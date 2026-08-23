@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Requests from Lito, his family, his team or a named institution
+    url: https://github.com/brunos3d/helplito.org/blob/main/CLAIMS.md
+    about: Corrections, removals, ownership and handover. Email is faster and private.
+  - name: Scientific, clinical or institutional information for Lito's team
+    url: https://helplito.org/en/can-you-help
+    about: Do not post it here. Use the form on the site; it reaches the official team directly.
