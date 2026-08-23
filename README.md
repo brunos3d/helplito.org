@@ -39,7 +39,9 @@ pnpm build
 pnpm start
 ```
 
-Copy `.env.example` to `.env.local` to change the submission mode or the repository link. No variable is required for a local build.
+Copy `.env.example` to `.env.local` for development. It sets `NEXT_PUBLIC_SITE_URL=http://localhost:3000`, which drives `metadataBase`, canonical and hreflang URLs, the sitemap and robots. `.env.production` is committed and sets `https://helplito.org` for production builds, including Vercel. No other variable is required for a local build.
+
+Next.js loads `.env.local` ahead of `.env.production`, also during `pnpm build`. A local production build therefore bakes in the localhost URL; that is fine for the QA sweep. To reproduce the deployed URLs locally, run `NEXT_PUBLIC_SITE_URL=https://helplito.org pnpm build`.
 
 ### QA sweep
 

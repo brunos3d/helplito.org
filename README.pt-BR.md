@@ -39,7 +39,9 @@ pnpm build
 pnpm start
 ```
 
-Copie `.env.example` para `.env.local` para mudar o modo de envio ou o link do repositório. Nenhuma variável é obrigatória para um build local.
+Copie `.env.example` para `.env.local` no desenvolvimento. Ele define `NEXT_PUBLIC_SITE_URL=http://localhost:3000`, que alimenta `metadataBase`, as URLs canônicas e de hreflang, o sitemap e o robots. `.env.production` é versionado e define `https://helplito.org` para builds de produção, inclusive na Vercel. Nenhuma outra variável é obrigatória para um build local.
+
+O Next.js carrega `.env.local` antes de `.env.production`, inclusive durante `pnpm build`. Um build de produção local, portanto, grava a URL de localhost; isso não atrapalha a varredura de QA. Para reproduzir as URLs do deploy localmente, rode `NEXT_PUBLIC_SITE_URL=https://helplito.org pnpm build`.
 
 ### Varredura de QA
 

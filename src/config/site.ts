@@ -7,10 +7,17 @@
  * - initiativeEmail: the person responsible for this website. Corrections, removals, legal,
  *   ownership and operational questions.
  */
+/**
+ * Public origin of the deployment, without a trailing slash.
+ * Read from NEXT_PUBLIC_SITE_URL: .env.production sets https://helplito.org for Vercel,
+ * .env.local sets http://localhost:3000 for development. Falls back to the production URL.
+ */
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://helplito.org").replace(/\/+$/, "");
+
 export const siteConfig = {
   name: "Help Lito",
   domain: "helplito.org",
-  url: "https://helplito.org",
+  url: siteUrl,
 
   /** Official email published by Lito's team for concrete, verifiable information. */
   officialEmail: "ajudalito@avioesemusicas.com",
