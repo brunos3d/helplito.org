@@ -55,11 +55,24 @@ pnpm qa                                # em outro; BASE e WIDTHS podem ser sobre
 
 A verificação do formulário para na etapa de revisão e bloqueia toda requisição que não vai para o servidor em teste. Ela nunca abre o link mailto e nunca envia nada para os endereços de contato.
 
+### Imagens de compartilhamento social
+
+As imagens de Open Graph e de pré-visualização social são arquivos estáticos em `public/og/`, referenciados em `src/lib/social-images.ts`. Elas são capturadas a partir dos templates de desenvolvimento em `/dev/og/[variant]`, com uma composição própria para cada proporção. Para regenerar depois de alterar `src/components/og/SocialCard.tsx`:
+
+```bash
+pnpm dev   # em um terminal
+pnpm og    # em outro; grava os cinco arquivos em public/og/
+```
+
+`public/og/README.md` documenta cada arquivo e onde ele é usado.
+
 ## Estrutura do projeto
 
 ```
 src/
-  app/[locale]/          páginas, layout, opengraph-image
+  app/[locale]/          páginas e layout
+  app/dev/og/            templates das imagens sociais (404 em produção)
+  components/og/         layouts dos cartões sociais, um por proporção
   app/api/submissions/   endpoint opcional de envio moderado
   components/home/       seções narrativas da página inicial, em ordem
   components/research/   card de ensaio clínico, cards de organizações, áreas de pesquisa
@@ -73,6 +86,7 @@ src/
   proxy.ts               middleware de idioma do next-intl
 scripts/
   qa-sweep.mjs           varredura de QA no navegador (veja acima)
+  generate-og.mjs        captura as imagens de compartilhamento em public/og/
 ```
 
 ## Regras de conteúdo codificadas na camada de dados

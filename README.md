@@ -55,11 +55,24 @@ pnpm qa                                # in another; BASE and WIDTHS can be over
 
 The form check stops at the review step and blocks every request that does not go to the server under test. It never opens the mailto link and never sends anything to the contact addresses.
 
+### Social sharing images
+
+The Open Graph and social preview images are static files in `public/og/`, referenced from `src/lib/social-images.ts`. They are captured from the development-only templates at `/dev/og/[variant]`, one intentional composition per aspect ratio. To regenerate after changing `src/components/og/SocialCard.tsx`:
+
+```bash
+pnpm dev   # in one terminal
+pnpm og    # in another; writes the five files into public/og/
+```
+
+`public/og/README.md` documents each file and where it is used.
+
 ## Project layout
 
 ```
 src/
-  app/[locale]/          pages, layout, opengraph-image
+  app/[locale]/          pages and layout
+  app/dev/og/            social image templates (404 in production)
+  components/og/         social card layouts, one per aspect ratio
   app/api/submissions/   optional moderated submission endpoint
   components/home/       homepage narrative sections, in order
   components/research/   trial card, organization cards, research areas
@@ -73,6 +86,7 @@ src/
   proxy.ts               next-intl locale middleware
 scripts/
   qa-sweep.mjs           browser QA sweep (see above)
+  generate-og.mjs        captures the social sharing images into public/og/
 ```
 
 ## Content rules encoded in the data layer

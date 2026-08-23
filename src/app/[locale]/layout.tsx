@@ -5,6 +5,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, htmlLang, ogLocale, type Locale } from "@/i18n/routing";
 import { plexMono, plexSans } from "@/lib/fonts";
+import { ogImages, twitterImages } from "@/lib/social-images";
 import { siteConfig } from "@/config/site";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -67,11 +68,13 @@ export async function generateMetadata({
       url: `/${locale}`,
       title: t("defaultTitle"),
       description: t("defaultDescription"),
+      images: [...ogImages],
     },
     twitter: {
       card: "summary_large_image",
       title: t("defaultTitle"),
       description: t("defaultDescription"),
+      images: [...twitterImages],
     },
     robots: { index: true, follow: true },
   };
