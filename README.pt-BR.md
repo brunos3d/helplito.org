@@ -61,7 +61,7 @@ As imagens de Open Graph e de pré-visualização social são arquivos estático
 
 ```bash
 pnpm dev   # em um terminal
-pnpm og    # em outro; grava os cinco arquivos em public/og/
+pnpm og    # em outro; grava os dois arquivos em public/og/
 ```
 
 `public/og/README.md` documenta cada arquivo e onde ele é usado.

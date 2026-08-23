@@ -61,7 +61,7 @@ The Open Graph and social preview images are static files in `public/og/`, refer
 
 ```bash
 pnpm dev   # in one terminal
-pnpm og    # in another; writes the five files into public/og/
+pnpm og    # in another; writes both files into public/og/
 ```
 
 `public/og/README.md` documents each file and where it is used.

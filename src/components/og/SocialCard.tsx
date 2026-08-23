@@ -4,9 +4,8 @@
  * Rendered only by the development route /dev/og/[variant] and captured once as
  * static PNG/JPEG files in public/og/. Never rendered on production requests.
  *
- * Each variant is a distinct composition designed for its aspect ratio, not a
- * resized copy of the landscape layout. Copy is fixed by design and must not be
- * localized or rewritten here; see docs in public/og/README.md.
+ * Copy is fixed by design and must not be localized or rewritten here; see
+ * docs in public/og/README.md.
  */
 
 const COPY = {
@@ -34,9 +33,6 @@ const FONT = {
 export const VARIANTS = {
   og: { width: 1200, height: 630, file: "help-lito-og-1200x630" },
   twitter: { width: 1200, height: 675, file: "help-lito-twitter-1200x675" },
-  square: { width: 1200, height: 1200, file: "help-lito-square-1200x1200" },
-  vertical: { width: 1080, height: 1350, file: "help-lito-vertical-1080x1350" },
-  story: { width: 1080, height: 1920, file: "help-lito-story-1080x1920" },
 } as const;
 
 export type VariantId = keyof typeof VARIANTS;
@@ -176,104 +172,11 @@ function Landscape({ width, height }: { width: number; height: number }) {
   );
 }
 
-/** Square 1200x1200: identity and title on top, photograph below. */
-function Square() {
-  return (
-    <div
-      style={{
-        width: 1200,
-        height: 1200,
-        display: "flex",
-        flexDirection: "column",
-        background: COLOR.bg,
-        padding: 60,
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <Wordmark markSize={44} fontSize={33} />
-        <UrlLabel fontSize={17} />
-      </div>
-      <div style={{ marginTop: 46 }}>
-        <Title fontSize={74} maxWidth={1020} />
-      </div>
-      <div style={{ marginTop: 26 }}>
-        <Description fontSize={26} maxWidth={900} />
-      </div>
-      <Photo position="50% 24%" style={{ marginTop: 44, flex: 1, minHeight: 0 }} />
-    </div>
-  );
-}
-
-/** Vertical 4:5, 1080x1350: editorial column, photograph in the lower half. */
-function Vertical() {
-  return (
-    <div
-      style={{
-        width: 1080,
-        height: 1350,
-        display: "flex",
-        flexDirection: "column",
-        background: COLOR.bg,
-        padding: 60,
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <Wordmark markSize={42} fontSize={31} />
-        <UrlLabel fontSize={16} />
-      </div>
-      <div style={{ marginTop: 42 }}>
-        <Title fontSize={68} maxWidth={930} />
-      </div>
-      <div style={{ marginTop: 24 }}>
-        <Description fontSize={25} maxWidth={850} />
-      </div>
-      <Photo position="50% 22%" style={{ marginTop: 40, flex: 1, minHeight: 0 }} />
-    </div>
-  );
-}
-
-/**
- * Story 9:16, 1080x1920. Generous safe areas: story UI covers roughly the top
- * and bottom 250px, so all text and the photograph stay inside that window.
- */
-function Story() {
-  return (
-    <div
-      style={{
-        width: 1080,
-        height: 1920,
-        display: "flex",
-        flexDirection: "column",
-        background: COLOR.bg,
-        padding: "190px 84px 170px",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <Wordmark markSize={48} fontSize={36} />
-        <UrlLabel fontSize={18} />
-      </div>
-      <div style={{ marginTop: 58 }}>
-        <Title fontSize={84} maxWidth={900} />
-      </div>
-      <div style={{ marginTop: 30 }}>
-        <Description fontSize={30} maxWidth={830} />
-      </div>
-      <Photo position="50% 30%" style={{ marginTop: 56, flex: 1, minHeight: 0 }} />
-    </div>
-  );
-}
-
 export function SocialCard({ variant }: { variant: VariantId }) {
   const { width, height } = VARIANTS[variant];
   switch (variant) {
     case "og":
     case "twitter":
       return <Landscape width={width} height={height} />;
-    case "square":
-      return <Square />;
-    case "vertical":
-      return <Vertical />;
-    case "story":
-      return <Story />;
   }
 }

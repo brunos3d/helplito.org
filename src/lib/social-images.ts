@@ -14,22 +14,14 @@
 const ALT = "Help Lito Find the Right People to Help. Lito Sousa and his wife.";
 
 /**
- * og:image entries. The 1200x630 image is the primary card for Facebook,
- * LinkedIn, WhatsApp, Slack, Discord and iMessage. The square 1200x1200 image
- * is offered second for consumers that prefer or crop to square previews.
+ * og:image entries. The 1200x630 image is the card for Facebook, LinkedIn,
+ * WhatsApp, Slack, Discord and iMessage.
  */
 export const ogImages = [
   {
     url: "/og/help-lito-og-1200x630.jpg",
     width: 1200,
     height: 630,
-    type: "image/jpeg",
-    alt: ALT,
-  },
-  {
-    url: "/og/help-lito-square-1200x1200.jpg",
-    width: 1200,
-    height: 1200,
     type: "image/jpeg",
     alt: ALT,
   },

@@ -25,9 +25,6 @@ const OUT = path.join(import.meta.dirname, "..", "public", "og");
 const VARIANTS = [
   { id: "og", width: 1200, height: 630, file: "help-lito-og-1200x630.jpg" },
   { id: "twitter", width: 1200, height: 675, file: "help-lito-twitter-1200x675.jpg" },
-  { id: "square", width: 1200, height: 1200, file: "help-lito-square-1200x1200.jpg" },
-  { id: "vertical", width: 1080, height: 1350, file: "help-lito-vertical-1080x1350.jpg" },
-  { id: "story", width: 1080, height: 1920, file: "help-lito-story-1080x1920.jpg" },
 ];
 
 await mkdir(OUT, { recursive: true });
