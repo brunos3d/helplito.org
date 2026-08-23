@@ -1,0 +1,707 @@
+{
+  "meta": {
+    "siteName": "Help Lito",
+    "defaultTitle": "Help Lito. An independent initiative connecting prion disease expertise with Lito Sousa's official team",
+    "defaultDescription": "Lito Sousa, creator of Aviões e Músicas, has been diagnosed with Creutzfeldt-Jakob Disease. Help Lito organizes verified information and connects researchers, physicians and institutions working on prion disease with his official team. Not a fundraising campaign.",
+    "pages": {
+      "aboutLito": {
+        "title": "About Lito Sousa",
+        "description": "More than three decades in aviation. Aircraft mechanic, private pilot, educator, Human Factors and Safety specialist, and creator of Aviões e Músicas."
+      },
+      "cjd": {
+        "title": "Understanding Creutzfeldt-Jakob Disease",
+        "description": "A clear, sourced explanation of CJD and prion disease: what it is, why it is hard to diagnose, why time matters, and what research is happening."
+      },
+      "research": {
+        "title": "Prion Disease Research",
+        "description": "Current research directions in prion disease, including PrP-lowering strategies, siRNA, antisense oligonucleotides and biomarkers, plus verified clinical trial records."
+      },
+      "help": {
+        "title": "Can You Help?",
+        "description": "For researchers, physicians, clinical trial teams, institutions and companies with verified information that may be relevant to Lito's case."
+      },
+      "sources": {
+        "title": "Sources",
+        "description": "Every official update, public health reference, clinical trial record and institution cited on Help Lito."
+      },
+      "about": {
+        "title": "About This Initiative",
+        "description": "Why Help Lito exists, who is responsible for it, and what it is not. Independent. Not a fundraiser. Open to correction and handover."
+      },
+      "disclaimer": {
+        "title": "Medical Disclaimer",
+        "description": "Help Lito does not provide medical advice."
+      },
+      "privacy": {
+        "title": "Privacy Policy",
+        "description": "What Help Lito collects, which is very little, and how the contact form works."
+      },
+      "responsibleUse": {
+        "title": "Responsible Use",
+        "description": "How information on Help Lito is curated, its limits, and how to request corrections or removal."
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "description": "Our commitment to an accessible website and how to report problems."
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Two separate channels: Lito's official team for scientific and medical information, and the Help Lito initiative for website, correction and legal matters."
+      }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "aboutLito": "About Lito",
+    "cjd": "Understanding CJD",
+    "research": "Research",
+    "help": "Can you help?",
+    "sources": "Sources",
+    "about": "About the initiative",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content",
+    "language": "Language",
+    "switchTo": "Ler em português"
+  },
+  "notice": {
+    "title": "This is an independent initiative. It is not a fundraiser, and no donations are collected through this website.",
+    "body": "Help Lito exists to increase visibility and help connect verified scientific, medical and institutional information with Lito's official team. It is not operated by Lito, his family or Aviões e Músicas, and it is not affiliated with them. Fraudulent fundraising campaigns using Lito's name have been reported: treat any request for money with caution.",
+    "officialLabel": "Official team, for relevant information",
+    "initiativeLabel": "Help Lito initiative, for website matters",
+    "link": "About this initiative and who is responsible for it"
+  },
+  "common": {
+    "officialEmail": "Official team email",
+    "contactTeam": "Contact Lito's official team",
+    "followUpdates": "Follow official updates",
+    "lastVerified": "Last verified",
+    "viewRegistry": "View official study record",
+    "officialSite": "Official website",
+    "readMore": "Read more",
+    "learnMore": "Learn more",
+    "showTechnical": "For professionals",
+    "hideTechnical": "Hide technical detail",
+    "source": "Source",
+    "sources": "Sources",
+    "copyEmail": "Copy email",
+    "copied": "Copied",
+    "externalLink": "opens in a new tab",
+    "country": "Country",
+    "category": "Category",
+    "status": "Status",
+    "phase": "Phase",
+    "sponsor": "Sponsor",
+    "participants": "Planned participants",
+    "locations": "Listed locations",
+    "approximately": "approximately {count}"
+  },
+  "status": {
+    "check-registry": "Check official registry",
+    "recruiting": "Recruiting (per registry)",
+    "not-yet-recruiting": "Not yet recruiting (per registry)",
+    "active-not-recruiting": "Active, not recruiting (per registry)",
+    "completed": "Completed",
+    "unknown": "Unknown"
+  },
+  "categories": {
+    "research": "Research",
+    "clinical-trials": "Clinical trials",
+    "diagnosis": "Diagnosis",
+    "patient-support": "Patient support",
+    "advocacy": "Advocacy",
+    "surveillance": "Surveillance"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Help Lito. An independent public-interest initiative",
+      "title": "Connecting Lito's case with the people who study prion disease.",
+      "lead": "Lito Sousa, aviation educator and creator of Aviões e Músicas, was diagnosed with Creutzfeldt-Jakob Disease in August 2026. There is no proven treatment. Help Lito organizes verified information about his case and the disease so that researchers, physicians and institutions with relevant knowledge can reach his official team.",
+      "primaryCta": "Can you help?",
+      "secondaryCta": "Understand the case",
+      "whatLabel": "What this site is",
+      "whatValue": "A bridge between verified expertise and Lito's official team.",
+      "notLabel": "What it is not",
+      "notValue": "Not a fundraiser. Not a medical service. Not an official channel.",
+      "portraitAlt": "Portrait of Lito Sousa, smiling, arms crossed, wearing a dark sweater.",
+      "portraitCaption": "Lito Sousa"
+    },
+    "who": {
+      "eyebrow": "Who is Lito?",
+      "title": "Thirty-seven years of making the sky make sense.",
+      "p1": "Lito Sousa is a Brazilian aviation professional. He started as an aircraft mechanic in commercial aviation, became a private pilot, and built experience across generations of aircraft. He specialized in Human Factors and Safety, the discipline that studies how people and complex systems fail together, and how to keep them from failing.",
+      "p2": "Then he did something unusual for a technician: he taught the public. Through Aviões e Músicas, one of the largest aviation education platforms in Brazil, he spent more than fifteen years turning dense technical knowledge into something anyone could follow. Turbulence. Engines. Why a wing works. Why an accident happened, and what changed afterward.",
+      "p3": "Along the way he helped thousands of people overcome their fear of flying, trained new professionals, and became a reference for an entire generation that learned aviation through his voice.",
+      "facts": {
+        "years": "years in commercial aviation",
+        "teaching": "years making aviation understandable",
+        "roles": "Mechanic. Pilot. Educator. Safety specialist.",
+        "rolesLabel": "Roles"
+      },
+      "imageAlt": "Lito Sousa in a safety vest and an A350 visitor cap, smiling inside an aircraft assembly hall, with an airliner fuselage behind him.",
+      "cta": "More about Lito",
+      "imageCaption": "Lito on a visit to an aircraft assembly line"
+    },
+    "diagnosis": {
+      "eyebrow": "The diagnosis",
+      "title": "Creutzfeldt-Jakob Disease, in sixty seconds.",
+      "intro": "CJD is a rare, rapidly progressive, neurodegenerative prion disease. It is not an infection in the usual sense and it is not a cancer. It involves a protein in the brain folding into the wrong shape.",
+      "steps": {
+        "normal": {
+          "title": "A normal protein",
+          "body": "Every person makes prion protein (PrP). In its normal shape it is harmless."
+        },
+        "misfold": {
+          "title": "Misfolding",
+          "body": "In CJD, some PrP takes on an abnormal shape that the body cannot easily clear."
+        },
+        "chain": {
+          "title": "A chain reaction",
+          "body": "Abnormal PrP induces normal PrP to misfold too. The process spreads through brain tissue."
+        },
+        "damage": {
+          "title": "Neurological damage",
+          "body": "Nerve cells are lost. Coordination, vision, memory, speech and movement decline, often within months."
+        }
+      },
+      "symptomsTitle": "Symptoms may include",
+      "symptoms": [
+        "Loss of coordination",
+        "Motor impairment",
+        "Visual disturbances",
+        "Cognitive changes and memory problems",
+        "Myoclonus (sudden muscle jerks)",
+        "Behavioral changes",
+        "Speech impairment",
+        "Rapid neurological decline"
+      ],
+      "noTreatment": "According to public health authorities, there is currently no proven treatment that stops or reverses the disease.",
+      "noContagion": "Ordinary social contact does not transmit sporadic CJD. Family members and people interacting normally with a patient are not at increased risk.",
+      "cta": "Explore the science",
+      "sourceLabel": "Sources: CDC, NINDS"
+    },
+    "reality": {
+      "eyebrow": "Why time matters",
+      "title": "This is why time matters.",
+      "body": "Lito has experienced a rapid neurological decline and a significant loss of movement, while remaining lucid during the early public updates. CJD progresses in weeks and months, not years.",
+      "transition": "And this is why we are looking for the people who may know more.",
+      "imageAlt": "Lito Sousa seated in a hospital recliner, wearing a light polo shirt and a hospital wristband, giving a thumbs up with flowers on a counter behind him.",
+      "imageCaption": "Lito during treatment, 2026"
+    },
+    "science": {
+      "eyebrow": "What research exists",
+      "title": "This is serious. It is also being studied.",
+      "intro": "Prion disease is one of the hardest problems in neurology, and a small, specialized research community has spent years on it. Some of that work has reached early human studies. None of it is a cure. All of it is relevant to anyone evaluating Lito's case.",
+      "areasTitle": "Research directions",
+      "trialTitle": "A registered first-in-human study",
+      "trialNote": "Shown as information only. Nothing here states that Lito is eligible, has been accepted, or will receive any experimental treatment, or that the treatment works.",
+      "orgsTitle": "Where this research happens",
+      "orgsIntro": "Institutions involved in prion disease research, diagnosis, patient support or clinical investigation. Listing does not imply endorsement, partnership or contact.",
+      "cta": "Explore the research"
+    },
+    "help": {
+      "eyebrow": "Can you help?",
+      "title": "Can your work, research or expertise help?",
+      "subtitle": "If you work in prion disease, neurology, RNA therapeutics, neurodegeneration, clinical research or a related field, your knowledge or your connections may be relevant. The request is for concrete, verifiable information, sent to the official channel.",
+      "flowTitle": "How information reaches the team",
+      "flow": [
+        {
+          "title": "You identify something relevant",
+          "body": "A study, a protocol, a specialist, an institution, a trial, a publication. Something a specialized team could evaluate."
+        },
+        {
+          "title": "You write to the official channel",
+          "body": "Directly, or through the structured form on this site, which prepares an email you review and send yourself. Help Lito does not receive it."
+        },
+        {
+          "title": "Lito's team evaluates it",
+          "body": "The official team and the physicians around Lito decide what is relevant. Help Lito has no role in that decision."
+        }
+      ],
+      "lookingFor": "What is being sought",
+      "lookingForList": [
+        "Verified treatment or protocol information",
+        "Clinical trial information and eligibility criteria",
+        "Research opportunities",
+        "Specialist contacts",
+        "Institutional connections"
+      ],
+      "notLookingFor": "What should not be sent",
+      "notLookingForList": [
+        "Unverified or miracle treatments",
+        "Speculation, rumors or conspiracy theories",
+        "Supplements, diets or alternative cures",
+        "Mass messages or chain messages"
+      ],
+      "formCta": "Use the structured form",
+      "follow": "Official updates"
+    },
+    "happened": {
+      "eyebrow": "What happened",
+      "title": "A diagnosis that moves faster than the search for answers.",
+      "p1": "Lito is a husband, a father and a friend to many. His wife, Mila Seidl, chose to share the diagnosis publicly because the family understood something quickly: this disease does not give people time to look for answers slowly.",
+      "p2": "The family has been adapting their home and preparing care. They are not asking for money. They are asking for verified knowledge, specialized contacts and real research, reaching them while it can still matter. The public timeline below is limited to what the family and team have shared.",
+      "imageAlt": "Lito Sousa and his wife Mila Seidl embracing and smiling, both in white shirts, at an outdoor event.",
+      "imageCaption": "Lito and Mila Seidl"
+    }
+  },
+  "aboutLitoPage": {
+    "eyebrow": "About Lito",
+    "title": "A mechanic who learned to explain the sky.",
+    "lead": "Lito Sousa is a Brazilian aviation professional, educator, creator, speaker, private pilot, international aircraft mechanic and specialist in Human Factors and Safety. He is best known as the creator and face of Aviões e Músicas.",
+    "sections": {
+      "career": {
+        "title": "The career",
+        "body": "According to the official Aviões e Músicas channels, Lito has more than 37 years of experience in commercial aviation. His career began decades ago in aircraft maintenance, and he built hands-on experience across generations of aircraft. He later became a private pilot and specialized in Human Factors and Safety, the field that studies how human performance, procedures and technology interact in high-risk operations."
+      },
+      "education": {
+        "title": "The educator",
+        "body": "For more than fifteen years, Lito has made aviation easier to understand for the public. Aviões e Músicas became one of the largest aviation education platforms in Brazil by doing something simple and difficult: taking technical material seriously while speaking plainly. Accident analyses, systems explanations, cockpit procedures and the reasoning behind safety rules were turned into content that pilots, mechanics, enthusiasts and nervous passengers could all follow."
+      },
+      "impact": {
+        "title": "The impact",
+        "body": "Lito has helped thousands of people overcome their fear of flying. He has contributed to aviation education and professional training, and has opened doors for new professionals entering the industry. For a generation of Brazilians, aviation has his voice."
+      },
+      "why": {
+        "title": "Why this matters here",
+        "body": "This website is not about a diagnosis. It is about a person who spent decades helping people understand complex systems, and who is now facing one of the most complex diseases in medicine. The same clarity he brought to aviation is what this project tries to bring to his case: organized, verified, reachable information."
+      }
+    },
+    "official": "Official channels",
+    "officialNote": "Help Lito is independent. These are the channels run by Lito and his team."
+  },
+  "cjdPage": {
+    "eyebrow": "Understanding CJD",
+    "title": "Creutzfeldt-Jakob Disease, explained carefully.",
+    "lead": "This page explains what CJD is, why it is so hard, and why time matters. It is written for families, journalists and curious visitors first, with deeper detail available for professionals. It is not medical advice.",
+    "sections": {
+      "what": {
+        "title": "What is CJD?",
+        "body": "Creutzfeldt-Jakob Disease (in Portuguese, Doença de Creutzfeldt-Jakob, DCJ) is a rare, rapidly progressive, neurodegenerative disease. It belongs to a family called prion diseases. The disease involves the prion protein, which every person makes, adopting an abnormal shape that spreads through the brain and damages nerve cells. Most cases are sporadic, meaning they occur without a known cause. Smaller proportions are genetic or acquired.",
+        "technical": "CJD is a transmissible spongiform encephalopathy caused by the conformational conversion of cellular prion protein (PrP^C) into a misfolded, aggregation-prone isoform (PrP^Sc). Sporadic CJD accounts for roughly 85% of cases, genetic forms for 10 to 15%, and acquired forms (iatrogenic, variant) for a small minority. Subtypes are classified by PRNP codon 129 genotype and PrP^Sc glycotype."
+      },
+      "prion": {
+        "title": "What does \"prion disease\" mean?",
+        "body": "A prion is a protein that has misfolded in a way that causes other copies of the same protein to misfold too. The word comes from \"proteinaceous infectious particle\". Unlike bacteria or viruses, there is no genetic material involved in the spread of the abnormal shape inside the brain. That is part of why prion diseases are so difficult: the thing causing damage is a version of something the body normally makes."
+      },
+      "difficult": {
+        "title": "Why is it difficult?",
+        "body": "CJD is rare, so most physicians see very few cases. Its early symptoms overlap with many other conditions, including encephalitis, autoimmune disorders, strokes and other dementias. Diagnosis usually requires a combination of clinical assessment, MRI, EEG, and tests on cerebrospinal fluid. Because the disease moves quickly, the window in which a diagnosis can be confirmed and options evaluated is short.",
+        "technical": "Supportive tests include DWI/FLAIR MRI showing cortical ribboning or basal ganglia signal, periodic sharp wave complexes on EEG, and CSF markers such as 14-3-3, total tau and, with high specificity, RT-QuIC. Definitive diagnosis is neuropathological."
+      },
+      "time": {
+        "title": "Why does time matter?",
+        "body": "CJD typically progresses over months. Patients lose coordination, vision, memory, speech and movement. Public health authorities state that there is currently no proven treatment capable of stopping or reversing the disease. Every week matters for care decisions, for understanding the available research, and for any conversation with a specialized team."
+      },
+      "contact": {
+        "title": "Can you catch it from someone?",
+        "body": "No. Sporadic CJD is not spread by ordinary social contact. Family members, caregivers and people interacting normally with a patient are not at increased risk because of everyday contact. Standard precautions are used in specific medical settings, such as neurosurgery, but this has nothing to do with being near a person."
+      },
+      "research": {
+        "title": "What research is happening?",
+        "body": "A small, specialized research community has spent years on prion disease. Work includes reducing the amount of normal prion protein in the brain with RNA-targeting therapies, better biomarkers for earlier diagnosis, and methods to track how the disease progresses. One PrP-targeting siRNA is now in a first-in-human safety study. This is early-stage research, not an available treatment."
+      }
+    },
+    "symptomsTitle": "Symptoms",
+    "symptomsIntro": "Symptoms vary between people and change over time. They may include:",
+    "cta": "Go to the research section",
+    "sourcesNote": "Medical information on this page is drawn from the US CDC and NINDS, and from the peer-reviewed literature summarized on our Sources page."
+  },
+  "researchPage": {
+    "eyebrow": "Research",
+    "title": "Where the science stands.",
+    "lead": "A curated, sourced view of current research in prion disease. Plain explanations first. Technical detail on request. Nothing here is a treatment recommendation, and nothing here implies eligibility for any study.",
+    "areasTitle": "Research directions",
+    "areasIntro": "One of the most active ideas in the field is simple to state: reduce the amount of normal prion protein, so there is less raw material for the disease process. Several approaches pursue it.",
+    "trialsTitle": "Verified clinical trial records",
+    "trialsIntro": "Trial status changes. We never hardcode recruitment status as a permanent fact. Every record shows when a human last verified it and links directly to the official registry.",
+    "trialsDisclaimer": "Listing a trial is not a statement that Lito is eligible, has been accepted, or will receive any experimental treatment. It is not a statement that the treatment works.",
+    "orgsTitle": "Where research is happening",
+    "orgsIntro": "Organizations and institutions involved in prion disease research, diagnosis, patient support or clinical investigation. Every entry links to an official website. No endorsement or partnership is implied.",
+    "filterAll": "All",
+    "searchRegistry": "Search ClinicalTrials.gov for prion disease studies",
+    "maintenance": "This section is built on a structured data model so it can be connected to a maintained research database later. If you notice an error, write to the official channel and mention \"helplito.org\"."
+  },
+  "helpPage": {
+    "eyebrow": "Can you help?",
+    "title": "Can your work, research or expertise help?",
+    "subtitle": "We are looking for verified scientific, clinical and institutional information that may be relevant to Lito's case.",
+    "who": "This page is for",
+    "whoList": [
+      "Prion disease researchers",
+      "Neurologists and infectious disease specialists with relevant expertise",
+      "Clinical trial investigators and research coordinators",
+      "Universities and research institutions",
+      "Biotechnology and pharmaceutical companies",
+      "RNA therapeutics, siRNA and antisense oligonucleotide researchers",
+      "Protein misfolding, neurodegeneration and biomarker researchers",
+      "Rare disease and patient advocacy organizations",
+      "Medical professionals with direct experience treating or studying prion disease"
+    ],
+    "howTitle": "How this works",
+    "howSteps": [
+      "Choose the option that best describes you.",
+      "Fill in the structured fields. Be specific and link to verifiable material.",
+      "Review the message. Nothing is sent until you decide.",
+      "The message goes to the official channel run by Lito's team, not to Help Lito."
+    ],
+    "directTitle": "Prefer to write directly?",
+    "directBody": "The form prepares an email addressed to the official team. You review it and send it from your own email client. Prefer to write directly? Include your name, organization, role, a link to your work, and why it may be relevant.",
+    "notes": {
+      "title": "Before you write",
+      "items": [
+        "Do not send medical advice for Lito specifically. Send information that a specialized team can evaluate.",
+        "Do not send unverified treatments, supplements or speculative suggestions.",
+        "Do not organize mass emailing campaigns toward researchers or hospitals. Connection, not harassment.",
+        "Help Lito does not receive or store form submissions in the default configuration. See the Privacy Policy."
+      ]
+    },
+    "formTitle": "Structured form"
+  },
+  "form": {
+    "categoryLabel": "Which best describes you?",
+    "categories": {
+      "researcher": "I am a researcher",
+      "physician": "I am a physician",
+      "trial": "I work on a clinical trial",
+      "institution": "I represent a university or research institution",
+      "company": "I work for a biotechnology or pharmaceutical company",
+      "advocacy": "I represent a patient advocacy organization",
+      "information": "I have verified scientific or clinical information"
+    },
+    "fields": {
+      "fullName": "Full name",
+      "organization": "Organization",
+      "role": "Professional role",
+      "country": "Country",
+      "expertise": "Area of expertise",
+      "website": "Official website",
+      "publication": "Relevant publication or research (link or citation)",
+      "trialId": "Clinical trial ID, if applicable",
+      "relevance": "Why this may be relevant",
+      "contact": "Professional contact information (email or phone)",
+      "optional": "optional"
+    },
+    "placeholders": {
+      "expertise": "e.g. prion biology, RNA therapeutics, neurology, biomarkers",
+      "trialId": "e.g. NCT00000000",
+      "relevance": "Be concrete. What is the information, where can it be verified, and why might it matter?",
+      "contact": "Institutional email preferred"
+    },
+    "review": "Review message",
+    "edit": "Edit",
+    "send": "Open in your email client",
+    "sendModerated": "Send for review",
+    "sending": "Sending",
+    "previewTitle": "Your message",
+    "previewNote": "This is exactly what will be sent. You can still go back and change it.",
+    "to": "To",
+    "subject": "Subject",
+    "subjectPrefix": "Information for Lito's team",
+    "successTitle": "Thank you.",
+    "successMailto": "Your email client should have opened with the message ready. If it did not, copy the message and send it to {email}.",
+    "successModerated": "Your message was received and will be reviewed before being forwarded to the official team.",
+    "errorTitle": "Something went wrong.",
+    "errorBody": "We could not send your message. Please email the official team directly at {email}.",
+    "copyMessage": "Copy message",
+    "consent": "I understand that this message goes to Lito's official team, that Help Lito is an independent initiative, and that I am sharing professional, verifiable information.",
+    "required": "Required",
+    "validation": {
+      "required": "This field is required.",
+      "email": "Enter a valid email address or phone number.",
+      "url": "Enter a valid URL starting with https://",
+      "consent": "Please confirm before continuing."
+    },
+    "honeypot": "Leave this field empty"
+  },
+  "sourcesPage": {
+    "eyebrow": "Sources",
+    "title": "Every claim, traceable.",
+    "lead": "Help Lito curates information from official updates, public health authorities, clinical trial registries and research institutions. Links go to official pages only. Accessed dates are shown for each entry.",
+    "categories": {
+      "official-updates": "Official updates",
+      "public-health": "Public health authorities",
+      "clinical-trials": "Clinical trials",
+      "research-institutions": "Research institutions",
+      "organizations": "Patient and research organizations"
+    },
+    "accessed": "Accessed",
+    "correction": "Found an error or a broken link? Write to the initiative:"
+  },
+  "aboutPage": {
+    "eyebrow": "About this initiative",
+    "title": "What Help Lito is, who is responsible for it, and what it is not.",
+    "lead": "Help Lito is an independent public-interest initiative created by Bruno Silva. It exists to increase visibility and help connect verified scientific, medical and institutional information with Lito's official team. It is named here for accountability, not promotion.",
+    "responsibleLabel": "Responsible for this website",
+    "officialLabel": "Official team channel",
+    "sourceCodeLabel": "Source code",
+    "sourceCodeLink": "Public repository",
+    "sourceCodePending": "The repository link will be published here once available.",
+    "sections": {
+      "why": {
+        "title": "Why this site exists",
+        "body": "When a rare, fast-moving disease meets a public figure, information scatters. Rumors, well-meaning but unverified suggestions, and fraudulent campaigns appear within days. At the same time, the people who actually study the disease may never hear about the case. Help Lito exists to reduce that distance: one place that explains who Lito is, what CJD is, where research is happening, and how a professional can reach the official team."
+      },
+      "notFundraising": {
+        "title": "Not a fundraising campaign",
+        "body": "Help Lito does not accept donations. There is no crowdfunding, no PIX, no cryptocurrency, no payment processing and no financial support section of any kind. The official team has warned that fraudulent fundraising campaigns are using Lito's name. If you see a financial campaign claiming to represent Help Lito or Lito without confirmation from his official channels, treat it with caution."
+      },
+      "independent": {
+        "title": "An independent initiative",
+        "body": "Help Lito is not operated by Lito, by Mila Seidl, by Aviões e Músicas, or by any hospital, university or research organization, and it is not officially affiliated with any of them unless explicit authorization is later obtained. It does not represent the Broad Institute, MIT, Harvard or any institution mentioned on this site. Institutions are listed for information only. The official contact channel, ajudalito@avioesemusicas.com, belongs to Lito's team and is reproduced here exactly as they published it."
+      },
+      "responsibility": {
+        "title": "Who is responsible",
+        "body": "This website was created and is maintained by Bruno Silva, independently and at his own expense. There is no organization behind it. The purpose of naming a responsible person is simple: if something on this site is wrong, harmful, or unwanted by the people it concerns, there must be someone who answers for it. That person can be reached at helplito@brunosilva.io."
+      },
+      "curation": {
+        "title": "How information is curated",
+        "body": "Medical and research content is drawn from public health authorities, official clinical trial registries and the peer-reviewed literature. Each source is listed on the Sources page with an access date. Clinical trial status can change at any time; the site shows a last verified date and always links to the official record rather than treating status as a fact. Information about Lito is limited to what his family and team have shared publicly."
+      },
+      "noGuarantee": {
+        "title": "No guarantees",
+        "body": "No treatment or study described on this site guarantees eligibility or benefit. Nothing here states or implies that Lito is eligible for, has been accepted into, or will receive any experimental therapy. Nothing here claims that any experimental therapy works."
+      },
+      "notAdvice": {
+        "title": "Not medical advice",
+        "body": "This site does not provide medical advice, diagnosis or treatment. Decisions about care belong to patients, families and their physicians."
+      },
+      "corrections": {
+        "title": "Corrections and removal",
+        "body": "Anyone can request a correction. Lito, his family, his official team, Aviões e Músicas, or any person or institution mentioned on this site can ask for content to be changed or removed. Write to helplito@brunosilva.io. Requests from the people the site is about take priority over everything else."
+      },
+      "handover": {
+        "title": "Ownership and handover",
+        "body": "Help Lito was created to help, not to control the narrative around Lito's case. If Lito, his family, his official team, Aviões e Músicas, or another appropriate authorized party wishes to discuss the future administration, ownership, operation or removal of this website and domain, those discussions are welcome at helplito@brunosilva.io. This does not imply that ownership transfers automatically; it means the door is open."
+      },
+      "openSource": {
+        "title": "Open source",
+        "body": "The source code of this website is published openly to support transparency, review and independent collaboration. Anyone can inspect how the site works, what it collects, and how content is structured. This is an accountability measure, not a showcase."
+      }
+    },
+    "linksTitle": "Related pages"
+  },
+  "legal": {
+    "eyebrow": "Transparency",
+    "contactLine": "Questions, corrections or requests about this page go to",
+    "disclaimer": {
+      "title": "Medical Disclaimer",
+      "lead": "Help Lito is an informational website. It does not provide medical advice, diagnosis or treatment.",
+      "sections": [
+        {
+          "title": "No medical advice",
+          "body": [
+            "Nothing on this site should be used as a substitute for consultation with qualified healthcare professionals. If you or someone you care for is facing a medical emergency, contact local emergency services."
+          ]
+        },
+        {
+          "title": "Accuracy and change",
+          "body": [
+            "Medical information is summarized from public health authorities, official clinical trial registries and peer-reviewed literature. We try to keep it accurate and current, but science and trial status change. Always consult the original source, linked on the Sources page."
+          ]
+        },
+        {
+          "title": "No endorsement, no eligibility",
+          "body": [
+            "References to research, clinical trials, institutions or organizations do not constitute endorsement, partnership or a recommendation. No statement on this site implies that any patient is eligible for, has been accepted into, or will benefit from any study or therapy."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "lead": "Help Lito collects as little as possible. This page describes exactly what the current implementation does.",
+      "sections": [
+        {
+          "title": "Browsing",
+          "body": [
+            "The site does not use advertising trackers, analytics scripts or third-party embeds. No account exists and no cookie is set for personalization. If the hosting platform provides aggregate, privacy-respecting traffic measurement in the future, this page will be updated to say so."
+          ]
+        },
+        {
+          "title": "Language preference",
+          "body": [
+            "When you switch languages, a cookie may store your choice so the site remembers it on the next visit. It contains only the language code."
+          ]
+        },
+        {
+          "title": "The contact form",
+          "body": [
+            "In the default configuration, the form on the Can You Help page builds an email message on your device and opens it in your own email client, addressed to Lito's official team at ajudalito@avioesemusicas.com. Help Lito does not receive, store or see the contents. How the official team handles your information is their responsibility.",
+            "No form on this site currently stores user data."
+          ]
+        },
+        {
+          "title": "Moderated mode",
+          "body": [
+            "The code includes an optional moderated mode in which submissions would be forwarded to a private review step before reaching the official team. It is not enabled. If it is ever enabled, submissions will be held privately, never published, deleted after forwarding, and this page will be updated first."
+          ]
+        },
+        {
+          "title": "Email you send us",
+          "body": [
+            "If you write to helplito@brunosilva.io, your message is kept only as long as needed to answer it or act on it, and is not shared with anyone except, when you ask for it, Lito's official team."
+          ]
+        },
+        {
+          "title": "Your rights",
+          "body": [
+            "If you believe Help Lito holds any information about you, or you want something removed, write to helplito@brunosilva.io."
+          ]
+        }
+      ]
+    },
+    "responsibleUse": {
+      "title": "Responsible Use",
+      "lead": "How this site is meant to be used, what its information can and cannot do, and how to ask for changes.",
+      "sections": [
+        {
+          "title": "Purpose",
+          "body": [
+            "Help Lito exists to increase visibility and help connect verified scientific, medical and institutional information with Lito's official team. It is independent, it is not a fundraiser, and it is not a medical service."
+          ]
+        },
+        {
+          "title": "Where the information comes from",
+          "body": [
+            "Content is curated from public, official, scientific and institutional sources: public health authorities, clinical trial registries, peer-reviewed literature and the official channels of Lito's team. Each source is listed on the Sources page with an access date."
+          ]
+        },
+        {
+          "title": "Information can become outdated",
+          "body": [
+            "Science moves, and clinical trial availability changes. Recruitment status shown on this site is always paired with a last verified date and a link to the official registry. Check the original record before acting on anything."
+          ]
+        },
+        {
+          "title": "Not advice, not a recommendation",
+          "body": [
+            "Help Lito does not provide medical advice and does not guarantee eligibility for any treatment or study. Nothing on this site should be read as a recommendation of a treatment. Decisions belong to patients, families and their physicians."
+          ]
+        },
+        {
+          "title": "Using the official channel well",
+          "body": [
+            "Use ajudalito@avioesemusicas.com for concrete, verifiable, professional information. Do not use it for unverified treatments, speculation, personal opinions about Lito's care, or commercial offers.",
+            "Do not organize or take part in mass messaging toward researchers, hospitals or institutions listed on this site. They are listed so professionals can verify them, not so the public contacts them on Lito's behalf."
+          ]
+        },
+        {
+          "title": "Images and the family's privacy",
+          "body": [
+            "Do not reproduce the photographs on this site outside their context, and never alongside sensational or misleading copy. Share only what the family has chosen to make public."
+          ]
+        },
+        {
+          "title": "No fundraising in Lito's name",
+          "body": [
+            "The official team has reported fraudulent campaigns. Help Lito does not and will not ask for money. Do not create fundraising campaigns in Lito's name."
+          ]
+        },
+        {
+          "title": "Corrections, removal and contact",
+          "body": [
+            "Anyone can request a correction. Lito, his family, his official team, Aviões e Músicas, or any person or institution mentioned here can request that content be changed or removed, and can raise questions about the administration or future of the website. Write to helplito@brunosilva.io."
+          ]
+        }
+      ]
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "lead": "This is a public-interest website. Accessibility is part of its purpose, not polish.",
+      "sections": [
+        {
+          "title": "Standards",
+          "body": [
+            "Help Lito aims to meet WCAG 2.2 level AA. Pages use semantic HTML, visible focus states, sufficient color contrast, descriptive alt text for every image, and keyboard-accessible navigation."
+          ]
+        },
+        {
+          "title": "Motion and reading",
+          "body": [
+            "The site contains no decorative animation. Transitions are limited to hover and focus states, and respect the prefers-reduced-motion setting. Headings use Georgia, a widely available serif; body text uses a sans-serif at comfortable sizes."
+          ]
+        },
+        {
+          "title": "Languages",
+          "body": [
+            "The site is available in English and Brazilian Portuguese, and each page declares its language for assistive technology."
+          ]
+        },
+        {
+          "title": "Report a barrier",
+          "body": [
+            "If you encounter a barrier, write to helplito@brunosilva.io with \"accessibility\" in the subject line."
+          ]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "description": "Independent initiative created to increase visibility and help connect relevant scientific, medical and institutional information with Lito's official team.",
+    "notFundraising": "Not a fundraising campaign. No donations are collected through this website.",
+    "navigate": "Site",
+    "transparency": "Transparency",
+    "links": {
+      "about": "About the initiative",
+      "sources": "Sources",
+      "responsibleUse": "Responsible use",
+      "privacy": "Privacy policy",
+      "disclaimer": "Medical disclaimer",
+      "accessibility": "Accessibility",
+      "contact": "Contact the initiative",
+      "sourceCode": "Source code"
+    },
+    "officialTitle": "Official contact for relevant scientific and medical information",
+    "officialBody": "Published by Lito's team. Not operated by Help Lito.",
+    "initiativeTitle": "Website-related contact",
+    "initiativeBody": "Corrections, removals, legal matters, ownership and questions about the initiative. Responsible: Bruno Silva.",
+    "copyright": "Help Lito. Independent public initiative. Not affiliated with Lito Sousa, Aviões e Músicas or any institution mentioned."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for does not exist or has moved.",
+    "cta": "Back to home"
+  },
+  "channels": {
+    "official": {
+      "eyebrow": "Channel 1",
+      "title": "Contact Lito's official team",
+      "body": "Published by Lito's team for concrete, verifiable information that may help his case. This channel does not belong to Help Lito.",
+      "for": [
+        "Verified scientific information",
+        "Clinical research",
+        "Treatment information",
+        "Clinical trial information",
+        "Specialist connections",
+        "Institutional opportunities"
+      ]
+    },
+    "initiative": {
+      "eyebrow": "Channel 2",
+      "title": "Contact the Help Lito initiative",
+      "body": "For matters about this website, which is independent and run by one person. Nothing sent here reaches Lito's team unless you ask for it to be forwarded.",
+      "for": [
+        "Website issues",
+        "Corrections",
+        "Content removal requests",
+        "Legal concerns",
+        "Ownership or administration of the site",
+        "Questions about the initiative"
+      ],
+      "note": "Responsible: Bruno Silva. Named for accountability, not promotion."
+    }
+  },
+  "contactPage": {
+    "eyebrow": "Contact",
+    "title": "Two channels, two purposes.",
+    "lead": "Information that may help Lito goes to his official team. Questions about this website go to the person who runs it. These channels are separate and should not be confused.",
+    "body": [
+      "If you have verified scientific, clinical or institutional information, write to Lito's official team. That channel was published by the team and is reproduced here exactly as shared. Help Lito does not read or filter what you send there.",
+      "If you want to report an error, request a correction or removal, raise a legal concern, discuss the ownership or administration of this website, or ask how the initiative operates, write to the Help Lito address. It is answered by Bruno Silva, the person responsible for the site.",
+      "Please do not use either channel to send unverified treatments, speculation or commercial offers, and do not organize mass messaging toward the institutions listed on this site."
+    ],
+    "formLink": "Use the structured form to prepare a message for the official team"
+  }
+}
