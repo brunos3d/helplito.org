@@ -411,6 +411,7 @@
       "required": "Este campo é obrigatório.",
       "email": "Informe um e-mail ou telefone válido.",
       "url": "Informe uma URL válida começando com https://",
+      "length": "Este campo é longo demais.",
       "consent": "Confirme antes de continuar."
     },
     "honeypot": "Deixe este campo em branco"

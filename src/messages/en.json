@@ -411,6 +411,7 @@
       "required": "This field is required.",
       "email": "Enter a valid email address or phone number.",
       "url": "Enter a valid URL starting with https://",
+      "length": "This field is too long.",
       "consent": "Please confirm before continuing."
     },
     "honeypot": "Leave this field empty"
