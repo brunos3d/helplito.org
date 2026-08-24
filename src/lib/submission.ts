@@ -68,7 +68,9 @@ export function isValidContact(value: string): boolean {
   return email.test(value.trim()) || phone.test(value.trim());
 }
 
-export type ValidationErrors = Partial<Record<keyof SubmissionFields, "required" | "url" | "email">>;
+export type ValidationErrors = Partial<
+  Record<keyof SubmissionFields, "required" | "url" | "email" | "length">
+>;
 
 export function validateSubmission(fields: Partial<SubmissionFields>): ValidationErrors {
   const errors: ValidationErrors = {};
@@ -76,8 +78,19 @@ export function validateSubmission(fields: Partial<SubmissionFields>): Validatio
     const v = fields[key];
     if (!v || (typeof v === "string" && v.trim().length === 0)) errors[key] = "required";
   }
-  if (fields.website && fields.website.trim() && !isValidUrl(fields.website.trim())) errors.website = "url";
-  if (fields.contact && fields.contact.trim() && !isValidContact(fields.contact)) errors.contact = "email";
+  for (const key of Object.keys(fieldLimits) as Array<keyof SubmissionFields>) {
+    const value = fields[key];
+    const limit = fieldLimits[key];
+    if (typeof value === "string" && limit !== undefined && value.length > limit) {
+      errors[key] = "length";
+    }
+  }
+  if (!errors.website && fields.website && fields.website.trim() && !isValidUrl(fields.website.trim())) {
+    errors.website = "url";
+  }
+  if (!errors.contact && fields.contact && fields.contact.trim() && !isValidContact(fields.contact)) {
+    errors.contact = "email";
+  }
   if (fields.category && !submissionCategories.includes(fields.category)) errors.category = "required";
   return errors;
 }
