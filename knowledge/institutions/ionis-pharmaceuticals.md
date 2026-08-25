@@ -7,19 +7,21 @@ source_last_updated:
   neurology_reference_date: 2026-03-05
   corporate_pipeline: 2026-06-24
   clinicaltrials_gov: 2026-08-19
-last_verified: 2026-08-24
+last_verified: 2026-08-25
 confidence: high
 sources:
   - https://ionis.com/patients-and-advocacy/expanded-access-policy
   - https://neurology.ionis.com/our-pipeline
   - https://ionis.com/science-and-innovation/pipeline
   - https://clinicaltrials.gov/study/NCT06153966
+  - https://www.instagram.com/lito/
 public_site_impact: candidate
 related:
   - F-ION-001
   - F-ION-004
   - Q-ION-001
   - Q-ION-002
+  - F-017
 ---
 
 # Ionis Pharmaceuticals
@@ -36,6 +38,19 @@ August 19, 2026 and reports `Active, not recruiting`; the Ionis neurology page
 also displays `Active, not recruiting`, but its citation identifies a registry
 snapshot accessed March 5, 2026. Agreement between those labels does not make
 the older webpage a current operational statement.
+
+## Case-specific status for Lito
+
+According to the family on August 25, Ionis declined Lito's inclusion, said the
+studies were not accepting new participants, and said compassionate-use access
+was not available to him at that time. This is a family report of a
+case-specific response; the underlying institutional communication was not
+independently obtained for this repository.
+
+The report is consistent with the registry's overall `Active, not recruiting`
+label and the absence of a published ION717 expanded-access program. It does not
+resolve the contradictory detailed registry prose or undated local page, and it
+does not establish universal or permanent unavailability.
 
 ## F-ION-004 — Published expanded-access availability
 
@@ -75,6 +90,10 @@ This finding is temporal and narrow:
 - absence from the current list does not establish permanent impossibility;
 - the record does not address an unpublicized, future, emergency, or
   case-specific sponsor decision.
+
+For Lito specifically, the family-reported answer is currently negative. Do not
+treat the general physician inquiry channel as an invitation for repeated
+appeals after that case-specific response.
 
 Recheck the live policy and trial record before reusing this finding.
 

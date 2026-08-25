@@ -36,28 +36,46 @@ export function TrialCard({ trial }: { trial: ClinicalTrial }) {
                 <dd className="mt-1">{t("approximately", { count: trial.plannedParticipants })}</dd>
               </div>
             )}
-            <div className="sm:col-span-2">
-              <dt className="eyebrow text-cream-200/70">{t("locations")}</dt>
-              <dd className="mt-1.5">
-                <ul className="grid gap-1 sm:grid-cols-2">
-                  {trial.locations.map((loc) => (
-                    <li key={loc}>{loc}</li>
-                  ))}
-                </ul>
-              </dd>
-            </div>
+            {trial.locations.length > 0 && (
+              <div className="sm:col-span-2">
+                <dt className="eyebrow text-cream-200/70">{t("locations")}</dt>
+                <dd className="mt-1.5">
+                  <ul className="grid gap-1 sm:grid-cols-2">
+                    {trial.locations.map((loc) => (
+                      <li key={loc}>{loc}</li>
+                    ))}
+                  </ul>
+                </dd>
+              </div>
+            )}
           </dl>
         </div>
 
         <div className="flex flex-col justify-between gap-6 bg-navy-950 p-6 sm:p-8 lg:col-span-4">
           <div>
-            <p className="eyebrow text-cream-200/70">{t("status")}</p>
+            <p className="eyebrow text-cream-200/70">{t("registryStatus")}</p>
             <p className="mt-1 text-lg font-medium">{s(trial.status)}</p>
             <p className="mt-1 font-mono text-xs text-cream-200/70">
               {t("lastVerified")}: {formatDate(trial.lastVerified, locale)}
             </p>
             {trial.statusNote && (
               <p className="mt-4 text-xs leading-relaxed text-cream-200/65">{pick(trial.statusNote, locale)}</p>
+            )}
+            {trial.operationalNote && (
+              <div className="mt-5 border-t border-cream-50/20 pt-4">
+                <p className="eyebrow text-cream-200/70">{t("operationalStatus")}</p>
+                <p className="mt-2 text-xs leading-relaxed text-cream-200/75">
+                  {pick(trial.operationalNote, locale)}
+                </p>
+              </div>
+            )}
+            {trial.caseStatus && (
+              <div className="mt-5 border-t border-amber-400/30 pt-4">
+                <p className="eyebrow text-amber-300">{t("caseSpecificStatus")}</p>
+                <p className="mt-2 text-sm leading-relaxed text-cream-100/90">
+                  {pick(trial.caseStatus, locale)}
+                </p>
+              </div>
             )}
           </div>
           <a

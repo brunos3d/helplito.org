@@ -1,7 +1,7 @@
 ---
 type: finding
 status: unresolved
-last_verified: 2026-08-24
+last_verified: 2026-08-25
 confidence: high
 sources:
   - https://clinicaltrials.gov/study/NCT06153966
@@ -10,6 +10,7 @@ sources:
   - https://clinicaltrials.med.nyu.edu/clinicaltrial/2549/phase-12a-study-evaluate/
   - https://euclinicaltrials.eu/ctis-public/view/2023-503355-98-00?lang=en
   - https://neurology.ionis.com/our-pipeline
+  - https://www.instagram.com/lito/
 public_site_impact: review-required
 related:
   - F-006
@@ -21,6 +22,11 @@ related:
 # ION717 recruitment state on 2026-08-24
 
 Verified approximately 2026-08-24 15:54 to 16:05 BRT (UTC-03:00).
+
+August 25 clarification: the official-source conflict below remains unresolved.
+Separately, the family reports that Ionis declined Lito, said the studies were
+closed to new participants, and said compassionate use was not available to him
+at that time. This is a case-specific answer, not proof of universal closure.
 
 ## Finding
 
@@ -90,5 +96,6 @@ registry removes that state.
 ## Potential public-site impact
 
 Do not publish ION717 as currently recruiting. If the study is added to public
-data, use `Active, not recruiting`, date it August 24, 2026 and state that
-official pages still conflict about Regimen 3 and NYU.
+data, use `Active, not recruiting`, date the registry verification, state that
+official pages still conflict, and separately attribute the case-specific
+answer to the family.

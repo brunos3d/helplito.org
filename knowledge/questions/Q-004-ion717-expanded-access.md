@@ -5,16 +5,18 @@ observed_at: 2026-08-24T22:15:45-03:00
 source_last_updated:
   ionis_policy: unknown
   clinicaltrials_gov: 2026-08-19
-last_verified: 2026-08-24
+last_verified: 2026-08-25
 confidence: high
 sources:
   - https://ionis.com/patients-and-advocacy/expanded-access-policy
   - https://clinicaltrials.gov/study/NCT06153966
   - https://www.fda.gov/news-events/expanded-access/expanded-access-information-physicians
+  - https://www.instagram.com/lito/
 public_site_impact: none
 related:
   - F-010
   - F-011
+  - F-017
   - F-ION-004
   - Q-ION-002
 ---
@@ -39,6 +41,11 @@ disease. It does not list ION717 or prion disease.
 
 The current ClinicalTrials.gov ION717 record independently says expanded access
 is not available.
+
+Separately, the family reports that Ionis said compassionate-use or
+expanded-access treatment was not available to Lito at this time. This is a
+case-specific reported answer, not an independently confirmed sponsor statement
+or a permanent worldwide claim.
 
 ## Policy criteria
 

@@ -70,4 +70,30 @@ export const timeline: TimelineEntry[] = [
         "A equipe oficial divulga o e-mail ajudalito@avioesemusicas.com para informações concretas e verificáveis que possam ajudar no caso do Lito, e alerta sobre campanhas fraudulentas de arrecadação usando o nome dele.",
     },
   },
+  {
+    id: "trial-access-update",
+    date: { en: "August 2026", "pt-br": "Agosto de 2026" },
+    title: {
+      en: "Trial access becomes more specific",
+      "pt-br": "O acesso aos estudos fica mais definido",
+    },
+    body: {
+      en: "The family reports that Ionis declined ION717 access for Lito and that compassionate use was not available to him at that time. PRiSM remains under investigation: the current Broad path reported by the family is non-interventional, and no interventional-arm evaluation is confirmed. Lito is not confirmed to be on a Harvard waiting list.",
+      "pt-br":
+        "A família relata que a Ionis negou o acesso do Lito ao ION717 e que o uso compassivo não estava disponível para ele naquele momento. O PRiSM continua em investigação: o caminho atual pelo Broad relatado pela família é sem intervenção, e não há avaliação confirmada para o braço de intervenção. Não há confirmação de que o Lito esteja em uma lista de espera de Harvard.",
+    },
+  },
+  {
+    id: "government-involvement",
+    date: { en: "August 2026", "pt-br": "Agosto de 2026" },
+    title: {
+      en: "Government involvement remains unverified in practice",
+      "pt-br": "A atuação do governo segue sem verificação prática",
+    },
+    body: {
+      en: "Health Minister Alexandre Padilha publicly said outreach was under way. The family reports that no concrete operational assistance or access resulting from the Ministry of Health or Itamaraty had been confirmed to it. Which institutions were contacted and what resulted remains unresolved.",
+      "pt-br":
+        "O ministro da Saúde, Alexandre Padilha, declarou publicamente que havia contatos em andamento. A família relata que nenhuma ajuda operacional concreta ou acesso resultante do Ministério da Saúde ou do Itamaraty havia sido confirmado a ela. Ainda não se sabe quais instituições foram contatadas e qual foi o resultado.",
+    },
+  },
 ];

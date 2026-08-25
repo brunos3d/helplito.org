@@ -91,6 +91,9 @@
     "country": "País",
     "category": "Categoria",
     "status": "Status",
+    "registryStatus": "Status no registro",
+    "operationalStatus": "Disponibilidade operacional",
+    "caseSpecificStatus": "Status atual para o Lito",
     "phase": "Fase",
     "sponsor": "Patrocinador",
     "participants": "Participantes previstos",
@@ -221,18 +224,18 @@
       ],
       "lookingFor": "O que está sendo procurado",
       "lookingForList": [
-        "Informações verificadas sobre tratamentos ou protocolos",
-        "Informações sobre ensaios clínicos e critérios de elegibilidade",
-        "Oportunidades de pesquisa",
-        "Contatos de especialistas",
-        "Conexões institucionais"
+        "Um centro ou uma coorte do PRiSM que possa avaliar o Lito agora para o braço de intervenção",
+        "Uma resposta da operação do estudo sobre triagem ativa para a intervenção e a rota segura de encaminhamento médico",
+        "Apresentações qualificadas a médicos ou pesquisadores capazes de produzir uma avaliação real de elegibilidade",
+        "Ajuda institucional que resolva um bloqueio de acesso específico e documentado",
+        "Um novo caminho legítimo de pesquisa sustentado por uma fonte primária atual"
       ],
       "notLookingFor": "O que não deve ser enviado",
       "notLookingForList": [
         "Tratamentos milagrosos ou não verificados",
         "Especulações, boatos ou teorias conspiratórias",
         "Suplementos, dietas ou curas alternativas",
-        "Mensagens em massa ou correntes"
+      "Mensagens em massa, pedidos duplicados ou contato indiscriminado com pesquisadores, hospitais ou patrocinadores"
       ],
       "formCta": "Usar o formulário estruturado",
       "follow": "Atualizações oficiais"
@@ -315,7 +318,7 @@
     "areasTitle": "Direções da pesquisa",
     "areasIntro": "Uma das ideias mais ativas do campo é simples de enunciar: reduzir a quantidade de proteína priônica normal, para que haja menos matéria-prima para o processo da doença. Várias abordagens seguem esse caminho.",
     "trialsTitle": "Registros verificados de ensaios clínicos",
-    "trialsIntro": "O status de um ensaio muda. Nunca tratamos o status de recrutamento como um fato permanente. Cada registro mostra quando uma pessoa o verificou pela última vez e leva diretamente ao registro oficial.",
+    "trialsIntro": "O status de um ensaio muda. Cada registro separa o que diz o registro público, a disponibilidade operacional e, quando há relato público, o que está disponível para o Lito agora. O rótulo Recrutando não garante coorte aberta, triagem nem aceitação.",
     "trialsDisclaimer": "Listar um ensaio não significa que o Lito seja elegível, tenha sido aceito ou vá receber qualquer tratamento experimental. Também não significa que o tratamento funcione.",
     "orgsTitle": "Onde a pesquisa acontece",
     "orgsIntro": "Organizações e instituições envolvidas em pesquisa, diagnóstico, apoio a pacientes ou investigação clínica em doenças priônicas. Cada entrada leva a um site oficial. Não há endosso nem parceria implícitos.",
@@ -326,7 +329,7 @@
   "helpPage": {
     "eyebrow": "Você pode ajudar?",
     "title": "O seu trabalho, a sua pesquisa ou a sua experiência podem ajudar?",
-    "subtitle": "Estamos procurando informações científicas, clínicas e institucionais verificadas que possam ser relevantes para o caso do Lito.",
+    "subtitle": "A prioridade atual é encontrar um centro ou uma coorte do PRiSM que possa avaliar o Lito para o braço de intervenção, além de apresentações qualificadas ou ação institucional capaz de produzir uma avaliação real ou resolver um bloqueio documentado.",
     "who": "Esta página é para",
     "whoList": [
       "Pesquisadores de doenças priônicas",
@@ -347,13 +350,14 @@
       "A mensagem vai para o canal oficial da equipe do Lito, não para o Help Lito."
     ],
     "directTitle": "Prefere escrever diretamente?",
-    "directBody": "O formulário prepara um e-mail endereçado à equipe oficial. Você revisa e envia pelo seu próprio aplicativo de e-mail. Prefere escrever diretamente? Inclua nome, organização, cargo, um link para o seu trabalho e por que ele pode ser relevante.",
+    "directBody": "O formulário prepara um e-mail endereçado à equipe oficial. Você revisa e envia pelo seu próprio aplicativo de e-mail. Seja específico sobre a incerteza que pode resolver, a instituição envolvida e a ação que ela pode tomar. O ION717 não é um caminho de acesso atual para o Lito após a resposta específica ao caso relatada pela família.",
     "notes": {
       "title": "Antes de escrever",
       "items": [
         "Não envie orientações médicas para o Lito especificamente. Envie informações que uma equipe especializada possa avaliar.",
         "Não envie tratamentos não verificados, suplementos ou sugestões especulativas.",
         "Não organize campanhas de e-mail em massa para pesquisadores ou hospitais. Conexão, não assédio.",
+        "Não repita pedidos de acesso ao ION717 sem informação nova, relevante e verificável do patrocinador ou de um centro.",
         "O Help Lito não recebe nem armazena envios do formulário na configuração padrão. Veja a Política de privacidade."
       ]
     },
@@ -419,9 +423,10 @@
   "sourcesPage": {
     "eyebrow": "Fontes",
     "title": "Cada afirmação, rastreável.",
-    "lead": "O Help Lito reúne informações de atualizações oficiais, autoridades de saúde pública, registros de ensaios clínicos e instituições de pesquisa. Os links levam apenas a páginas oficiais. A data de acesso aparece em cada entrada.",
+    "lead": "O Help Lito reúne informações de atualizações oficiais, autoridades de saúde pública, registros de ensaios clínicos e instituições de pesquisa. Reportagens claramente identificadas são usadas apenas para declarações públicas, atribuições à família, correções e contexto da linha do tempo. A data de acesso aparece em cada entrada.",
     "categories": {
       "official-updates": "Atualizações oficiais",
+      "reporting": "Reportagens e declarações públicas",
       "public-health": "Autoridades de saúde pública",
       "clinical-trials": "Ensaios clínicos",
       "research-institutions": "Instituições de pesquisa",

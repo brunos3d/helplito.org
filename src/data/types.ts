@@ -51,7 +51,12 @@ export type ClinicalTrial = {
   locations: string[];
   /** Never treated as a permanent fact. Always shown with lastVerified. */
   status: TrialStatus;
+  /** Registry-specific context, including conflicts inside official records. */
   statusNote?: Localized;
+  /** Real-world sponsor/site availability, kept separate from registry status. */
+  operationalNote?: Localized;
+  /** Publicly reportable status of this path for Lito, with attribution in copy. */
+  caseStatus?: Localized;
   lastVerified: string;
 };
 
@@ -64,6 +69,7 @@ export type ResearchArea = {
 
 export type SourceCategory =
   | "official-updates"
+  | "reporting"
   | "public-health"
   | "clinical-trials"
   | "research-institutions"

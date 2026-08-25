@@ -1,14 +1,16 @@
 ---
 type: trial
 status: partially-verified
-last_verified: 2026-08-24
-confidence: high
+last_verified: 2026-08-25
+confidence: medium
 sources:
   - https://clinicaltrials.gov/study/NCT06153966
   - https://clinicaltrials.gov/api/v2/studies/NCT06153966
   - https://clinicaltrials.gov/api/int/studies/NCT06153966/history
   - https://euclinicaltrials.eu/ctis-public/view/2023-503355-98-00?lang=en
   - https://ionis.com/science-and-innovation/pipeline
+  - https://ionis.com/patients-and-advocacy/expanded-access-policy
+  - https://www.instagram.com/lito/
 public_site_impact: review-required
 related:
   - F-006
@@ -18,13 +20,30 @@ related:
   - F-015
   - Q-003
   - Q-005
+  - F-017
 ---
 
 # ION717 / PrProfile / NCT06153966
 
-Verified approximately 2026-08-24 15:54 to 16:05 BRT (UTC-03:00).
+Registry evidence verified approximately 2026-08-24 15:54 to 16:05 BRT
+(UTC-03:00); case-specific status updated 2026-08-25.
 The record contains a current internal recruitment conflict, so no single status
 sentence should be quoted without its source field and date.
+
+## Current status by evidence layer
+
+- **Registry status:** ClinicalTrials.gov version 30 lists the study as
+  `Active, not recruiting`, removes site statuses and the central contact, and
+  says expanded access is unavailable. The detailed description still contains
+  conflicting recruitment language.
+- **Operational status:** the family reports that Ionis said the studies were
+  not accepting new participants. This has not been independently confirmed
+  through a dated sponsor statement resolving the public-page conflict.
+- **Case-specific status:** the family reports that Ionis declined Lito's
+  inclusion. This is not evidence of universal or permanent unavailability.
+- **Expanded access:** public sources list no ION717 program, and the family
+  reports that Ionis said compassionate-use access was not available to Lito at
+  this time.
 
 ## Observed facts
 
@@ -137,6 +156,9 @@ The reviewed sources do not establish:
 - access to ION717 outside the study;
 - safety or efficacy of ION717.
 
+The reported sponsor answer supplies a current operational answer for Lito. It
+does not establish that ION717 is unavailable to everyone worldwide.
+
 ## Conflicts and changes over time
 
 Selected ClinicalTrials.gov history:
@@ -158,8 +180,8 @@ states. These scopes and timestamps must remain explicit.
 
 ## Open questions
 
-- Q-003: Is Regimen 3 closed everywhere, or is any site still open under a local
-  state not reconciled with version 30?
-- Q-004: Does any ION717 expanded access route exist outside the programs
-  currently listed by Ionis?
+- Q-003: How should the conflicting official pages be reconciled with the
+  family-reported sponsor answer for Lito?
+- Q-004: Only new sponsor or registry evidence would change the current negative
+  public-program and case-specific expanded-access state.
 - Q-005: What did the public phrase "European Phase 3 without placebo" refer to?

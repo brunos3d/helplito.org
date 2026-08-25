@@ -66,7 +66,7 @@ export function Science() {
                       <dd className="mt-1">{trial.sponsor}</dd>
                     </div>
                     <div>
-                      <dt className="eyebrow text-cream-200/70">{c("status")}</dt>
+                      <dt className="eyebrow text-cream-200/70">{c("registryStatus")}</dt>
                       <dd className="mt-1">
                         {s(trial.status)}
                         <span className="block font-mono text-xs text-cream-200/70">
@@ -75,6 +75,14 @@ export function Science() {
                       </dd>
                     </div>
                   </dl>
+                  {trial.caseStatus && (
+                    <div className="mt-4 border-t border-amber-400/30 pt-4">
+                      <p className="eyebrow text-amber-300">{c("caseSpecificStatus")}</p>
+                      <p className="mt-2 text-sm leading-relaxed text-cream-100/85">
+                        {pick(trial.caseStatus, locale)}
+                      </p>
+                    </div>
+                  )}
                   <p className="mt-4 text-xs leading-relaxed text-cream-200/70">{t("trialNote")}</p>
                   <a
                     href={trial.registryUrl}
