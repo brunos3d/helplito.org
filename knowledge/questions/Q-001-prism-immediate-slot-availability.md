@@ -1,6 +1,10 @@
 ---
 type: question
 status: unresolved
+observed_at: 2026-08-24T22:15:45-03:00
+source_last_updated:
+  clinicaltrials_gov: 2026-06-05
+  neuronext_project: unknown
 last_verified: 2026-08-24
 confidence: high
 sources:
