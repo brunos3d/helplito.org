@@ -1,6 +1,9 @@
 ---
 type: regulatory
 status: verified
+observed_at: 2026-08-24T22:15:45-03:00
+source_last_updated:
+  fda_pages: unknown
 last_verified: 2026-08-24
 confidence: high
 sources:
@@ -11,12 +14,14 @@ sources:
 public_site_impact: none
 related:
   - F-011
+  - F-REG-US-001
   - Q-004
+  - Q-ION-002
 ---
 
 # United States expanded access
 
-Verified approximately 2026-08-24 16:00 BRT (UTC-03:00).
+Verified 2026-08-24 22:15 BRT (UTC-03:00).
 
 This note summarizes the current FDA process for drugs and biologics. It is not
 medical or legal advice and does not assess whether a particular request meets
@@ -37,6 +42,21 @@ The available categories include:
 - widespread treatment use.
 
 This record focuses on the first two.
+
+## F-REG-US-001 — A pathway is not product supply
+
+The FDA regulatory pathway exists, but its existence does not mean a
+manufacturer has agreed to supply an investigational drug. Likewise, an
+expanded access mechanism exists, but that does not mean ION717 is currently
+available through expanded access.
+
+```text
+FDA regulatory pathway exists
+  != manufacturer has agreed to supply the drug
+
+expanded access mechanism exists
+  != ION717 is currently available through expanded access
+```
 
 ## Roles
 
@@ -67,6 +87,21 @@ to assess product quality.
 
 FDA authorization does not make a company supply a product and does not create
 an expanded access program.
+
+## Individual-patient IND versus expanded-access protocol
+
+FDA describes two submission structures relevant to individual-patient access:
+
+- A licensed treating physician may submit a new individual-patient IND when
+  the access cannot proceed under an existing IND. The physician becomes the
+  sponsor-investigator and normally relies on the manufacturer through a letter
+  of authorization to the product information in the manufacturer's IND.
+- An IND holder may submit an expanded-access protocol to an existing IND. FDA's
+  forms guidance distinguishes this protocol route from a new expanded-access
+  IND and identifies the forms used by industry sponsors and physicians.
+
+The administrative route does not change the underlying dependency on a
+manufacturer that is willing and able to provide the product.
 
 ### Institutional Review Board
 
