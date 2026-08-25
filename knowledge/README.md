@@ -20,6 +20,10 @@ primary sources
 Nothing moves from this directory into the public data layer automatically. A
 candidate public fact requires a separate, sourced and human-reviewed change.
 
+The layer may also record completed research activity. Activity records say
+what was checked, what artifacts were produced and what remains unresolved.
+They are not task queues, outreach plans or evidence for a medical claim.
+
 ## Intended records
 
 The directory may grow gradually to include:
@@ -28,7 +32,9 @@ The directory may grow gradually to include:
 - institutional records;
 - regulatory pathway notes;
 - dated findings and source conflicts;
-- open questions.
+- open questions; and
+- dated activity records that summarize completed work without reproducing
+  contact details or message templates.
 
 Each pull request should remain small and cover one subject. New record types
 should be added only when an existing type cannot express the evidence clearly.
@@ -77,9 +83,16 @@ In particular, they must not:
   treatment;
 - publish private medical information;
 - copy personal contact details or become a contact directory;
+- store outreach recipient lists, message templates or sending instructions;
 - call for mass messaging or automate outreach;
 - publish user submissions;
 - add fundraising, tracking or analytics.
+
+It is acceptable for an activity record to state that outreach-related research
+or drafting occurred, or whether a message was sent. The operational material
+itself stays outside this repository. A sent-message record must contain only
+the date, receiving organization or official channel, purpose and outcome. It
+must not reproduce private correspondence or personal contact information.
 
 Official registry pages and institutional contact pages may be linked for
 provenance. Prefer links over copied contact details.
