@@ -11,8 +11,8 @@ last_verified: 2026-08-24
 confidence: high
 sources:
   - https://ionis.com/patients-and-advocacy/expanded-access-policy
-  - https://ionis.com/our-science/neurology
-  - https://ionis.com/our-medicines/ionis-pipeline
+  - https://neurology.ionis.com/our-pipeline
+  - https://ionis.com/science-and-innovation/pipeline
   - https://clinicaltrials.gov/study/NCT06153966
 public_site_impact: candidate
 related:
@@ -81,6 +81,6 @@ Recheck the live policy and trial record before reusing this finding.
 ## Sources
 
 - [Ionis Expanded Access Policy](https://ionis.com/patients-and-advocacy/expanded-access-policy)
-- [Ionis neurology page](https://ionis.com/our-science/neurology)
-- [Ionis pipeline](https://ionis.com/our-medicines/ionis-pipeline)
+- [Ionis neurology pipeline](https://neurology.ionis.com/our-pipeline)
+- [Ionis corporate pipeline](https://ionis.com/science-and-innovation/pipeline)
 - [ClinicalTrials.gov NCT06153966](https://clinicaltrials.gov/study/NCT06153966)
