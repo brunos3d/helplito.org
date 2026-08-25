@@ -1,6 +1,10 @@
 ---
 type: finding
 status: verified
+observed_at: 2026-08-24T22:15:45-03:00
+source_last_updated:
+  clinicaltrials_gov: 2026-06-05
+  neuronext_project: unknown
 last_verified: 2026-08-24
 confidence: high
 sources:
@@ -15,19 +19,30 @@ related:
 
 # PRiSM recruitment status versus immediate availability
 
-Verified approximately 2026-08-24 15:54 BRT (UTC-03:00).
+Verified again on 2026-08-24 at approximately 22:15 BRT (UTC-03:00).
 
 ## Finding
 
-ClinicalTrials.gov lists PRiSM overall and all five sites as `Recruiting`. That
-status does not guarantee an immediate slot, screening appointment or dose at a
-specific site.
+ClinicalTrials.gov separately lists PRiSM overall and each of its five sites as
+`Recruiting`. Those fields agree in the current snapshot, but global and
+site-level recruitment are different claims. Neither guarantees an immediate
+slot, screening appointment, open arm or dose at a specific site.
 
 ## Evidence
 
-The registry identifies a current recruitment state but exposes no real-time
-capacity field. NeuroNEXT lists the project and sites but does not publish slot
-inventory or a service-level commitment for referral handling.
+The registry exposes one overall status and one status for each location. It
+also exposes a central contact and site contacts, but no real-time capacity
+field. NeuroNEXT lists the project and sites but does not publish slot inventory
+or a service-level commitment for referral handling.
+
+```text
+overall trial status: Recruiting
+  != every arm or dose cohort is open
+  != a specific site's real-time capacity
+
+site status: Recruiting
+  != a slot or screening appointment is immediately available
+```
 
 ## Conflicting evidence
 
