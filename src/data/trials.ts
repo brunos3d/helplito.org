@@ -38,15 +38,29 @@ export const trials: ClinicalTrial[] = [
       "pt-br":
         "O ClinicalTrials.gov lista o estudo e os cinco centros como recrutando. Esse é o status do registro, não uma prova de capacidade em tempo real em qualquer dos braços.",
     },
-    operationalNote: {
-      en: "The registry does not publish live capacity by site, arm or dose cohort. It remains unclear whether any PRiSM site can currently evaluate Lito for the interventional arm.",
+    sponsorOperationalNote: {
+      en: "Broad publicly confirms that it is in contact with Lito's team and helping evaluate available options. Broad says it does not know whether it can help, but will try. This is active evaluation, not acceptance or an interventional slot.",
       "pt-br":
-        "O registro não publica a capacidade em tempo real por centro, braço ou coorte de dose. Ainda não está claro se algum centro do PRiSM pode avaliar o Lito agora para o braço de intervenção.",
+        "O Broad confirma publicamente que está em contato com a equipe do Lito e ajudando a avaliar as opções disponíveis. O instituto afirma que não sabe se poderá ajudar, mas tentará. Isso é avaliação ativa, não aceitação nem vaga no braço de intervenção.",
+    },
+    siteOperationalNote: {
+      en: "The registry does not publish live capacity by site, arm or dose cohort. No PRiSM site is confirmed to be conducting an interventional-arm eligibility review for Lito.",
+      "pt-br":
+        "O registro não publica capacidade em tempo real por centro, braço ou coorte de dose. Nenhum centro do PRiSM está confirmado como responsável por uma avaliação de elegibilidade do Lito para o braço de intervenção.",
     },
     caseStatus: {
-      en: "The family reports that the current Broad option presented to Lito is on the non-intervention side and would not provide the experimental intervention. This is not a rejection or an eligibility decision. Lito is not confirmed to be on a Harvard waiting list.",
+      en: "Lito may be in a preliminary PRiSM-associated screening or triage process, but participation is not confirmed. The family reports that the concrete option discussed so far is observation/control without the experimental intervention. Broad has not confirmed that as the final or only outcome.",
       "pt-br":
-        "A família relata que a opção atual apresentada ao Lito pelo Broad está no lado sem intervenção e não daria acesso à intervenção experimental. Isso não é uma rejeição nem uma decisão de elegibilidade. Não há confirmação de que o Lito esteja em uma lista de espera de Harvard.",
+        "O Lito pode estar em um processo preliminar de triagem associado ao PRiSM, mas a participação não está confirmada. A família relata que a opção concreta discutida até agora é observação/controle sem a intervenção experimental. O Broad não confirmou que esse seja o desfecho final ou único.",
+    },
+    expandedAccessNote: {
+      en: "The registry reports no expanded access for this study.",
+      "pt-br": "O registro informa que não há acesso expandido para este estudo.",
+    },
+    regulatoryNote: {
+      en: "PRiSM has trial-level regulatory authorization. Reporting that screening remains subject to FDA does not establish that FDA personally approves ordinary enrollment for each participant; that precise claim still needs primary-source verification.",
+      "pt-br":
+        "O PRiSM tem autorização regulatória no nível do estudo. Reportagens dizendo que a triagem permanece sujeita à FDA não comprovam que a agência aprove pessoalmente a entrada comum de cada participante; essa afirmação precisa de fonte primária.",
     },
     lastVerified: "2026-08-25",
   },
@@ -73,15 +87,30 @@ export const trials: ClinicalTrial[] = [
       "pt-br":
         "O registro atual indica ativo, sem recrutamento e sem acesso expandido. A descrição detalhada ainda contém linguagem conflitante sobre recrutamento; por isso, os metadados oficiais e a disponibilidade operacional devem ser lidos separadamente.",
     },
-    operationalNote: {
-      en: "The family reports that Ionis said the studies were not accepting new participants. This has not been independently confirmed through a dated sponsor statement resolving the conflicting public pages.",
+    sponsorOperationalNote: {
+      en: "Ionis has stated publicly that the ION717 study is no longer recruiting new participants. This operational answer is separate from the registry metadata conflict.",
       "pt-br":
-        "A família relata que a Ionis informou que os estudos não estavam aceitando novos participantes. Isso não foi confirmado de forma independente por uma declaração datada do patrocinador que resolva as páginas públicas conflitantes.",
+        "A Ionis declarou publicamente que o estudo do ION717 não está mais recrutando novos participantes. Essa resposta operacional é separada do conflito nos metadados do registro.",
+    },
+    siteOperationalNote: {
+      en: "No site is confirmed to be accepting new sponsor-authorized referrals or screening participants for ION717.",
+      "pt-br":
+        "Nenhum centro está confirmado como aceitando novos encaminhamentos autorizados pelo patrocinador ou fazendo triagem para o ION717.",
     },
     caseStatus: {
-      en: "The family reports that Ionis declined access for Lito and said compassionate use was not available to him at this time. This case-specific answer does not mean ION717 is unavailable to everyone worldwide.",
+      en: "The family reports that Ionis declined access for Lito. No current ION717 access path has been identified. This is closed for active outreach and should be monitored only for a material sponsor, cohort, registry, EAP or site change.",
       "pt-br":
-        "A família relata que a Ionis negou o acesso para o Lito e informou que o uso compassivo não estava disponível para ele neste momento. Essa resposta específica para o caso não significa que o ION717 esteja indisponível para todas as pessoas no mundo.",
+        "A família relata que a Ionis negou o acesso ao Lito. Nenhum caminho atual pelo ION717 foi identificado. A busca ativa está encerrada e deve ser reaberta apenas diante de uma mudança material do patrocinador, coorte, registro, programa de acesso expandido ou centro.",
+    },
+    expandedAccessNote: {
+      en: "Ionis says ION717 is not currently available through its expanded-access programs. Its general policy lists no ION717 EAP; that policy is not evidence that compassionate use is available.",
+      "pt-br":
+        "A Ionis afirma que o ION717 não está disponível atualmente por seus programas de acesso expandido. Sua política geral não lista um programa para o ION717 e não comprova que o uso compassivo esteja disponível.",
+    },
+    regulatoryNote: {
+      en: "Expanded access would involve a separate regulatory process, but FDA paperwork is not the current primary blocker: Ionis is not making ION717 available through expanded access.",
+      "pt-br":
+        "O acesso expandido envolveria um processo regulatório separado, mas a documentação perante a FDA não é o bloqueio principal atual: a Ionis não disponibiliza o ION717 por acesso expandido.",
     },
     lastVerified: "2026-08-25",
   },

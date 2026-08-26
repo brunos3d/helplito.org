@@ -14,6 +14,7 @@ sources:
   - https://neurology.ionis.com/our-pipeline
   - https://ionis.com/science-and-innovation/pipeline
   - https://clinicaltrials.gov/study/NCT06153966
+  - https://www.uol.com.br/splash/noticias/2026/08/25/lito-sousa-farmaceutica-caso.amp.htm
   - https://www.instagram.com/lito/
 public_site_impact: candidate
 related:
@@ -39,18 +40,27 @@ also displays `Active, not recruiting`, but its citation identifies a registry
 snapshot accessed March 5, 2026. Agreement between those labels does not make
 the older webpage a current operational statement.
 
+## Sponsor operational status
+
+Ionis publicly stated, in a company response reproduced by UOL on August 25,
+that the ION717 study is no longer recruiting new participants, that safety and
+efficacy have not been established, and that ION717 is not currently available
+through Ionis expanded-access programs. This is a sponsor-attributed public
+statement and materially upgrades the earlier family-only operational evidence.
+
+It does not erase the conflicting ClinicalTrials.gov detailed description or
+undated local pages. Registry metadata and sponsor operations remain separately
+queryable.
+
 ## Case-specific status for Lito
 
-According to the family on August 25, Ionis declined Lito's inclusion, said the
-studies were not accepting new participants, and said compassionate-use access
-was not available to him at that time. This is a family report of a
-case-specific response; the underlying institutional communication was not
-independently obtained for this repository.
+According to the family on August 25, Ionis declined Lito's inclusion. Ionis's
+public statement confirms the operational closure and says the individual case
+is being handled privately, but does not publish the private decision. The
+case-specific denial therefore remains family-reported.
 
-The report is consistent with the registry's overall `Active, not recruiting`
-label and the absence of a published ION717 expanded-access program. It does not
-resolve the contradictory detailed registry prose or undated local page, and it
-does not establish universal or permanent unavailability.
+No current ION717 access path for Lito is identified. This does not establish
+permanent closure or rule out a future sponsor-authorized change.
 
 ## F-ION-004 — Published expanded-access availability
 
@@ -66,8 +76,9 @@ Alexander disease in the United States. ION717 and prion disease were not
 listed.
 
 The ION717 ClinicalTrials.gov record independently sets its expanded-access
-field to unavailable. This is supporting trial-record evidence, not a substitute
-for the sponsor's policy page.
+field to unavailable. Ionis's August 25 product-specific statement provides the
+current operational result. Neither the registry nor the general policy should
+be substituted for the other.
 
 ## Policy scope
 
@@ -77,9 +88,9 @@ evidence, active development, effects on clinical trials and regulatory review,
 product supply, and the existence of a regulatory mechanism in the relevant
 country or region.
 
-The policy also provides a channel through which physicians may ask Ionis about
-investigational medicines. The existence of that channel is not evidence of a
-program, product supply, approval, or an affirmative decision for any person.
+The policy also provides a physician inquiry channel. Its existence is not
+evidence of a program, product supply or approval and is not a reason for
+repetitive appeals after Ionis's current product-specific answer.
 
 ## Interpretation limits
 

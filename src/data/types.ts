@@ -53,10 +53,16 @@ export type ClinicalTrial = {
   status: TrialStatus;
   /** Registry-specific context, including conflicts inside official records. */
   statusNote?: Localized;
-  /** Real-world sponsor/site availability, kept separate from registry status. */
-  operationalNote?: Localized;
+  /** Sponsor-reported real-world availability, kept separate from registry. */
+  sponsorOperationalNote?: Localized;
+  /** Site-level referral/screening capacity, kept separate from sponsor state. */
+  siteOperationalNote?: Localized;
   /** Publicly reportable status of this path for Lito, with attribution in copy. */
   caseStatus?: Localized;
+  /** Product-specific expanded-access state, not a general policy summary. */
+  expandedAccessNote?: Localized;
+  /** Mechanism-specific regulatory boundary or unresolved regulatory claim. */
+  regulatoryNote?: Localized;
   lastVerified: string;
 };
 

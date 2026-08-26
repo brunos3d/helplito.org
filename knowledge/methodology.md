@@ -79,7 +79,10 @@ Use these sections when applicable:
 ## Potential public-site impact
 ```
 
-Do not collapse distinct states. In particular:
+Do not collapse distinct states. Every case-linked trial record should separate
+registry status, sponsor operational status, site operational status,
+case-specific status and regulatory status when the evidence exists. In
+particular:
 
 ```text
 trial exists
@@ -89,6 +92,7 @@ trial exists
   != a person is eligible
   != a person is accepted
   != a drug is available through expanded access
+  != a regulator has made an individual decision
 ```
 
 These distinctions remain explicit even when a source uses a broad label such

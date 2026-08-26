@@ -58,6 +58,70 @@ export const sources: Source[] = [
     accessed: ACCESSED_UPDATE,
   },
   {
+    id: "broad-lito-statement-2026-08-25",
+    category: "official-updates",
+    title: {
+      en: "Broad Institute acknowledges active contact with Lito's team",
+      "pt-br": "Broad Institute confirma contato ativo com a equipe do Lito",
+    },
+    publisher: "Broad Institute",
+    url: "https://www.instagram.com/p/Dcd_Xd9R26O/",
+    note: {
+      en: "Primary institutional statement. Confirms contact and evaluation of options, while explicitly not promising help, eligibility, enrollment or treatment.",
+      "pt-br":
+        "Declaração institucional primária. Confirma contato e avaliação de opções, sem prometer ajuda, elegibilidade, inclusão ou tratamento.",
+    },
+    accessed: ACCESSED_UPDATE,
+  },
+  {
+    id: "uol-ionis-operational-statement-2026-08-25",
+    category: "reporting",
+    title: {
+      en: "Ionis reports no current ION717 recruitment or expanded access",
+      "pt-br": "Ionis informa que o ION717 não recruta nem tem acesso expandido atualmente",
+    },
+    publisher: "UOL / Splash",
+    url: "https://www.uol.com.br/splash/noticias/2026/08/25/lito-sousa-farmaceutica-caso.amp.htm",
+    note: {
+      en: "High-quality reporting reproducing a direct Ionis statement. Supports sponsor operational closure, no current ION717 expanded-access availability, and the warning that safety and efficacy are not established. It does not disclose Lito's private case decision.",
+      "pt-br":
+        "Reportagem de qualidade que reproduz uma declaração direta da Ionis. Sustenta o encerramento operacional, a indisponibilidade atual do ION717 por acesso expandido e o alerta de que segurança e eficácia não foram estabelecidas. Não revela a decisão privada sobre o caso do Lito.",
+    },
+    accessed: ACCESSED_UPDATE,
+  },
+  {
+    id: "padilha-formal-request-2026-08-25",
+    category: "official-updates",
+    title: {
+      en: "Health Minister reports formal request for Lito's consideration",
+      "pt-br": "Ministro da Saúde informa pedido formal para consideração do Lito",
+    },
+    publisher: "Alexandre Padilha / X",
+    url: "https://x.com/padilhando/status/2092330780286505394",
+    note: {
+      en: "Primary government statement about Ministry outreach and a formal request for inclusion in an initial study process. It is not evidence of eligibility, acceptance or a study slot.",
+      "pt-br":
+        "Declaração governamental primária sobre contatos do Ministério e pedido formal de inclusão em um processo inicial de estudo. Não comprova elegibilidade, aceitação nem vaga.",
+    },
+    accessed: ACCESSED_UPDATE,
+  },
+  {
+    id: "uol-itamaraty-embassy-outreach-2026-08-25",
+    category: "reporting",
+    title: {
+      en: "Itamaraty confirms embassy outreach supporting Lito's research search",
+      "pt-br": "Itamaraty confirma mobilização de embaixadas na busca por estudos",
+    },
+    publisher: "UOL / Splash",
+    url: "https://www.uol.com.br/splash/noticias/2026/08/25/lito-sousa-itamaraty.amp.htm",
+    note: {
+      en: "Reporting of direct Itamaraty confirmation; identifies outreach involving the United States, France and Germany. Diplomatic outreach supports consideration but does not determine eligibility or access.",
+      "pt-br":
+        "Reportagem com confirmação direta do Itamaraty; identifica ações envolvendo Estados Unidos, França e Alemanha. A atuação diplomática apoia a tentativa de consideração, mas não determina elegibilidade nem acesso.",
+    },
+    accessed: ACCESSED_UPDATE,
+  },
+  {
     id: "avioes-e-musicas",
     category: "official-updates",
     title: { en: "Aviões e Músicas, official website", "pt-br": "Aviões e Músicas, site oficial" },

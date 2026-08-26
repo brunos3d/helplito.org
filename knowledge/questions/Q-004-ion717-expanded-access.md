@@ -12,6 +12,7 @@ sources:
   - https://clinicaltrials.gov/study/NCT06153966
   - https://www.fda.gov/news-events/expanded-access/expanded-access-information-physicians
   - https://www.instagram.com/lito/
+  - https://www.uol.com.br/splash/noticias/2026/08/25/lito-sousa-farmaceutica-caso.amp.htm
 public_site_impact: none
 related:
   - F-010
@@ -31,8 +32,9 @@ Does Ionis currently make ION717 available through an expanded access program?
 
 ## Current answer
 
-No current published evidence was found in the reviewed official sources that
-an ION717 expanded access program is available.
+Ionis says ION717 is not currently available through its expanded-access
+programs. This product-specific operational statement is consistent with, but
+separate from, the general policy and registry.
 
 The Ionis policy page says that if a specific program is not listed for a
 condition or investigational medicine, Ionis has no currently available program
@@ -42,10 +44,8 @@ disease. It does not list ION717 or prion disease.
 The current ClinicalTrials.gov ION717 record independently says expanded access
 is not available.
 
-Separately, the family reports that Ionis said compassionate-use or
-expanded-access treatment was not available to Lito at this time. This is a
-case-specific reported answer, not an independently confirmed sponsor statement
-or a permanent worldwide claim.
+Separately, the family reports a negative case-specific answer for Lito. The
+general policy, ION717-specific status and case result remain separate scopes.
 
 ## Policy criteria
 
@@ -65,10 +65,10 @@ investigational medicine.
 
 ## Falsification attempt
 
-The current Ionis policy's list of available programs and the ION717 registry
-expanded-access field were checked. ION717 was absent from the list and the
-registry field was false. No sponsor announcement of an ION717 program was
-located in the current Ionis materials reviewed.
+The current Ionis program list and registry field were checked: ION717 was
+absent and the registry field was false. Ionis's later product-specific public
+statement independently confirms current unavailability through its
+expanded-access programs.
 
 ## What could change the answer
 

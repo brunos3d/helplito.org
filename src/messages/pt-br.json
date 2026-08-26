@@ -93,7 +93,11 @@
     "status": "Status",
     "registryStatus": "Status no registro",
     "operationalStatus": "Disponibilidade operacional",
+    "sponsorOperationalStatus": "Status operacional do patrocinador",
+    "siteOperationalStatus": "Status operacional dos centros",
     "caseSpecificStatus": "Status atual para o Lito",
+    "expandedAccessStatus": "Acesso expandido",
+    "regulatoryStatus": "Status regulatório",
     "phase": "Fase",
     "sponsor": "Patrocinador",
     "participants": "Participantes previstos",
@@ -206,7 +210,7 @@
     "help": {
       "eyebrow": "Você pode ajudar?",
       "title": "O seu trabalho, a sua pesquisa ou a sua experiência podem ajudar?",
-      "subtitle": "Se você trabalha com doenças priônicas, neurologia, terapias de RNA, neurodegeneração, pesquisa clínica ou áreas relacionadas, o seu conhecimento ou os seus contatos podem ser relevantes. O pedido é por informações concretas e verificáveis, enviadas ao canal oficial.",
+      "subtitle": "O Broad já está em contato com a equipe do Lito, e a Ionis já deu sua resposta atual. A ajuda útil agora é informação concreta ou uma apresentação qualificada que resolva um bloqueio de elegibilidade para a intervenção do PRiSM ou identifique um caminho internacional realmente ativo.",
       "flowTitle": "Como a informação chega à equipe",
       "flow": [
         {
@@ -224,11 +228,11 @@
       ],
       "lookingFor": "O que está sendo procurado",
       "lookingForList": [
-        "Um centro ou uma coorte do PRiSM que possa avaliar o Lito agora para o braço de intervenção",
-        "Uma resposta da operação do estudo sobre triagem ativa para a intervenção e a rota segura de encaminhamento médico",
-        "Apresentações qualificadas a médicos ou pesquisadores capazes de produzir uma avaliação real de elegibilidade",
-        "Ajuda institucional que resolva um bloqueio de acesso específico e documentado",
-        "Um novo caminho legítimo de pesquisa sustentado por uma fonte primária atual"
+        "Um centro ou uma coorte do PRiSM que possa acelerar uma avaliação de elegibilidade para o braço de intervenção",
+        "Uma resposta da operação do estudo que identifique a triagem ativa ou o bloqueio exato",
+        "Apresentações qualificadas a investigadores ou lideranças de centros capazes de decidir elegibilidade ou capacidade",
+        "Oportunidades internacionais verificadas com triagem ativa e rota segura de encaminhamento médico",
+        "Resultados concretos ou instituições destinatárias da atual atuação governamental e diplomática"
       ],
       "notLookingFor": "O que não deve ser enviado",
       "notLookingForList": [
@@ -329,7 +333,7 @@
   "helpPage": {
     "eyebrow": "Você pode ajudar?",
     "title": "O seu trabalho, a sua pesquisa ou a sua experiência podem ajudar?",
-    "subtitle": "A prioridade atual é encontrar um centro ou uma coorte do PRiSM que possa avaliar o Lito para o braço de intervenção, além de apresentações qualificadas ou ação institucional capaz de produzir uma avaliação real ou resolver um bloqueio documentado.",
+    "subtitle": "O Broad já avalia opções com a equipe do Lito. A prioridade é acelerar uma avaliação de elegibilidade para a intervenção do PRiSM — ou obter o motivo exato de ela não poder ocorrer — além de caminhos internacionais verificados e apresentações qualificadas capazes de resolver esse bloqueio.",
     "who": "Esta página é para",
     "whoList": [
       "Pesquisadores de doenças priônicas",
@@ -350,14 +354,14 @@
       "A mensagem vai para o canal oficial da equipe do Lito, não para o Help Lito."
     ],
     "directTitle": "Prefere escrever diretamente?",
-    "directBody": "O formulário prepara um e-mail endereçado à equipe oficial. Você revisa e envia pelo seu próprio aplicativo de e-mail. Seja específico sobre a incerteza que pode resolver, a instituição envolvida e a ação que ela pode tomar. O ION717 não é um caminho de acesso atual para o Lito após a resposta específica ao caso relatada pela família.",
+    "directBody": "O formulário prepara um e-mail endereçado à equipe oficial. Você revisa e envia pelo seu próprio aplicativo de e-mail. Seja específico sobre o bloqueio que pode resolver, a instituição envolvida e a decisão que ela pode tomar. A busca ativa pelo ION717 está encerrada após a resposta operacional pública da Ionis; o caminho deve ser apenas monitorado por mudanças materiais.",
     "notes": {
       "title": "Antes de escrever",
       "items": [
         "Não envie orientações médicas para o Lito especificamente. Envie informações que uma equipe especializada possa avaliar.",
         "Não envie tratamentos não verificados, suplementos ou sugestões especulativas.",
         "Não organize campanhas de e-mail em massa para pesquisadores ou hospitais. Conexão, não assédio.",
-        "Não repita pedidos de acesso ao ION717 sem informação nova, relevante e verificável do patrocinador ou de um centro.",
+        "Não envie pedidos genéricos ao Broad nem repita pedidos de acesso ao ION717. O contato só é útil quando resolve um bloqueio específico ou traz evidência materialmente nova do patrocinador ou de um centro.",
         "O Help Lito não recebe nem armazena envios do formulário na configuração padrão. Veja a Política de privacidade."
       ]
     },

@@ -10,6 +10,7 @@ sources:
   - https://euclinicaltrials.eu/ctis-public/view/2023-503355-98-00?lang=en
   - https://ionis.com/science-and-innovation/pipeline
   - https://ionis.com/patients-and-advocacy/expanded-access-policy
+  - https://www.uol.com.br/splash/noticias/2026/08/25/lito-sousa-farmaceutica-caso.amp.htm
   - https://www.instagram.com/lito/
 public_site_impact: review-required
 related:
@@ -25,8 +26,8 @@ related:
 
 # ION717 / PrProfile / NCT06153966
 
-Registry evidence verified approximately 2026-08-24 15:54 to 16:05 BRT
-(UTC-03:00); case-specific status updated 2026-08-25.
+Registry evidence rechecked 2026-08-25 BRT (UTC-03:00); sponsor-attributed and
+case-specific status updated 2026-08-25.
 The record contains a current internal recruitment conflict, so no single status
 sentence should be quoted without its source field and date.
 
@@ -36,14 +37,21 @@ sentence should be quoted without its source field and date.
   `Active, not recruiting`, removes site statuses and the central contact, and
   says expanded access is unavailable. The detailed description still contains
   conflicting recruitment language.
-- **Operational status:** the family reports that Ionis said the studies were
-  not accepting new participants. This has not been independently confirmed
-  through a dated sponsor statement resolving the public-page conflict.
+- **Sponsor operational status:** Ionis publicly stated, in a company response
+  reproduced by UOL on August 25, that the study is no longer recruiting new
+  participants. No current site referral or screening path is confirmed.
 - **Case-specific status:** the family reports that Ionis declined Lito's
-  inclusion. This is not evidence of universal or permanent unavailability.
-- **Expanded access:** public sources list no ION717 program, and the family
-  reports that Ionis said compassionate-use access was not available to Lito at
-  this time.
+  inclusion. Ionis confirms that the individual matter is being handled
+  privately, but does not publish the case decision. No current ION717 path for
+  Lito has been identified.
+- **Expanded access:** Ionis's general policy lists no ION717 program and says
+  an unlisted medicine or condition has no currently available Ionis program.
+  The August 25 company response separately says ION717 is not currently
+  available through Ionis expanded-access programs.
+- **Regulatory status:** no primary source reviewed here says FDA must
+  personally approve ordinary participation in this authorized trial.
+  Individual expanded access is a different process, but sponsor supply is the
+  present upstream blocker.
 
 ## Observed facts
 
@@ -156,8 +164,9 @@ The reviewed sources do not establish:
 - access to ION717 outside the study;
 - safety or efficacy of ION717.
 
-The reported sponsor answer supplies a current operational answer for Lito. It
-does not establish that ION717 is unavailable to everyone worldwide.
+The sponsor-attributed response establishes present operational closure and
+current ION717 expanded-access unavailability. It does not establish permanent
+closure or rule out a future cohort or program.
 
 ## Conflicts and changes over time
 
@@ -178,10 +187,18 @@ NYU Langone's official study page still says `Recruitment Status: Open` and
 shows no visible update date. CTIS says recruitment ended in all four EU member
 states. These scopes and timestamps must remain explicit.
 
+### C-006: Registry metadata versus sponsor operational status
+
+ClinicalTrials.gov's structured field says `Active, not recruiting`, while its
+detailed description still says Regimen 3 sites actively recruit. Ionis says
+the study is no longer recruiting new participants. This is operationally
+resolved for current sponsor availability but remains an unresolved registry
+metadata conflict.
+
 ## Open questions
 
-- Q-003: How should the conflicting official pages be reconciled with the
-  family-reported sponsor answer for Lito?
-- Q-004: Only new sponsor or registry evidence would change the current negative
-  public-program and case-specific expanded-access state.
+- Q-003: Monitor for a meaningful registry correction or new sponsor-authorized
+  site/cohort; do not treat this as an active appeal.
+- Q-004: Only a new Ionis program or other sponsor-authorized pathway would
+  change the current negative expanded-access state.
 - Q-005: What did the public phrase "European Phase 3 without placebo" refer to?

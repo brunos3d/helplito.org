@@ -61,11 +61,19 @@ export function TrialCard({ trial }: { trial: ClinicalTrial }) {
             {trial.statusNote && (
               <p className="mt-4 text-xs leading-relaxed text-cream-200/65">{pick(trial.statusNote, locale)}</p>
             )}
-            {trial.operationalNote && (
+            {trial.sponsorOperationalNote && (
               <div className="mt-5 border-t border-cream-50/20 pt-4">
-                <p className="eyebrow text-cream-200/70">{t("operationalStatus")}</p>
+                <p className="eyebrow text-cream-200/70">{t("sponsorOperationalStatus")}</p>
                 <p className="mt-2 text-xs leading-relaxed text-cream-200/75">
-                  {pick(trial.operationalNote, locale)}
+                  {pick(trial.sponsorOperationalNote, locale)}
+                </p>
+              </div>
+            )}
+            {trial.siteOperationalNote && (
+              <div className="mt-5 border-t border-cream-50/20 pt-4">
+                <p className="eyebrow text-cream-200/70">{t("siteOperationalStatus")}</p>
+                <p className="mt-2 text-xs leading-relaxed text-cream-200/75">
+                  {pick(trial.siteOperationalNote, locale)}
                 </p>
               </div>
             )}
@@ -74,6 +82,22 @@ export function TrialCard({ trial }: { trial: ClinicalTrial }) {
                 <p className="eyebrow text-amber-300">{t("caseSpecificStatus")}</p>
                 <p className="mt-2 text-sm leading-relaxed text-cream-100/90">
                   {pick(trial.caseStatus, locale)}
+                </p>
+              </div>
+            )}
+            {trial.expandedAccessNote && (
+              <div className="mt-5 border-t border-cream-50/20 pt-4">
+                <p className="eyebrow text-cream-200/70">{t("expandedAccessStatus")}</p>
+                <p className="mt-2 text-xs leading-relaxed text-cream-200/75">
+                  {pick(trial.expandedAccessNote, locale)}
+                </p>
+              </div>
+            )}
+            {trial.regulatoryNote && (
+              <div className="mt-5 border-t border-cream-50/20 pt-4">
+                <p className="eyebrow text-cream-200/70">{t("regulatoryStatus")}</p>
+                <p className="mt-2 text-xs leading-relaxed text-cream-200/75">
+                  {pick(trial.regulatoryNote, locale)}
                 </p>
               </div>
             )}

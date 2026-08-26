@@ -4,13 +4,14 @@ status: verified
 observed_at: 2026-08-24T22:15:45-03:00
 source_last_updated:
   fda_pages: unknown
-last_verified: 2026-08-24
+last_verified: 2026-08-25
 confidence: high
 sources:
   - https://www.fda.gov/news-events/expanded-access/expanded-access-information-physicians
   - https://www.fda.gov/news-events/expanded-access/expanded-access-information-patients
   - https://www.fda.gov/news-events/expanded-access/expanded-access-how-submit-request-forms
   - https://www.fda.gov/drugs/investigational-new-drug-ind-application/physicians-how-request-single-patient-expanded-access-compassionate-use
+  - https://www.uol.com.br/splash/noticias/2026/08/25/lito-sousa-farmaceutica-caso.amp.htm
 public_site_impact: none
 related:
   - F-011
@@ -57,6 +58,10 @@ FDA regulatory pathway exists
 expanded access mechanism exists
   != ION717 is currently available through expanded access
 ```
+
+Ionis now says ION717 is not currently available through its expanded-access
+programs. Sponsor product availability is therefore the upstream blocker; FDA
+paperwork is not the primary current bottleneck.
 
 ## Roles
 
@@ -161,6 +166,15 @@ The general FDA pathway does not establish:
 - that FDA will allow a particular request to proceed;
 - that a product is safe or effective;
 - that a particular person is eligible.
+
+## Ordinary trial enrollment is separate
+
+These expanded-access sources do not establish that FDA personally approves
+each participant's ordinary enrollment in an already authorized trial.
+Protocol eligibility, investigator/site decisions, sponsor operations, trial
+authorization and individual expanded-access authorization are different
+mechanisms. Any precise FDA claim about Lito's reported PRiSM triage still needs
+primary evidence.
 
 ## Sources
 

@@ -11,6 +11,7 @@ sources:
   - https://euclinicaltrials.eu/ctis-public/view/2023-503355-98-00?lang=en
   - https://neurology.ionis.com/our-pipeline
   - https://www.instagram.com/lito/
+  - https://www.uol.com.br/splash/noticias/2026/08/25/lito-sousa-farmaceutica-caso.amp.htm
 public_site_impact: review-required
 related:
   - F-006
@@ -23,18 +24,20 @@ related:
 
 Verified approximately 2026-08-24 15:54 to 16:05 BRT (UTC-03:00).
 
-August 25 clarification: the official-source conflict below remains unresolved.
-Separately, the family reports that Ionis declined Lito, said the studies were
-closed to new participants, and said compassionate use was not available to him
-at that time. This is a case-specific answer, not proof of universal closure.
+August 25 clarification: the registry conflict below remains unresolved. Ionis
+now publicly says the study is no longer recruiting and ION717 is not currently
+available through its expanded-access programs. The family separately reports a
+negative case-specific result. Current operational closure must not be rewritten
+as permanent impossibility.
 
 ## Finding
 
 The current overall ClinicalTrials.gov state is `Active, not recruiting`. This
 changed from `Recruiting` in the immediately preceding version. The current
 record nevertheless retains a sentence that says listed sites actively recruit
-for Regimen 3. NYU still says `Open`. The operational state is therefore
-unresolved beyond the current overall registry classification.
+for Regimen 3. NYU still says `Open`. Ionis's later public statement resolves
+the current sponsor-operational state while leaving the registry metadata
+conflict queryable.
 
 ## Evidence
 
@@ -95,7 +98,8 @@ registry removes that state.
 
 ## Potential public-site impact
 
-Do not publish ION717 as currently recruiting. If the study is added to public
-data, use `Active, not recruiting`, date the registry verification, state that
-official pages still conflict, and separately attribute the case-specific
-answer to the family.
+Publish the registry and sponsor scopes separately: the registry says `Active,
+not recruiting` but retains conflicting prose; Ionis says the study is no
+longer recruiting and ION717 is not currently available through its
+expanded-access programs. The family-reported case result remains separately
+attributed.
