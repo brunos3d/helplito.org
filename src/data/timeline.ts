@@ -70,4 +70,43 @@ export const timeline: TimelineEntry[] = [
         "A equipe oficial divulga o e-mail ajudalito@avioesemusicas.com para informações concretas e verificáveis que possam ajudar no caso do Lito, e alerta sobre campanhas fraudulentas de arrecadação usando o nome dele.",
     },
   },
+  {
+    id: "trial-access-update",
+    date: { en: "August 2026", "pt-br": "Agosto de 2026" },
+    title: {
+      en: "The first concrete trial answers are limited",
+      "pt-br": "As primeiras respostas concretas dos estudos são limitadas",
+    },
+    body: {
+      en: "The family reports that Ionis declined ION717 access for Lito and that the concrete Broad path discussed so far involved observation/control without the experimental intervention. The historical claim that Lito was on a Harvard waiting list was corrected; only a possible preliminary screening or triage path is now supported, not participation or access.",
+      "pt-br":
+        "A família relata que a Ionis negou o acesso do Lito ao ION717 e que o caminho concreto discutido até agora pelo Broad envolvia observação/controle sem a intervenção experimental. A afirmação histórica de que o Lito estava em uma lista de espera de Harvard foi corrigida; hoje há suporte apenas para um possível processo preliminar de triagem, não para participação ou acesso.",
+    },
+  },
+  {
+    id: "institutional-confirmations",
+    date: { en: "August 2026", "pt-br": "Agosto de 2026" },
+    title: {
+      en: "Broad and Ionis state their current positions",
+      "pt-br": "Broad e Ionis informam suas posições atuais",
+    },
+    body: {
+      en: "Broad publicly confirms that it is in contact with Lito's team and evaluating options, without promising that it can help. Ionis publicly says the ION717 study is no longer recruiting and ION717 is not currently available through expanded access. PRiSM interventional eligibility remains unresolved; ION717 becomes a monitoring-only path.",
+      "pt-br":
+        "O Broad confirma publicamente que está em contato com a equipe do Lito e avaliando opções, sem prometer que poderá ajudar. A Ionis declara que o estudo do ION717 não recruta mais e que o medicamento não está disponível atualmente por acesso expandido. A elegibilidade do Lito para o braço de intervenção do PRiSM segue sem definição; o ION717 passa a ser apenas monitorado.",
+    },
+  },
+  {
+    id: "government-involvement",
+    date: { en: "August 2026", "pt-br": "Agosto de 2026" },
+    title: {
+      en: "Government and diplomatic outreach becomes concrete",
+      "pt-br": "A atuação governamental e diplomática se torna concreta",
+    },
+    body: {
+      en: "After the family initially reported no concrete government result, the Ministry of Health reported a formal request for Lito's consideration in the initial study process. Itamaraty confirmed embassy outreach, with reporting identifying the United States, France and Germany. Outreach is confirmed; eligibility, enrollment and an interventional slot are not.",
+      "pt-br":
+        "Depois de a família relatar inicialmente que não via resultado concreto do governo, o Ministério da Saúde informou ter formalizado um pedido para que o Lito fosse considerado no processo inicial do estudo. O Itamaraty confirmou a mobilização de embaixadas, com reportagens identificando Estados Unidos, França e Alemanha. O contato está confirmado; elegibilidade, inclusão e vaga no braço de intervenção não estão.",
+    },
+  },
 ];

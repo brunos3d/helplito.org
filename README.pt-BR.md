@@ -91,7 +91,7 @@ scripts/
 
 ## Regras de conteúdo codificadas na camada de dados
 
-- `src/data/trials.ts`: todo ensaio clínico carrega `status` e `lastVerified`. A interface exibe os dois e aponta para o registro oficial. Nunca trate o status de recrutamento como fato permanente. Atualize `lastVerified` sempre que uma pessoa conferir o registro.
+- `src/data/trials.ts`: todo ensaio clínico carrega `status` e `lastVerified`, com campos separados para registro, operação do patrocinador, operação dos centros, caso do Lito, acesso expandido e limites regulatórios. Nunca junte esses estados em um único rótulo de recrutamento. Atualize `lastVerified` sempre que uma pessoa conferir o registro.
 - `src/data/organizations.ts`: cada entrada precisa de uma URL oficial e de uma data `lastVerified`. Estar listado não implica endosso.
 - `src/data/sources.ts`: toda afirmação médica ou científica do site deve rastrear até uma entrada aqui.
 - `src/data/timeline.ts`: somente informação pública, com precisão de mês.

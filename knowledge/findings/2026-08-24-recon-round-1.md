@@ -10,12 +10,22 @@ sources:
   - https://euclinicaltrials.eu/ctis-public/view/2023-503355-98-00?lang=en
   - https://ionis.com/patients-and-advocacy/expanded-access-policy
 public_site_impact: review-required
+related:
+  - F-017
+  - F-018
+  - F-019
+  - C-005
 ---
 
 # Recon round 1
 
 Verification window: approximately 2026-08-24 15:54 to 16:05 BRT
 (UTC-03:00).
+
+Historical snapshot note: the official-source findings below remain valid for
+their stated verification window. The August 25 case-specific and government
+updates supersede this report's operational priorities, not its registry
+history.
 
 This report rechecks an earlier set of leads. It is an index, not a patient
 assessment, treatment recommendation or statement that a slot or investigational
@@ -209,7 +219,12 @@ be discussed and implemented separately after maintainer review.
 
 ### F-014: Brazilian Ministry of Health involvement
 
-Result: unresolved. Confidence: low.
+Result at the August 24 verification window: unresolved. Confidence: low.
+
+Superseded for current-state use by
+[the August 25 government discrepancy](2026-08-25-government-involvement-discrepancy.md),
+which adds a sourced public statement and a current family-reported operational
+outcome. The historical result below is preserved rather than rewritten.
 
 The earlier lead said a Brazilian authority was in contact with institutions
 related to the case. No sufficiently specific primary government statement was

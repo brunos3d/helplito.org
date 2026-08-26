@@ -91,7 +91,7 @@ scripts/
 
 ## Content rules encoded in the data layer
 
-- `src/data/trials.ts`: every trial carries `status` and `lastVerified`. The UI renders both and links to the official registry. Never treat recruitment status as a permanent fact. Update `lastVerified` whenever a human checks the record.
+- `src/data/trials.ts`: every trial carries `status` and `lastVerified`, with separate fields for registry, sponsor operations, site operations, Lito's case, expanded access and regulatory boundaries. Never collapse these into one recruitment label. Update `lastVerified` whenever a human checks the record.
 - `src/data/organizations.ts`: each entry needs an official URL and a `lastVerified` date. Listing does not imply endorsement.
 - `src/data/sources.ts`: every medical or research claim on the site should trace back to an entry here.
 - `src/data/timeline.ts`: public information only, month-level precision.

@@ -1,6 +1,11 @@
 ---
 type: regulatory
 status: verified
+observed_at: 2026-08-24T22:15:45-03:00
+source_last_updated:
+  assistance_programs_page: unknown
+  forms_page: 2026-03-03
+  rdc_38_2013_consolidated_text: unknown
 last_verified: 2026-08-24
 confidence: high
 sources:
@@ -11,11 +16,13 @@ sources:
 public_site_impact: none
 related:
   - F-012
+  - F-REG-BR-001
+  - Q-ION-002
 ---
 
 # Brazil compassionate use and expanded access
 
-Verified approximately 2026-08-24 16:08 BRT (UTC-03:00).
+Verified 2026-08-24 22:15 BRT (UTC-03:00).
 
 This note describes the current ANVISA public materials for medicines. It is not
 medical or legal advice and does not guide completion of patient forms.
@@ -139,6 +146,12 @@ This list documents form existence and purpose. Form selection and completion
 belong to the sponsor, ORP, physician and regulatory process.
 
 ## Regulatory authorization versus product supply
+
+### F-REG-BR-001 — Authorization is not manufacturer willingness
+
+ANVISA publishes an authorization pathway. That does not establish that a
+manufacturer is willing to provide the investigational medicine or that a
+sponsor or ORP will submit a request.
 
 The following are not equivalent:
 

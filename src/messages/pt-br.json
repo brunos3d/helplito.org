@@ -91,6 +91,13 @@
     "country": "País",
     "category": "Categoria",
     "status": "Status",
+    "registryStatus": "Status no registro",
+    "operationalStatus": "Disponibilidade operacional",
+    "sponsorOperationalStatus": "Status operacional do patrocinador",
+    "siteOperationalStatus": "Status operacional dos centros",
+    "caseSpecificStatus": "Status atual para o Lito",
+    "expandedAccessStatus": "Acesso expandido",
+    "regulatoryStatus": "Status regulatório",
     "phase": "Fase",
     "sponsor": "Patrocinador",
     "participants": "Participantes previstos",
@@ -203,7 +210,7 @@
     "help": {
       "eyebrow": "Você pode ajudar?",
       "title": "O seu trabalho, a sua pesquisa ou a sua experiência podem ajudar?",
-      "subtitle": "Se você trabalha com doenças priônicas, neurologia, terapias de RNA, neurodegeneração, pesquisa clínica ou áreas relacionadas, o seu conhecimento ou os seus contatos podem ser relevantes. O pedido é por informações concretas e verificáveis, enviadas ao canal oficial.",
+      "subtitle": "O Broad já está em contato com a equipe do Lito, e a Ionis já deu sua resposta atual. A ajuda útil agora é informação concreta ou uma apresentação qualificada que resolva um bloqueio de elegibilidade para a intervenção do PRiSM ou identifique um caminho internacional realmente ativo.",
       "flowTitle": "Como a informação chega à equipe",
       "flow": [
         {
@@ -221,18 +228,18 @@
       ],
       "lookingFor": "O que está sendo procurado",
       "lookingForList": [
-        "Informações verificadas sobre tratamentos ou protocolos",
-        "Informações sobre ensaios clínicos e critérios de elegibilidade",
-        "Oportunidades de pesquisa",
-        "Contatos de especialistas",
-        "Conexões institucionais"
+        "Um centro ou uma coorte do PRiSM que possa acelerar uma avaliação de elegibilidade para o braço de intervenção",
+        "Uma resposta da operação do estudo que identifique a triagem ativa ou o bloqueio exato",
+        "Apresentações qualificadas a investigadores ou lideranças de centros capazes de decidir elegibilidade ou capacidade",
+        "Oportunidades internacionais verificadas com triagem ativa e rota segura de encaminhamento médico",
+        "Resultados concretos ou instituições destinatárias da atual atuação governamental e diplomática"
       ],
       "notLookingFor": "O que não deve ser enviado",
       "notLookingForList": [
         "Tratamentos milagrosos ou não verificados",
         "Especulações, boatos ou teorias conspiratórias",
         "Suplementos, dietas ou curas alternativas",
-        "Mensagens em massa ou correntes"
+      "Mensagens em massa, pedidos duplicados ou contato indiscriminado com pesquisadores, hospitais ou patrocinadores"
       ],
       "formCta": "Usar o formulário estruturado",
       "follow": "Atualizações oficiais"
@@ -315,7 +322,7 @@
     "areasTitle": "Direções da pesquisa",
     "areasIntro": "Uma das ideias mais ativas do campo é simples de enunciar: reduzir a quantidade de proteína priônica normal, para que haja menos matéria-prima para o processo da doença. Várias abordagens seguem esse caminho.",
     "trialsTitle": "Registros verificados de ensaios clínicos",
-    "trialsIntro": "O status de um ensaio muda. Nunca tratamos o status de recrutamento como um fato permanente. Cada registro mostra quando uma pessoa o verificou pela última vez e leva diretamente ao registro oficial.",
+    "trialsIntro": "O status de um ensaio muda. Cada registro separa o que diz o registro público, a disponibilidade operacional e, quando há relato público, o que está disponível para o Lito agora. O rótulo Recrutando não garante coorte aberta, triagem nem aceitação.",
     "trialsDisclaimer": "Listar um ensaio não significa que o Lito seja elegível, tenha sido aceito ou vá receber qualquer tratamento experimental. Também não significa que o tratamento funcione.",
     "orgsTitle": "Onde a pesquisa acontece",
     "orgsIntro": "Organizações e instituições envolvidas em pesquisa, diagnóstico, apoio a pacientes ou investigação clínica em doenças priônicas. Cada entrada leva a um site oficial. Não há endosso nem parceria implícitos.",
@@ -326,7 +333,7 @@
   "helpPage": {
     "eyebrow": "Você pode ajudar?",
     "title": "O seu trabalho, a sua pesquisa ou a sua experiência podem ajudar?",
-    "subtitle": "Estamos procurando informações científicas, clínicas e institucionais verificadas que possam ser relevantes para o caso do Lito.",
+    "subtitle": "O Broad já avalia opções com a equipe do Lito. A prioridade é acelerar uma avaliação de elegibilidade para a intervenção do PRiSM — ou obter o motivo exato de ela não poder ocorrer — além de caminhos internacionais verificados e apresentações qualificadas capazes de resolver esse bloqueio.",
     "who": "Esta página é para",
     "whoList": [
       "Pesquisadores de doenças priônicas",
@@ -347,13 +354,14 @@
       "A mensagem vai para o canal oficial da equipe do Lito, não para o Help Lito."
     ],
     "directTitle": "Prefere escrever diretamente?",
-    "directBody": "O formulário prepara um e-mail endereçado à equipe oficial. Você revisa e envia pelo seu próprio aplicativo de e-mail. Prefere escrever diretamente? Inclua nome, organização, cargo, um link para o seu trabalho e por que ele pode ser relevante.",
+    "directBody": "O formulário prepara um e-mail endereçado à equipe oficial. Você revisa e envia pelo seu próprio aplicativo de e-mail. Seja específico sobre o bloqueio que pode resolver, a instituição envolvida e a decisão que ela pode tomar. A busca ativa pelo ION717 está encerrada após a resposta operacional pública da Ionis; o caminho deve ser apenas monitorado por mudanças materiais.",
     "notes": {
       "title": "Antes de escrever",
       "items": [
         "Não envie orientações médicas para o Lito especificamente. Envie informações que uma equipe especializada possa avaliar.",
         "Não envie tratamentos não verificados, suplementos ou sugestões especulativas.",
         "Não organize campanhas de e-mail em massa para pesquisadores ou hospitais. Conexão, não assédio.",
+        "Não envie pedidos genéricos ao Broad nem repita pedidos de acesso ao ION717. O contato só é útil quando resolve um bloqueio específico ou traz evidência materialmente nova do patrocinador ou de um centro.",
         "O Help Lito não recebe nem armazena envios do formulário na configuração padrão. Veja a Política de privacidade."
       ]
     },
@@ -419,9 +427,10 @@
   "sourcesPage": {
     "eyebrow": "Fontes",
     "title": "Cada afirmação, rastreável.",
-    "lead": "O Help Lito reúne informações de atualizações oficiais, autoridades de saúde pública, registros de ensaios clínicos e instituições de pesquisa. Os links levam apenas a páginas oficiais. A data de acesso aparece em cada entrada.",
+    "lead": "O Help Lito reúne informações de atualizações oficiais, autoridades de saúde pública, registros de ensaios clínicos e instituições de pesquisa. Reportagens claramente identificadas são usadas apenas para declarações públicas, atribuições à família, correções e contexto da linha do tempo. A data de acesso aparece em cada entrada.",
     "categories": {
       "official-updates": "Atualizações oficiais",
+      "reporting": "Reportagens e declarações públicas",
       "public-health": "Autoridades de saúde pública",
       "clinical-trials": "Ensaios clínicos",
       "research-institutions": "Instituições de pesquisa",

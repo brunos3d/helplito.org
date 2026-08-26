@@ -18,11 +18,11 @@ export const organizations: ResearchOrganization[] = [
     category: ["research", "clinical-trials"],
     officialUrl: "https://www.broadinstitute.org",
     description: {
-      en: "Biomedical research institute. Sponsor of the PRiSM first-in-human study of a PrP-targeting siRNA in symptomatic prion disease.",
+      en: "Biomedical research institute and sponsor of PRiSM. Broad publicly confirms that it is in contact with Lito's team and evaluating options, without confirming eligibility, enrollment or treatment.",
       "pt-br":
-        "Instituto de pesquisa biomédica. Patrocinador do estudo PRiSM, o primeiro em humanos com um siRNA direcionado à PrP em doença priônica sintomática.",
+        "Instituto de pesquisa biomédica e patrocinador do PRiSM. O Broad confirma publicamente que está em contato com a equipe do Lito e avaliando opções, sem confirmar elegibilidade, inclusão ou tratamento.",
     },
-    lastVerified: VERIFIED,
+    lastVerified: "2026-08-25",
     mapPosition: { x: 63, y: 8 },
   },
   {

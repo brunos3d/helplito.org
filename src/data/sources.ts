@@ -1,10 +1,13 @@
 import type { Source } from "./types";
 
 const ACCESSED = "2026-08-23";
+const ACCESSED_UPDATE = "2026-08-25";
 
 /**
  * Every important medical or research claim on the site should trace back to one of these.
- * Keep entries factual. Link only to official pages.
+ * Keep entries factual. Medical and scientific claims use primary sources.
+ * Clearly labeled reporting may support public statements, family attribution,
+ * corrections and timeline context, but not standalone medical claims.
  */
 export const sources: Source[] = [
   // Official updates
@@ -18,7 +21,105 @@ export const sources: Source[] = [
       en: "Official profile. Updates about Lito's situation are shared here by the family and team.",
       "pt-br": "Perfil oficial. Atualizações sobre a situação do Lito são compartilhadas aqui pela família e pela equipe.",
     },
-    accessed: ACCESSED,
+    accessed: ACCESSED_UPDATE,
+  },
+
+  // Reporting used for attribution and public timeline context
+  {
+    id: "uol-family-trial-correction-2026-08-24",
+    category: "reporting",
+    title: {
+      en: "Mila Seidl clarifies the reported trial-access status",
+      "pt-br": "Mila Seidl esclarece o status de acesso aos estudos",
+    },
+    publisher: "BOL / UOL",
+    url: "https://www.bol.uol.com.br/noticias/2026/08/24/mulher-de-lito-sousa-diz-que-familia-aguarda-1-entrevista-para-elegibilidade-em-estudo-nos-eua.htm",
+    note: {
+      en: "Secondary reporting used for Mila's correction of the Harvard waiting-list description and the dated Nashville and Mayo leads. It is not evidence of eligibility or acceptance.",
+      "pt-br":
+        "Reportagem secundária usada para a correção feita por Mila sobre a suposta lista de espera de Harvard e para os relatos datados sobre Nashville e Mayo. Não comprova elegibilidade nem aceitação.",
+    },
+    accessed: ACCESSED_UPDATE,
+  },
+  {
+    id: "uol-padilha-contact-statement-2026-08-23",
+    category: "reporting",
+    title: {
+      en: "Padilha says contacts with universities are under way",
+      "pt-br": "Padilha afirma que há contatos em andamento com universidades",
+    },
+    publisher: "UOL / Agência Estado",
+    url: "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/08/23/ministro-diz-estar-em-contato-com-universidades-para-lito-ser-incluido-em-pesquisa-de-doenca.amp.htm",
+    note: {
+      en: "Supports attribution of the minister's public statement. It does not document which institutions were contacted or any operational result.",
+      "pt-br":
+        "Sustenta a atribuição da declaração pública do ministro. Não documenta quais instituições foram contatadas nem qualquer resultado operacional.",
+    },
+    accessed: ACCESSED_UPDATE,
+  },
+  {
+    id: "broad-lito-statement-2026-08-25",
+    category: "official-updates",
+    title: {
+      en: "Broad Institute acknowledges active contact with Lito's team",
+      "pt-br": "Broad Institute confirma contato ativo com a equipe do Lito",
+    },
+    publisher: "Broad Institute",
+    url: "https://www.instagram.com/p/Dcd_Xd9R26O/",
+    note: {
+      en: "Primary institutional statement. Confirms contact and evaluation of options, while explicitly not promising help, eligibility, enrollment or treatment.",
+      "pt-br":
+        "Declaração institucional primária. Confirma contato e avaliação de opções, sem prometer ajuda, elegibilidade, inclusão ou tratamento.",
+    },
+    accessed: ACCESSED_UPDATE,
+  },
+  {
+    id: "uol-ionis-operational-statement-2026-08-25",
+    category: "reporting",
+    title: {
+      en: "Ionis reports no current ION717 recruitment or expanded access",
+      "pt-br": "Ionis informa que o ION717 não recruta nem tem acesso expandido atualmente",
+    },
+    publisher: "UOL / Splash",
+    url: "https://www.uol.com.br/splash/noticias/2026/08/25/lito-sousa-farmaceutica-caso.amp.htm",
+    note: {
+      en: "High-quality reporting reproducing a direct Ionis statement. Supports sponsor operational closure, no current ION717 expanded-access availability, and the warning that safety and efficacy are not established. It does not disclose Lito's private case decision.",
+      "pt-br":
+        "Reportagem de qualidade que reproduz uma declaração direta da Ionis. Sustenta o encerramento operacional, a indisponibilidade atual do ION717 por acesso expandido e o alerta de que segurança e eficácia não foram estabelecidas. Não revela a decisão privada sobre o caso do Lito.",
+    },
+    accessed: ACCESSED_UPDATE,
+  },
+  {
+    id: "padilha-formal-request-2026-08-25",
+    category: "official-updates",
+    title: {
+      en: "Health Minister reports formal request for Lito's consideration",
+      "pt-br": "Ministro da Saúde informa pedido formal para consideração do Lito",
+    },
+    publisher: "Alexandre Padilha / X",
+    url: "https://x.com/padilhando/status/2092330780286505394",
+    note: {
+      en: "Primary government statement about Ministry outreach and a formal request for inclusion in an initial study process. It is not evidence of eligibility, acceptance or a study slot.",
+      "pt-br":
+        "Declaração governamental primária sobre contatos do Ministério e pedido formal de inclusão em um processo inicial de estudo. Não comprova elegibilidade, aceitação nem vaga.",
+    },
+    accessed: ACCESSED_UPDATE,
+  },
+  {
+    id: "uol-itamaraty-embassy-outreach-2026-08-25",
+    category: "reporting",
+    title: {
+      en: "Itamaraty confirms embassy outreach supporting Lito's research search",
+      "pt-br": "Itamaraty confirma mobilização de embaixadas na busca por estudos",
+    },
+    publisher: "UOL / Splash",
+    url: "https://www.uol.com.br/splash/noticias/2026/08/25/lito-sousa-itamaraty.amp.htm",
+    note: {
+      en: "Reporting of direct Itamaraty confirmation; identifies outreach involving the United States, France and Germany. Diplomatic outreach supports consideration but does not determine eligibility or access.",
+      "pt-br":
+        "Reportagem com confirmação direta do Itamaraty; identifica ações envolvendo Estados Unidos, França e Alemanha. A atuação diplomática apoia a tentativa de consideração, mas não determina elegibilidade nem acesso.",
+    },
+    accessed: ACCESSED_UPDATE,
   },
   {
     id: "avioes-e-musicas",
@@ -105,7 +206,23 @@ export const sources: Source[] = [
       en: "Official registry record. Sponsor, phase, planned enrollment, locations and recruitment status come from this record and can change.",
       "pt-br": "Registro oficial. Patrocinador, fase, número previsto de participantes, locais e status de recrutamento vêm deste registro e podem mudar.",
     },
-    accessed: ACCESSED,
+    accessed: ACCESSED_UPDATE,
+  },
+  {
+    id: "nct06153966",
+    category: "clinical-trials",
+    title: {
+      en: "PrProfile / ION717 (NCT06153966)",
+      "pt-br": "PrProfile / ION717 (NCT06153966)",
+    },
+    publisher: "ClinicalTrials.gov",
+    url: "https://clinicaltrials.gov/study/NCT06153966",
+    note: {
+      en: "Official registry record. The current overall status is Active, not recruiting, while detailed text still contains conflicting recruitment language.",
+      "pt-br":
+        "Registro oficial. O status geral atual é ativo, sem recrutamento, enquanto o texto detalhado ainda contém linguagem conflitante sobre recrutamento.",
+    },
+    accessed: ACCESSED_UPDATE,
   },
   {
     id: "clinicaltrials-prion-search",
@@ -128,6 +245,35 @@ export const sources: Source[] = [
     publisher: "Broad Institute",
     url: "https://www.broadinstitute.org",
     accessed: ACCESSED,
+  },
+  {
+    id: "neuronext-prism",
+    category: "research-institutions",
+    title: { en: "NN112 PRiSM", "pt-br": "NN112 PRiSM" },
+    publisher: "NeuroNEXT",
+    url: "https://neuronext.org/projects/nn112-prism/",
+    note: {
+      en: "Official network project page. It identifies the PRiSM network and sites but does not publish real-time interventional-arm capacity.",
+      "pt-br":
+        "Página oficial do projeto na rede. Identifica a rede e os centros do PRiSM, mas não publica a capacidade em tempo real do braço de intervenção.",
+    },
+    accessed: ACCESSED_UPDATE,
+  },
+  {
+    id: "ionis-expanded-access-policy",
+    category: "research-institutions",
+    title: {
+      en: "Ionis expanded access policy",
+      "pt-br": "Política de acesso expandido da Ionis",
+    },
+    publisher: "Ionis Pharmaceuticals",
+    url: "https://ionis.com/patients-and-advocacy/expanded-access-policy",
+    note: {
+      en: "Official corporate policy. No ION717 program was listed when checked; a general policy is not evidence of product supply or case approval.",
+      "pt-br":
+        "Política corporativa oficial. Nenhum programa para o ION717 estava listado na verificação; uma política geral não comprova fornecimento do produto nem aprovação de um caso.",
+    },
+    accessed: ACCESSED_UPDATE,
   },
   {
     id: "ucsf-mac",
@@ -174,6 +320,7 @@ export const sources: Source[] = [
 
 export const sourceCategories = [
   "official-updates",
+  "reporting",
   "public-health",
   "clinical-trials",
   "research-institutions",

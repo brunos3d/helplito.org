@@ -1,14 +1,17 @@
 ---
 type: trial
 status: partially-verified
-last_verified: 2026-08-24
-confidence: high
+last_verified: 2026-08-25
+confidence: medium
 sources:
   - https://clinicaltrials.gov/study/NCT06153966
   - https://clinicaltrials.gov/api/v2/studies/NCT06153966
   - https://clinicaltrials.gov/api/int/studies/NCT06153966/history
   - https://euclinicaltrials.eu/ctis-public/view/2023-503355-98-00?lang=en
   - https://ionis.com/science-and-innovation/pipeline
+  - https://ionis.com/patients-and-advocacy/expanded-access-policy
+  - https://www.uol.com.br/splash/noticias/2026/08/25/lito-sousa-farmaceutica-caso.amp.htm
+  - https://www.instagram.com/lito/
 public_site_impact: review-required
 related:
   - F-006
@@ -18,13 +21,37 @@ related:
   - F-015
   - Q-003
   - Q-005
+  - F-017
 ---
 
 # ION717 / PrProfile / NCT06153966
 
-Verified approximately 2026-08-24 15:54 to 16:05 BRT (UTC-03:00).
+Registry evidence rechecked 2026-08-25 BRT (UTC-03:00); sponsor-attributed and
+case-specific status updated 2026-08-25.
 The record contains a current internal recruitment conflict, so no single status
 sentence should be quoted without its source field and date.
+
+## Current status by evidence layer
+
+- **Registry status:** ClinicalTrials.gov version 30 lists the study as
+  `Active, not recruiting`, removes site statuses and the central contact, and
+  says expanded access is unavailable. The detailed description still contains
+  conflicting recruitment language.
+- **Sponsor operational status:** Ionis publicly stated, in a company response
+  reproduced by UOL on August 25, that the study is no longer recruiting new
+  participants. No current site referral or screening path is confirmed.
+- **Case-specific status:** the family reports that Ionis declined Lito's
+  inclusion. Ionis confirms that the individual matter is being handled
+  privately, but does not publish the case decision. No current ION717 path for
+  Lito has been identified.
+- **Expanded access:** Ionis's general policy lists no ION717 program and says
+  an unlisted medicine or condition has no currently available Ionis program.
+  The August 25 company response separately says ION717 is not currently
+  available through Ionis expanded-access programs.
+- **Regulatory status:** no primary source reviewed here says FDA must
+  personally approve ordinary participation in this authorized trial.
+  Individual expanded access is a different process, but sponsor supply is the
+  present upstream blocker.
 
 ## Observed facts
 
@@ -137,6 +164,10 @@ The reviewed sources do not establish:
 - access to ION717 outside the study;
 - safety or efficacy of ION717.
 
+The sponsor-attributed response establishes present operational closure and
+current ION717 expanded-access unavailability. It does not establish permanent
+closure or rule out a future cohort or program.
+
 ## Conflicts and changes over time
 
 Selected ClinicalTrials.gov history:
@@ -156,10 +187,18 @@ NYU Langone's official study page still says `Recruitment Status: Open` and
 shows no visible update date. CTIS says recruitment ended in all four EU member
 states. These scopes and timestamps must remain explicit.
 
+### C-006: Registry metadata versus sponsor operational status
+
+ClinicalTrials.gov's structured field says `Active, not recruiting`, while its
+detailed description still says Regimen 3 sites actively recruit. Ionis says
+the study is no longer recruiting new participants. This is operationally
+resolved for current sponsor availability but remains an unresolved registry
+metadata conflict.
+
 ## Open questions
 
-- Q-003: Is Regimen 3 closed everywhere, or is any site still open under a local
-  state not reconciled with version 30?
-- Q-004: Does any ION717 expanded access route exist outside the programs
-  currently listed by Ionis?
+- Q-003: Monitor for a meaningful registry correction or new sponsor-authorized
+  site/cohort; do not treat this as an active appeal.
+- Q-004: Only a new Ionis program or other sponsor-authorized pathway would
+  change the current negative expanded-access state.
 - Q-005: What did the public phrase "European Phase 3 without placebo" refer to?

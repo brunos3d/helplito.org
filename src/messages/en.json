@@ -91,6 +91,13 @@
     "country": "Country",
     "category": "Category",
     "status": "Status",
+    "registryStatus": "Registry status",
+    "operationalStatus": "Operational availability",
+    "sponsorOperationalStatus": "Sponsor operational status",
+    "siteOperationalStatus": "Site operational status",
+    "caseSpecificStatus": "Current status for Lito",
+    "expandedAccessStatus": "Expanded access",
+    "regulatoryStatus": "Regulatory status",
     "phase": "Phase",
     "sponsor": "Sponsor",
     "participants": "Planned participants",
@@ -203,7 +210,7 @@
     "help": {
       "eyebrow": "Can you help?",
       "title": "Can your work, research or expertise help?",
-      "subtitle": "If you work in prion disease, neurology, RNA therapeutics, neurodegeneration, clinical research or a related field, your knowledge or your connections may be relevant. The request is for concrete, verifiable information, sent to the official channel.",
+      "subtitle": "Broad is already in contact with Lito's team, and Ionis has given its current answer. The useful help now is concrete information or a qualified introduction that can resolve an interventional PRiSM eligibility blocker or identify a genuinely active international path.",
       "flowTitle": "How information reaches the team",
       "flow": [
         {
@@ -221,18 +228,18 @@
       ],
       "lookingFor": "What is being sought",
       "lookingForList": [
-        "Verified treatment or protocol information",
-        "Clinical trial information and eligibility criteria",
-        "Research opportunities",
-        "Specialist contacts",
-        "Institutional connections"
+        "A verified PRiSM site or cohort currently able to expedite an interventional eligibility review",
+        "An arm-specific trial-operations answer identifying active screening or the exact blocker",
+        "Qualified introductions to investigators or site leadership able to make an eligibility or capacity decision",
+        "Verified international study opportunities with active screening and a secure physician-referral route",
+        "Concrete outcomes or recipient institutions from the current government and diplomatic outreach"
       ],
       "notLookingFor": "What should not be sent",
       "notLookingForList": [
         "Unverified or miracle treatments",
         "Speculation, rumors or conspiracy theories",
         "Supplements, diets or alternative cures",
-        "Mass messages or chain messages"
+      "Mass messages, duplicate appeals or indiscriminate outreach to researchers, hospitals or sponsors"
       ],
       "formCta": "Use the structured form",
       "follow": "Official updates"
@@ -315,7 +322,7 @@
     "areasTitle": "Research directions",
     "areasIntro": "One of the most active ideas in the field is simple to state: reduce the amount of normal prion protein, so there is less raw material for the disease process. Several approaches pursue it.",
     "trialsTitle": "Verified clinical trial records",
-    "trialsIntro": "Trial status changes. We never hardcode recruitment status as a permanent fact. Every record shows when a human last verified it and links directly to the official registry.",
+    "trialsIntro": "Trial status changes. Every record separates what the public registry says from operational availability and, where publicly reported, what is currently available to Lito. A Recruiting label does not guarantee an open cohort, screening or acceptance.",
     "trialsDisclaimer": "Listing a trial is not a statement that Lito is eligible, has been accepted, or will receive any experimental treatment. It is not a statement that the treatment works.",
     "orgsTitle": "Where research is happening",
     "orgsIntro": "Organizations and institutions involved in prion disease research, diagnosis, patient support or clinical investigation. Every entry links to an official website. No endorsement or partnership is implied.",
@@ -326,7 +333,7 @@
   "helpPage": {
     "eyebrow": "Can you help?",
     "title": "Can your work, research or expertise help?",
-    "subtitle": "We are looking for verified scientific, clinical and institutional information that may be relevant to Lito's case.",
+    "subtitle": "Broad is already evaluating options with Lito's team. The priority is an expedited interventional PRiSM eligibility assessment—or the exact reason it cannot occur—plus verified international paths and qualified introductions able to resolve that blocker.",
     "who": "This page is for",
     "whoList": [
       "Prion disease researchers",
@@ -347,13 +354,14 @@
       "The message goes to the official channel run by Lito's team, not to Help Lito."
     ],
     "directTitle": "Prefer to write directly?",
-    "directBody": "The form prepares an email addressed to the official team. You review it and send it from your own email client. Prefer to write directly? Include your name, organization, role, a link to your work, and why it may be relevant.",
+    "directBody": "The form prepares an email addressed to the official team. You review it and send it from your own email client. Be specific about the blocker you can resolve, the institution involved and the decision it can make. ION717 is closed for active outreach after Ionis's public operational answer; monitor it only for a material change.",
     "notes": {
       "title": "Before you write",
       "items": [
         "Do not send medical advice for Lito specifically. Send information that a specialized team can evaluate.",
         "Do not send unverified treatments, supplements or speculative suggestions.",
         "Do not organize mass emailing campaigns toward researchers or hospitals. Connection, not harassment.",
+        "Do not send generic requests to Broad or repeat ION717 access appeals. Contact is useful only when it can resolve a named blocker or brings materially new sponsor/site evidence.",
         "Help Lito does not receive or store form submissions in the default configuration. See the Privacy Policy."
       ]
     },
@@ -419,9 +427,10 @@
   "sourcesPage": {
     "eyebrow": "Sources",
     "title": "Every claim, traceable.",
-    "lead": "Help Lito curates information from official updates, public health authorities, clinical trial registries and research institutions. Links go to official pages only. Accessed dates are shown for each entry.",
+    "lead": "Help Lito curates information from official updates, public health authorities, clinical trial registries and research institutions. Clearly labeled reporting is used only for public statements, family attribution, corrections and timeline context. Accessed dates are shown for each entry.",
     "categories": {
       "official-updates": "Official updates",
+      "reporting": "Reporting and public statements",
       "public-health": "Public health authorities",
       "clinical-trials": "Clinical trials",
       "research-institutions": "Research institutions",

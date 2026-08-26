@@ -51,7 +51,18 @@ export type ClinicalTrial = {
   locations: string[];
   /** Never treated as a permanent fact. Always shown with lastVerified. */
   status: TrialStatus;
+  /** Registry-specific context, including conflicts inside official records. */
   statusNote?: Localized;
+  /** Sponsor-reported real-world availability, kept separate from registry. */
+  sponsorOperationalNote?: Localized;
+  /** Site-level referral/screening capacity, kept separate from sponsor state. */
+  siteOperationalNote?: Localized;
+  /** Publicly reportable status of this path for Lito, with attribution in copy. */
+  caseStatus?: Localized;
+  /** Product-specific expanded-access state, not a general policy summary. */
+  expandedAccessNote?: Localized;
+  /** Mechanism-specific regulatory boundary or unresolved regulatory claim. */
+  regulatoryNote?: Localized;
   lastVerified: string;
 };
 
@@ -64,6 +75,7 @@ export type ResearchArea = {
 
 export type SourceCategory =
   | "official-updates"
+  | "reporting"
   | "public-health"
   | "clinical-trials"
   | "research-institutions"
