@@ -2,11 +2,13 @@
 
 [Português (Brasil)](README.pt-BR.md)
 
-Bilingual public-interest website for Help Lito, an independent initiative that connects researchers, physicians, clinical trial teams and institutions working on prion disease with the official team of Lito Sousa, who was diagnosed with Creutzfeldt-Jakob Disease in August 2026.
+Bilingual memorial website for Lito Sousa (25 January 1967 to 1 October 2026), aviation educator and creator of Aviões e Músicas. Help Lito started in August 2026 as an independent initiative to connect prion disease researchers with Lito's official team after his Creutzfeldt-Jakob Disease diagnosis. After his death, the site became a memorial: his story, links to his YouTube channel, and a public record of prion disease research for the professionals who keep working on it.
 
 The site is not a fundraising campaign. It has no donation, payment or crowdfunding features, and none should be added.
 
 Live site: https://helplito.org
+
+The domain was registered on 23 August 2026 for one year. The site goes offline when it expires on 23 August 2027.
 
 ## Documents
 
@@ -73,16 +75,14 @@ src/
   app/[locale]/          pages and layout
   app/dev/og/            social image templates (404 in production)
   components/og/         social card layouts, one per aspect ratio
-  app/api/submissions/   optional moderated submission endpoint
   components/home/       homepage narrative sections, in order
   components/research/   trial card, organization cards, research areas
-  components/help/       structured "Can You Help?" form
   components/visuals/    prion diagram
-  config/site.ts         official channels, initiative contact, repository URL, submission mode
+  config/site.ts         official channels, initiative contact, repository URL
   data/                  structured content: organizations, trials, research areas, sources, timeline
   i18n/                  routing, navigation, request config
   messages/              en.json and pt-br.json
-  lib/                   fonts, metadata, submission helpers, utils
+  lib/                   fonts, metadata, utils
   proxy.ts               next-intl locale middleware
 scripts/
   qa-sweep.mjs           browser QA sweep (see above)
@@ -94,7 +94,7 @@ scripts/
 - `src/data/trials.ts`: every trial carries `status` and `lastVerified`. The UI renders both and links to the official registry. Never treat recruitment status as a permanent fact. Update `lastVerified` whenever a human checks the record.
 - `src/data/organizations.ts`: each entry needs an official URL and a `lastVerified` date. Listing does not imply endorsement.
 - `src/data/sources.ts`: every medical or research claim on the site should trace back to an entry here.
-- `src/data/timeline.ts`: public information only, month-level precision.
+- `src/data/timeline.ts`: the post-mortem timeline shown on the homepage. Each entry is tagged `lito` (his life and illness) or `project` (this initiative), down to the domain expiry on 23 August 2027. Public information only.
 
 Types live in `src/data/types.ts`. The `Localized` type holds one string per locale, so data files stay bilingual without touching the message files.
 
@@ -102,19 +102,16 @@ Types live in `src/data/types.ts`. The `Localized` type holds one string per loc
 
 Two channels exist and must never be confused. Both live in `src/config/site.ts`.
 
-- `officialEmail` (ajudalito@avioesemusicas.com): Lito's official team. Scientific, clinical and institutional information.
+The email Lito's team published during his illness (ajudalito@avioesemusicas.com) was created for his case. It is intentionally no longer listed anywhere on the site.
+
+- `officialInstagram` and `avioesEMusicas` (site and YouTube): Lito's official channels, maintained by his team.
 - `initiativeEmail` (helplito@brunosilva.io): the person responsible for this website. Corrections, removals, legal matters, ownership and operational questions.
 
 `NEXT_PUBLIC_REPOSITORY_URL` enables the source code link on the About page and footer. Set it to `https://github.com/brunos3d/helplito.org` in the hosting environment.
 
-## The "Can You Help?" form
+## The former "Can You Help?" form
 
-`NEXT_PUBLIC_SUBMISSION_MODE` controls delivery (see `.env.example`):
-
-- `mailto` (default): the form builds a plain-text message, shows it for review, then opens the sender's email client addressed to the official team. Nothing is sent to or stored by this project.
-- `moderated`: the form posts to `/api/submissions`, which validates the payload and forwards it to `SUBMISSION_WEBHOOK_URL` (optionally with `SUBMISSION_WEBHOOK_TOKEN` as a bearer token). The route stores nothing. Without the webhook configured, it responds 503.
-
-Submissions are never published. There is no forum, no comments and no public directory.
+Until October 2026, `/can-you-help` hosted a structured form that prepared an email to Lito's team. It was removed together with the `/api/submissions` route after his death. The route now serves the "For researchers" page, which points to the organization directory and the research page. The path stays the same so existing links keep working.
 
 ## Adding a language
 
@@ -125,7 +122,7 @@ Submissions are never published. There is no forum, no comments and no public di
 
 ## Images
 
-`public/lito.jpg` is the hero portrait. `lito-airbus.jpg` is used in the "Who is Lito" section, `lito-and-wife.jpg` in the family section, and `lito-hospitalized.jpg` only after the visitor has met Lito, in the "Why time matters" section. Keep that order.
+All photographs render in black and white and fade to color on hover, focus or touch (`src/components/ui/Figure.tsx`); the social cards use the same treatment. `public/lito.jpg` is the memorial portrait, used in the hero and in the social cards. `lito-airbus.jpg` is used in the "Who Lito was" section and on the About Lito page, and `lito-and-wife.jpg` in the family section. The hospital photo was removed when the site became a memorial; prefer photos that show Lito as people remember him.
 
 The photographs show real people and were taken from material Lito's family and team shared publicly. They are included for identification only. Anyone shown in them can ask for removal through [CLAIMS.md](CLAIMS.md).
 

@@ -11,7 +11,7 @@
  * these constants instead of relying on inheritance from the locale layout.
  */
 
-const ALT = "Help Lito Find the Right People to Help. Lito Sousa and his wife.";
+const ALT = "In memory of Lito Sousa, 1967–2026. Black and white portrait of Lito smiling with his arms crossed.";
 
 /**
  * og:image entries. The 1200x630 image is the card for Facebook, LinkedIn,
@@ -19,7 +19,7 @@ const ALT = "Help Lito Find the Right People to Help. Lito Sousa and his wife.";
  */
 export const ogImages = [
   {
-    url: "/og/help-lito-og-1200x630.jpg",
+    url: "/og/help-lito-memorial-og-1200x630.jpg",
     width: 1200,
     height: 630,
     type: "image/jpeg",
@@ -30,7 +30,7 @@ export const ogImages = [
 /** twitter:image for the summary_large_image card (16:9). */
 export const twitterImages = [
   {
-    url: "/og/help-lito-twitter-1200x675.jpg",
+    url: "/og/help-lito-memorial-twitter-1200x675.jpg",
     width: 1200,
     height: 675,
     alt: ALT,

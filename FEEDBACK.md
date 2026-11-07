@@ -10,7 +10,7 @@ If you are Lito, his family, his team or an institution mentioned on the site, u
 
 Feedback about the website goes to helplito@brunosilva.io or to a GitHub issue in this repository.
 
-Scientific, clinical or institutional information that may help Lito goes to his official team at ajudalito@avioesemusicas.com, ideally through the form on the site, which structures the message for them. Help Lito does not read that mailbox, so anything sent to GitHub or to the initiative address about treatments or trials will only be forwarded with delay, if at all.
+Help Lito no longer forwards scientific or clinical information to Lito's team. The site is now a memorial, and the form that prepared those messages was removed after his death.
 
 Please do not send suggestions for unverified treatments to any address.
 

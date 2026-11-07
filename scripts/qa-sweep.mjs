@@ -3,12 +3,11 @@
  *
  * Visits every route in both locales across a set of viewport widths and checks:
  * horizontal overflow, console errors, failed requests, broken images, heading
- * structure, unnamed controls, internal links and anchors, language switching,
- * the mobile menu and the "Can You Help?" form validation.
+ * structure, unnamed controls, internal links and anchors, language switching
+ * and the mobile menu.
  *
- * Safety: the form test stops at the review step. It never triggers the mailto
- * link and it blocks every request that is not to the server under test, so no
- * email and no external contact request can be sent.
+ * Safety: the mobile menu check blocks every request that is not to the server
+ * under test, so no external request is made from that step.
  *
  * Usage:
  *   pnpm build && pnpm start   (or pnpm dev)
@@ -158,7 +157,7 @@ for (const w of WIDTHS) {
   console.log(`checked ${targets.size} internal link targets and language switching on every route`);
 }
 
-// 3. Mobile menu and form validation. No email is ever sent.
+// 3. Mobile menu.
 {
   const ctx = await browser.newContext({ viewport: { width: 375, height: 812 }, isMobile: true, hasTouch: true });
   const page = await ctx.newPage();
@@ -175,7 +174,7 @@ for (const w of WIDTHS) {
     inert: document.getElementById("content").hasAttribute("inert"),
     links: document.querySelectorAll("#mobile-nav a").length,
   }));
-  if (!open.shown || !open.inert || open.links < 6) report(`mobile menu open state: ${JSON.stringify(open)}`);
+  if (!open.shown || !open.inert || open.links < 5) report(`mobile menu open state: ${JSON.stringify(open)}`);
   await page.keyboard.press("Escape");
   const closed = await page.evaluate(() => ({
     shown: getComputedStyle(document.getElementById("mobile-nav")).display !== "none",
@@ -183,35 +182,8 @@ for (const w of WIDTHS) {
   }));
   if (closed.shown || closed.focus !== "mobile-nav") report(`mobile menu after Escape: ${JSON.stringify(closed)}`);
 
-  await page.goto(`${BASE}/en/can-you-help`, { waitUntil: "load" });
-  const form = page.locator("form");
-  await form.locator("button[type=submit]").click();
-  await page.waitForTimeout(100);
-  const invalid = await form.locator("[aria-invalid=true]").count();
-  const focused = await page.evaluate(() => document.activeElement?.getAttribute("aria-invalid"));
-  if (invalid < 8) report(`empty form submit marked ${invalid} fields invalid`);
-  if (focused !== "true") report("first invalid field did not receive focus");
-  await page.fill("input[name=fullName]", "QA Test");
-  await page.fill("input[name=organization]", "QA Org");
-  await page.fill("input[name=role]", "QA");
-  await page.fill("input[name=country]", "Nowhere");
-  await page.fill("input[name=expertise]", "testing");
-  await page.fill("input[name=website]", "not-a-url");
-  await page.fill("textarea[name=relevance]", "QA run");
-  await page.fill("input[name=contact]", "invalid");
-  await form.locator("button[type=submit]").click();
-  const names = await form.locator("[aria-invalid=true]").evaluateAll((els) => els.map((e) => e.getAttribute("name") || e.type));
-  if (names.join() !== "website,contact,checkbox") report(`format validation flagged: ${names.join(",")}`);
-  await page.fill("input[name=website]", "https://example.org");
-  await page.fill("input[name=contact]", "qa@example.invalid");
-  await page.check("input[type=checkbox]");
-  await form.locator("button[type=submit]").click();
-  await page.waitForTimeout(200);
-  const preview = await page.locator("pre").textContent().catch(() => "");
-  if (!preview.includes("QA Org")) report("review step did not render the message preview");
-  // Stop here. The send button is never clicked.
   await ctx.close();
-  console.log("checked mobile menu and form validation (review step only, nothing sent)");
+  console.log("checked mobile menu");
 }
 
 await browser.close();

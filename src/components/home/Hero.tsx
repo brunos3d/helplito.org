@@ -1,11 +1,12 @@
 import { useTranslations } from "next-intl";
+import { siteConfig } from "@/config/site";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { ButtonLink, ArrowIcon } from "@/components/ui/Button";
+import { ButtonLink, ArrowIcon, ExternalIcon } from "@/components/ui/Button";
 import { Figure } from "@/components/ui/Figure";
 
 /**
- * Section 1. What this is, who it is about, what it asks, in one screen.
+ * Opening. The memorial: who he was, when he lived, the line he kept repeating.
  * The portrait is a distinct object, not a background.
  */
 export function Hero() {
@@ -17,26 +18,37 @@ export function Hero() {
         <div className="grid gap-10 md:grid-cols-12 md:items-center lg:items-stretch lg:gap-12">
           <div className="flex flex-col justify-center md:col-span-7">
             <Eyebrow>{t("eyebrow")}</Eyebrow>
-            <h1 className="display mt-5 text-[2.4rem] text-navy-900 sm:text-5xl md:text-[2.6rem] lg:text-[3.6rem]">{t("title")}</h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-700">{t("lead")}</p>
+            <h1 className="display mt-5 text-[2.8rem] text-navy-900 sm:text-6xl lg:text-7xl">{t("title")}</h1>
+            <p className="mt-4 font-mono text-sm tracking-wide text-ink-500">
+              <span className="sr-only">{t("datesLabel")}: </span>
+              <time dateTime="1967-01-25" className="whitespace-nowrap">{t("born")}</time>
+              <span aria-hidden className="mx-3 text-amber-600">
+                ·
+              </span>
+              <time dateTime="2026-10-01" className="whitespace-nowrap">{t("died")}</time>
+            </p>
+
+            <figure className="mt-8 max-w-xl border-l-2 border-amber-500 pl-5">
+              <blockquote lang="pt-BR" className="display text-2xl leading-snug text-navy-900 sm:text-3xl">
+                &ldquo;{t("quote")}&rdquo;
+              </blockquote>
+              <figcaption className="mt-2 text-sm text-ink-500">
+                {t.has("quoteTranslation") && (
+                  <span className="block italic text-ink-700">{t("quoteTranslation")}</span>
+                )}
+                {t("quoteNote")}
+              </figcaption>
+            </figure>
+
+            <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink-700">{t("lead")}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <ButtonLink href="/can-you-help" size="lg">
-                {t("primaryCta")} <ArrowIcon />
+              <ButtonLink href={siteConfig.avioesEMusicas.youtube} size="lg">
+                {t("primaryCta")} <ExternalIcon />
               </ButtonLink>
-              <ButtonLink href="#case" variant="outline-dark" size="lg">
-                {t("secondaryCta")}
+              <ButtonLink href="#timeline" variant="outline-dark" size="lg">
+                {t("secondaryCta")} <ArrowIcon />
               </ButtonLink>
             </div>
-            <dl className="mt-10 grid max-w-xl gap-x-8 gap-y-3 border-t border-navy-900/15 pt-5 text-sm sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-              <div>
-                <dt className="eyebrow text-ink-500">{t("whatLabel")}</dt>
-                <dd className="mt-1 text-ink-900">{t("whatValue")}</dd>
-              </div>
-              <div>
-                <dt className="eyebrow text-ink-500">{t("notLabel")}</dt>
-                <dd className="mt-1 text-ink-900">{t("notValue")}</dd>
-              </div>
-            </dl>
           </div>
           <div className="md:col-span-5">
             <Figure

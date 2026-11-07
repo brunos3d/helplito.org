@@ -1,13 +1,13 @@
 import { setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/home/Hero";
 import { WhoIsLito } from "@/components/home/WhoIsLito";
-import { WhatHappened } from "@/components/home/WhatHappened";
 import { Diagnosis } from "@/components/home/Diagnosis";
-import { Reality } from "@/components/home/Reality";
-import { Science } from "@/components/home/Science";
-import { CanYouHelp } from "@/components/home/CanYouHelp";
+import { Timeline } from "@/components/home/Timeline";
+import { Researchers } from "@/components/home/Researchers";
+import { KeepAlive } from "@/components/home/KeepAlive";
 import { NoticeBand } from "@/components/layout/NoticeBand";
 
+/** The memorial, read top to bottom as a post-mortem: who he was, what he had, what was tried, what remains. */
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -17,11 +17,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Hero />
       <NoticeBand />
       <WhoIsLito />
-      <WhatHappened />
       <Diagnosis />
-      <Reality />
-      <Science />
-      <CanYouHelp />
+      <Timeline />
+      <Researchers />
+      <KeepAlive />
     </>
   );
 }

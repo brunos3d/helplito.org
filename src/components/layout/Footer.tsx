@@ -74,14 +74,23 @@ export function Footer() {
           <div className="border-l-2 border-amber-400 pl-5">
             <h2 className="eyebrow text-amber-300">{t("officialTitle")}</h2>
             <p className="mt-2 text-sm text-cream-200/75">{t("officialBody")}</p>
-            <p className="mt-2 font-mono text-[0.95rem]">
-              <EmailLink email={siteConfig.officialEmail} />
-            </p>
-            <p className="mt-1 text-sm text-cream-200/75">
-              <ExternalLink href={siteConfig.officialInstagram.url} className="text-cream-100/85">
-                Instagram {siteConfig.officialInstagram.handle}
-              </ExternalLink>
-            </p>
+            <ul className="mt-2 space-y-1 text-sm">
+              <li>
+                <ExternalLink href={siteConfig.avioesEMusicas.youtube} className="text-cream-100/85">
+                  YouTube @avioesemusicas
+                </ExternalLink>
+              </li>
+              <li>
+                <ExternalLink href={siteConfig.officialInstagram.url} className="text-cream-100/85">
+                  Instagram {siteConfig.officialInstagram.handle}
+                </ExternalLink>
+              </li>
+              <li>
+                <ExternalLink href={siteConfig.avioesEMusicas.url} className="text-cream-100/85">
+                  {siteConfig.avioesEMusicas.name}
+                </ExternalLink>
+              </li>
+            </ul>
           </div>
           <div className="border-l-2 border-cream-50/30 pl-5">
             <h2 className="eyebrow text-cream-200/70">{t("initiativeTitle")}</h2>

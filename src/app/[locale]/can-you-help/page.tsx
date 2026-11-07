@@ -1,10 +1,11 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata } from "@/lib/metadata";
+import { organizations } from "@/data/organizations";
 import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { ButtonLink, ArrowIcon } from "@/components/ui/Button";
 import { NoticeBand } from "@/components/layout/NoticeBand";
-import { ContactChannels } from "@/components/layout/ContactChannels";
-import { HelpForm } from "@/components/help/HelpForm";
+import { OrganizationDirectory } from "@/components/research/OrganizationDirectory";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -13,10 +14,15 @@ export async function generateMetadata({ params }: Props) {
   return pageMetadata(locale, "help", "/can-you-help");
 }
 
-export default async function CanYouHelpPage({ params }: Props) {
+/**
+ * For researchers. The route keeps its original path so existing links still work.
+ * Lito's case has ended; this page points professionals to the institutions doing the work.
+ */
+export default async function ForResearchersPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("helpPage");
+  const nav = await getTranslations("nav");
   const whoList = t.raw("whoList") as string[];
   const howSteps = t.raw("howSteps") as string[];
   const notes = t.raw("notes.items") as string[];
@@ -26,13 +32,7 @@ export default async function CanYouHelpPage({ params }: Props) {
       <PageHeader eyebrow={t("eyebrow")} title={t("title")} lead={t("subtitle")} />
       <NoticeBand />
 
-      <section className="bg-cream-50 py-12 sm:py-16">
-        <Container size="wide">
-          <ContactChannels />
-        </Container>
-      </section>
-
-      <section className="border-t border-navy-900/15 bg-cream-50 py-16 sm:py-20">
+      <section className="bg-cream-50 py-16 sm:py-20">
         <Container size="wide">
           <div className="grid gap-12 lg:grid-cols-12">
             <aside className="space-y-8 lg:col-span-4">
@@ -68,10 +68,15 @@ export default async function CanYouHelpPage({ params }: Props) {
               </div>
             </aside>
 
-            <div id="help-form" className="scroll-mt-24 lg:col-span-8">
-              <h2 className="display text-2xl text-navy-900">{t("formTitle")}</h2>
-              <p className="mt-2 mb-8 text-sm text-ink-500">{t("directBody")}</p>
-              <HelpForm />
+            <div id="organizations" className="scroll-mt-24 lg:col-span-8">
+              <h2 className="display text-2xl text-navy-900 sm:text-3xl">{t("orgsTitle")}</h2>
+              <p className="mt-2 mb-8 max-w-2xl text-sm leading-relaxed text-ink-500">{t("orgsIntro")}</p>
+              <OrganizationDirectory organizations={organizations} />
+              <div className="mt-10">
+                <ButtonLink href="/research" variant="outline-dark">
+                  {nav("research")} <ArrowIcon />
+                </ButtonLink>
+              </div>
             </div>
           </div>
         </Container>

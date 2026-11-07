@@ -9,9 +9,9 @@
  */
 
 const COPY = {
-  title: "Help Lito Find the Right People to Help",
+  title: "In memory of Lito Sousa, 1967–2026",
   description:
-    "Help Lito is an independent initiative connecting relevant knowledge and expertise with Lito's official team.",
+    "Aviation educator and creator of Aviões e Músicas. \u201cTurbulência não derruba avião.\u201d",
   url: "HELPLITO.ORG",
 } as const;
 
@@ -31,8 +31,8 @@ const FONT = {
 } as const;
 
 export const VARIANTS = {
-  og: { width: 1200, height: 630, file: "help-lito-og-1200x630" },
-  twitter: { width: 1200, height: 675, file: "help-lito-twitter-1200x675" },
+  og: { width: 1200, height: 630, file: "help-lito-memorial-og-1200x630" },
+  twitter: { width: 1200, height: 675, file: "help-lito-memorial-twitter-1200x675" },
 } as const;
 
 export type VariantId = keyof typeof VARIANTS;
@@ -126,17 +126,17 @@ function Description({ fontSize, maxWidth }: { fontSize: number; maxWidth?: numb
 
 /**
  * The photograph as a distinct bordered object, matching the site's Figure
- * component. No gradients or overlays; the photo stays visually honest.
- * objectPosition keeps both faces inside every crop.
+ * component, in black and white like the memorial photos on the site. No gradients or overlays; the photo stays visually honest.
+ * objectPosition keeps his face inside every crop.
  */
 function Photo({ position, style }: { position: string; style?: React.CSSProperties }) {
   return (
     <div style={{ border: `1px solid ${COLOR.border}`, overflow: "hidden", display: "flex", ...style }}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/lito-and-wife.jpg"
+        src="/lito.jpg"
         alt=""
-        style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: position }}
+        style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: position, filter: "grayscale(1)" }}
       />
     </div>
   );
@@ -166,7 +166,7 @@ function Landscape({ width, height }: { width: number; height: number }) {
         <UrlLabel fontSize={17} />
       </div>
       <div style={{ flex: 1, display: "flex", padding: "44px 44px 44px 0" }}>
-        <Photo position="50% 26%" style={{ flex: 1 }} />
+        <Photo position="50% 22%" style={{ flex: 1 }} />
       </div>
     </div>
   );

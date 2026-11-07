@@ -5,12 +5,16 @@ development; nothing here is rendered at request time.
 
 | File | Size | Ratio | Used by |
 | --- | --- | --- | --- |
-| `help-lito-og-1200x630.jpg` | 1200x630 | 1.91:1 | `og:image`. Facebook, LinkedIn, WhatsApp, Slack, Discord, iMessage and other Open Graph consumers. |
-| `help-lito-twitter-1200x675.jpg` | 1200x675 | 16:9 | `twitter:image` for the X summary_large_image card. |
+| `help-lito-memorial-og-1200x630.jpg` | 1200x630 | 1.91:1 | `og:image`. Facebook, LinkedIn, WhatsApp, Slack, Discord, iMessage and other Open Graph consumers. |
+| `help-lito-memorial-twitter-1200x675.jpg` | 1200x675 | 16:9 | `twitter:image` for the X summary_large_image card. |
 
 Format is JPEG quality 90. The cards contain a photograph, so PNG versions
 are 3 to 6 times larger and the 1200x630 PNG (about 430 KB) would break the
 roughly 300 KB limit WhatsApp applies to link preview images.
+
+When the card content changes, rename the files (and update `src/lib/social-images.ts`,
+`VARIANTS` in `src/components/og/SocialCard.tsx` and `scripts/generate-og.mjs`). Social
+platforms cache previews by image URL, so a new name is what makes them fetch the new card.
 
 ## Regenerating
 

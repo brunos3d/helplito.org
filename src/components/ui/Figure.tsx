@@ -17,10 +17,14 @@ const aspects = { "4/5": "aspect-[4/5]", "3/4": "aspect-[3/4]", "1/1": "aspect-s
 /**
  * Photograph as a distinct object: rectangular, thin border, mono caption.
  * No gradients, masks or overlays. The photographs do their own work.
+ *
+ * Memorial treatment: photos render in black and white and fade back to color on
+ * hover, keyboard focus inside the figure, or touch (active). The transition is
+ * skipped when the visitor prefers reduced motion.
  */
 export function Figure({ src, alt, caption, sizes, priority, aspect = "4/5", className, position }: Props) {
   return (
-    <figure className={className}>
+    <figure className={cn("group", className)}>
       <div className={cn("relative overflow-hidden border border-navy-900/15 bg-cream-200", aspects[aspect])}>
         <Image
           src={src}
@@ -28,7 +32,7 @@ export function Figure({ src, alt, caption, sizes, priority, aspect = "4/5", cla
           fill
           sizes={sizes}
           priority={priority}
-          className="object-cover"
+          className="object-cover grayscale transition-[filter] duration-700 ease-out group-hover:grayscale-0 group-focus-within:grayscale-0 group-active:grayscale-0 motion-reduce:transition-none"
           style={position ? { objectPosition: position } : undefined}
         />
       </div>

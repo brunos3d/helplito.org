@@ -10,7 +10,7 @@ Requests from these people take priority over everything else in this project. Y
 
 Write to helplito@brunosilva.io. The address is answered by Bruno Silva, the person responsible for the website. Write in Portuguese or English.
 
-Do not use ajudalito@avioesemusicas.com for requests about this website. That address belongs to Lito's official team, and Help Lito does not read it.
+Do not use ajudalito@avioesemusicas.com for requests about this website. That address belongs to Lito's team, and Help Lito has no access to it.
 
 If you prefer a public record, you can open an issue using the "Correction or removal request" template, but an email is faster and keeps personal details out of a public repository.
 

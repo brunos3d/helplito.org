@@ -2,8 +2,9 @@
  * Central configuration for Help Lito.
  * Official channels live here so they are never duplicated across pages.
  *
- * Two contact channels exist and must never be confused:
- * - officialEmail: Lito's official team. Scientific, clinical and institutional information.
+ * Lito died on 1 October 2026 and the site is now a memorial. The email his team published
+ * for his case (ajudalito@avioesemusicas.com) is intentionally no longer listed.
+ * - Official channels (Instagram, Aviões e Músicas site and YouTube): maintained by his team.
  * - initiativeEmail: the person responsible for this website. Corrections, removals, legal,
  *   ownership and operational questions.
  */
@@ -13,14 +14,13 @@
  * .env.local sets http://localhost:3000 for development. Falls back to the production URL.
  */
 const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://helplito.org").replace(/\/+$/, "");
+const repositoryUrl = process.env.NEXT_PUBLIC_REPOSITORY_URL || "";
 
 export const siteConfig = {
   name: "Help Lito",
   domain: "helplito.org",
   url: siteUrl,
 
-  /** Official email published by Lito's team for concrete, verifiable information. */
-  officialEmail: "ajudalito@avioesemusicas.com",
   officialInstagram: {
     handle: "@lito",
     url: "https://www.instagram.com/lito/",
@@ -39,14 +39,8 @@ export const siteConfig = {
    * Public source code repository. Set NEXT_PUBLIC_REPOSITORY_URL once the repository exists.
    * The UI hides the link while this is empty. Never invent a URL here.
    */
-  repositoryUrl: process.env.NEXT_PUBLIC_REPOSITORY_URL || "",
+  repositoryUrl,
 
-  /**
-   * How the "Can You Help?" form delivers information.
-   * - "mailto": builds a structured email the sender reviews and sends from their own client.
-   * - "moderated": posts to /api/submissions, which forwards to SUBMISSION_WEBHOOK_URL for private review.
-   */
-  submissionMode:
-    (process.env.NEXT_PUBLIC_SUBMISSION_MODE as "mailto" | "moderated") ??
-    "mailto",
+  /** Public research notes written during the campaign. Empty when repositoryUrl is unset. */
+  knowledgeUrl: repositoryUrl ? `${repositoryUrl}/tree/main/knowledge` : "",
 } as const;

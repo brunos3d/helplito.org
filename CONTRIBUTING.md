@@ -118,4 +118,4 @@ The maintainer reviews every pull request personally. Response time depends on w
 
 Questions about contributing: open an issue or write to helplito@brunosilva.io.
 
-Do not send scientific or medical information through GitHub. That goes to Lito's official team at ajudalito@avioesemusicas.com, using the form on the site.
+Do not send scientific or medical information through GitHub. Help Lito no longer forwards anything to Lito's team; the For researchers page lists the institutions that work on prion disease.

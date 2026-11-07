@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Help Lito",
     short_name: "Help Lito",
     description:
-      "Independent initiative connecting verified prion disease expertise with Lito Sousa's official team. Not a fundraiser.",
+      "Independent memorial to Lito Sousa (1967-2026), aviation educator and creator of Aviões e Músicas. Not a fundraiser.",
     start_url: "/",
     display: "browser",
     background_color: "#faf8f3",
