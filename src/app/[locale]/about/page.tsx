@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: Props) {
 
 const keys = [
   "why",
+  "memorial",
   "notFundraising",
   "independent",
   "responsibility",
@@ -26,6 +27,7 @@ const keys = [
   "notAdvice",
   "corrections",
   "handover",
+  "ending",
   "openSource",
 ] as const;
 
@@ -45,8 +47,10 @@ export default async function AboutPage({ params }: Props) {
             <EmailLink email={siteConfig.initiativeEmail} className="text-navy-900" />
           </dd>
           <dt className="eyebrow mt-4 text-ink-500">{t("officialLabel")}</dt>
-          <dd className="mt-1 font-mono">
-            <EmailLink email={siteConfig.officialEmail} className="text-navy-900" />
+          <dd className="mt-1">
+            <ExternalLink href={siteConfig.avioesEMusicas.youtube} className="text-navy-900">
+              YouTube @avioesemusicas
+            </ExternalLink>
           </dd>
           <dt className="eyebrow mt-4 text-ink-500">{t("sourceCodeLabel")}</dt>
           <dd className="mt-1 text-ink-700">

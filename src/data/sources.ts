@@ -15,8 +15,8 @@ export const sources: Source[] = [
     publisher: "Instagram",
     url: "https://www.instagram.com/lito/",
     note: {
-      en: "Official profile. Updates about Lito's situation are shared here by the family and team.",
-      "pt-br": "Perfil oficial. Atualizações sobre a situação do Lito são compartilhadas aqui pela família e pela equipe.",
+      en: "Official profile, kept by the family and team. His death was announced here.",
+      "pt-br": "Perfil oficial, mantido pela família e pela equipe. A morte dele foi anunciada aqui.",
     },
     accessed: ACCESSED,
   },
@@ -39,6 +39,43 @@ export const sources: Source[] = [
     publisher: "YouTube",
     url: "https://www.youtube.com/@avioesemusicas",
     accessed: ACCESSED,
+  },
+
+  // Biography and press
+  {
+    id: "wikipedia-pt",
+    category: "biography",
+    title: { en: "Lito Sousa, Portuguese Wikipedia", "pt-br": "Lito Sousa, Wikipédia em português" },
+    publisher: "Wikipedia",
+    url: "https://pt.wikipedia.org/wiki/Lito_Sousa",
+    note: {
+      en: "Full name, birth date and place, date of death, timeline of the illness. Not an official source; cross-checked with press coverage.",
+      "pt-br": "Nome completo, data e local de nascimento, data da morte e linha do tempo da doença. Não é fonte oficial; conferida com a cobertura da imprensa.",
+    },
+    accessed: "2026-11-06",
+  },
+  {
+    id: "wikipedia-en",
+    category: "biography",
+    title: { en: "Lito Sousa, English Wikipedia", "pt-br": "Lito Sousa, Wikipédia em inglês" },
+    publisher: "Wikipedia",
+    url: "https://en.wikipedia.org/wiki/Lito_Sousa",
+    accessed: "2026-11-06",
+  },
+  {
+    id: "exame-obituary",
+    category: "biography",
+    title: {
+      en: "Lito Sousa, owner of the Aviões e Músicas channel, dies at 59 (in Portuguese)",
+      "pt-br": "Lito Sousa, dono do canal Aviões e Músicas, morre aos 59 anos",
+    },
+    publisher: "Exame",
+    url: "https://exame.com/ciencia/lito-sousa-dono-do-canal-avioes-e-musicas-morre-aos-59-anos/",
+    note: {
+      en: "Death on 1 October 2026 and the exceptional Anvisa authorization for the experimental drug ALN-6457 on 11 September.",
+      "pt-br": "Morte em 1º de outubro de 2026 e a autorização excepcional da Anvisa para o medicamento experimental ALN-6457 em 11 de setembro.",
+    },
+    accessed: "2026-11-06",
   },
 
   // Public health authorities
@@ -174,6 +211,7 @@ export const sources: Source[] = [
 
 export const sourceCategories = [
   "official-updates",
+  "biography",
   "public-health",
   "clinical-trials",
   "research-institutions",

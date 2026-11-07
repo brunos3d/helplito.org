@@ -1,16 +1,16 @@
 import { useTranslations } from "next-intl";
 import { siteConfig } from "@/config/site";
 import { CopyEmail } from "@/components/ui/CopyEmail";
+import { ExternalLink } from "@/components/ui/ExternalLink";
 import { cn } from "@/lib/utils";
 
 /**
- * The two contact channels, side by side, never confused.
- * Official team: scientific, clinical, institutional information.
+ * The two channels, side by side, never confused.
+ * Official: Lito's channels, kept by his team. No email: the case address is no longer listed.
  * Initiative: corrections, removals, legal, ownership, website questions.
  */
 export function ContactChannels({ className }: { className?: string }) {
   const t = useTranslations("channels");
-  const officialFor = t.raw("official.for") as string[];
   const initiativeFor = t.raw("initiative.for") as string[];
 
   return (
@@ -21,15 +21,17 @@ export function ContactChannels({ className }: { className?: string }) {
           {t("official.title")}
         </h3>
         <p className="mt-3 text-sm leading-relaxed text-cream-200/80">{t("official.body")}</p>
-        <ul className="mt-4 grid gap-1 text-sm text-cream-100/90 sm:grid-cols-2">
-          {officialFor.map((x) => (
-            <li key={x} className="flex gap-2">
-              <span aria-hidden className="text-amber-300">·</span>
-              {x}
-            </li>
-          ))}
+        <ul className="mt-5 space-y-1.5 text-sm text-cream-100/90">
+          <li>
+            <ExternalLink href={siteConfig.avioesEMusicas.youtube}>YouTube @avioesemusicas</ExternalLink>
+          </li>
+          <li>
+            <ExternalLink href={siteConfig.officialInstagram.url}>Instagram {siteConfig.officialInstagram.handle}</ExternalLink>
+          </li>
+          <li>
+            <ExternalLink href={siteConfig.avioesEMusicas.url}>{siteConfig.avioesEMusicas.name}</ExternalLink>
+          </li>
         </ul>
-        <CopyEmail email={siteConfig.officialEmail} tone="light" className="mt-6" />
       </section>
 
       <section className="bg-cream-100 p-6 sm:p-8" aria-labelledby="ch-initiative">

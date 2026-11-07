@@ -64,6 +64,7 @@ export type ResearchArea = {
 
 export type SourceCategory =
   | "official-updates"
+  | "biography"
   | "public-health"
   | "clinical-trials"
   | "research-institutions"
@@ -81,8 +82,14 @@ export type Source = {
 
 export type TimelineEntry = {
   id: string;
-  /** Month-level precision is enough. Avoid day-level private details. */
+  /** "lito": his life and illness. "project": the Help Lito initiative and this website. */
+  kind: "lito" | "project";
+  /** ISO date for the <time> element. Month precision (YYYY-MM) when the day is not public. */
+  isoDate: string;
+  /** Human date. Day-level only for dates the family or the press announced. */
   date: Localized;
   title: Localized;
   body: Localized;
+  /** True for events that have not happened yet, such as the domain expiring. */
+  upcoming?: boolean;
 };

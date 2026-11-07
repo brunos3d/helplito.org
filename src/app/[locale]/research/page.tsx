@@ -3,6 +3,8 @@ import { pageMetadata } from "@/lib/metadata";
 import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { ExternalLink } from "@/components/ui/ExternalLink";
+import { ButtonLink, ExternalIcon } from "@/components/ui/Button";
+import { siteConfig } from "@/config/site";
 import { NoticeBand } from "@/components/layout/NoticeBand";
 import { ResearchAreaCard } from "@/components/research/ResearchAreaCard";
 import { TrialCard } from "@/components/research/TrialCard";
@@ -25,7 +27,9 @@ export default async function ResearchPage({ params }: Props) {
 
   return (
     <>
-      <PageHeader eyebrow={t("eyebrow")} title={t("title")} lead={t("lead")} />
+      <PageHeader eyebrow={t("eyebrow")} title={t("title")} lead={t("lead")}>
+        <p className="border-l-2 border-amber-500 pl-4 font-mono text-xs leading-relaxed text-ink-700">{t("archiveNote")}</p>
+      </PageHeader>
       <NoticeBand />
 
       <section id="areas" className="scroll-mt-20 bg-cream-50 py-16 sm:py-24">
@@ -74,6 +78,22 @@ export default async function ResearchPage({ params }: Props) {
           <p className="mt-10 max-w-2xl text-sm text-ink-500">{t("maintenance")}</p>
         </Container>
       </section>
+
+      {siteConfig.knowledgeUrl && (
+        <section id="investigation-log" className="scroll-mt-20 border-t border-navy-900/15 bg-cream-50 py-16 sm:py-24">
+          <Container size="wide">
+            <div className="max-w-3xl">
+              <h2 className="display text-3xl text-navy-900 sm:text-4xl">{t("repoTitle")}</h2>
+              <p className="mt-4 text-[1.05rem] leading-relaxed text-ink-700">{t("repoBody")}</p>
+              <div className="mt-8">
+                <ButtonLink href={siteConfig.knowledgeUrl} variant="outline-dark">
+                  {t("repoCta")} <ExternalIcon />
+                </ButtonLink>
+              </div>
+            </div>
+          </Container>
+        </section>
+      )}
     </>
   );
 }

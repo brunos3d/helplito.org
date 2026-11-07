@@ -33,7 +33,7 @@ export default async function ContactPage({ params }: Props) {
           </div>
           <p className="mt-8 text-sm text-ink-500">
             <Link href="/can-you-help" className="link-underline text-navy-900">
-              {t("formLink")}
+              {t("researchLink")}
             </Link>
           </p>
         </Container>

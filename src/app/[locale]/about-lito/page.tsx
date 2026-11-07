@@ -19,7 +19,7 @@ export default async function AboutLitoPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations("aboutLitoPage");
   const who = await getTranslations("home.who");
-  const sections = ["career", "education", "impact", "why"] as const;
+  const sections = ["career", "education", "impact", "farewell", "why"] as const;
 
   return (
     <>

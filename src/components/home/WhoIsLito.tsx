@@ -4,7 +4,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { ButtonLink, ArrowIcon } from "@/components/ui/Button";
 import { Figure } from "@/components/ui/Figure";
 
-/** Section 2. Who Lito is, before anything medical. */
+/** Section 1. Who Lito was, before anything medical. */
 export function WhoIsLito() {
   const t = useTranslations("home.who");
 

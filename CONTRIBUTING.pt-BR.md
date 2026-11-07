@@ -118,4 +118,4 @@ O mantenedor revisa todo pull request pessoalmente. O tempo de resposta depende 
 
 Dúvidas sobre contribuição: abra uma issue ou escreva para helplito@brunosilva.io.
 
-Não envie informação científica ou médica pelo GitHub. Isso vai para a equipe oficial do Lito em ajudalito@avioesemusicas.com, usando o formulário do site.
+Não envie informação científica ou médica pelo GitHub. O Help Lito não encaminha mais nada para a equipe do Lito; a página Para pesquisadores lista as instituições que trabalham com doenças priônicas.

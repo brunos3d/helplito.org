@@ -2,11 +2,13 @@
 
 [English](README.md)
 
-Site bilíngue de interesse público do Help Lito, uma iniciativa independente que conecta pesquisadores, médicos, equipes de ensaios clínicos e instituições que trabalham com doenças priônicas à equipe oficial de Lito Sousa, diagnosticado com a Doença de Creutzfeldt-Jakob em agosto de 2026.
+Site memorial bilíngue de Lito Sousa (25 de janeiro de 1967 a 1º de outubro de 2026), educador de aviação e criador do Aviões e Músicas. O Help Lito começou em agosto de 2026 como uma iniciativa independente para conectar pesquisadores de doenças priônicas à equipe oficial do Lito depois do diagnóstico da doença de Creutzfeldt-Jakob. Depois da morte dele, o site virou um memorial: a história dele, links para o canal no YouTube e um registro público da pesquisa em doenças priônicas para os profissionais que seguem trabalhando nela.
 
 O site não é uma campanha de arrecadação. Não tem recursos de doação, pagamento ou financiamento coletivo, e nenhum deve ser adicionado.
 
 Site: https://helplito.org
+
+O domínio foi registrado em 23 de agosto de 2026, por um ano. O site sai do ar quando ele expirar, em 23 de agosto de 2027.
 
 ## Documentos
 
@@ -73,16 +75,14 @@ src/
   app/[locale]/          páginas e layout
   app/dev/og/            templates das imagens sociais (404 em produção)
   components/og/         layouts dos cartões sociais, um por proporção
-  app/api/submissions/   endpoint opcional de envio moderado
   components/home/       seções narrativas da página inicial, em ordem
   components/research/   card de ensaio clínico, cards de organizações, áreas de pesquisa
-  components/help/       formulário estruturado "Você pode ajudar?"
   components/visuals/    diagrama do príon
-  config/site.ts         canais oficiais, contato da iniciativa, URL do repositório, modo de envio
+  config/site.ts         canais oficiais, contato da iniciativa, URL do repositório
   data/                  conteúdo estruturado: organizações, ensaios, áreas de pesquisa, fontes, linha do tempo
   i18n/                  roteamento, navegação, configuração de requisição
   messages/              en.json e pt-br.json
-  lib/                   fontes, metadados, helpers de envio, utilitários
+  lib/                   fontes, metadados, utilitários
   proxy.ts               middleware de idioma do next-intl
 scripts/
   qa-sweep.mjs           varredura de QA no navegador (veja acima)
@@ -94,7 +94,7 @@ scripts/
 - `src/data/trials.ts`: todo ensaio clínico carrega `status` e `lastVerified`. A interface exibe os dois e aponta para o registro oficial. Nunca trate o status de recrutamento como fato permanente. Atualize `lastVerified` sempre que uma pessoa conferir o registro.
 - `src/data/organizations.ts`: cada entrada precisa de uma URL oficial e de uma data `lastVerified`. Estar listado não implica endosso.
 - `src/data/sources.ts`: toda afirmação médica ou científica do site deve rastrear até uma entrada aqui.
-- `src/data/timeline.ts`: somente informação pública, com precisão de mês.
+- `src/data/timeline.ts`: a linha do tempo post-mortem da página inicial. Cada entrada é marcada como `lito` (a vida e a doença dele) ou `project` (esta iniciativa), até a expiração do domínio em 23 de agosto de 2027. Somente informação pública.
 
 Os tipos ficam em `src/data/types.ts`. O tipo `Localized` guarda uma string por idioma, então os arquivos de dados continuam bilíngues sem mexer nos arquivos de mensagens.
 
@@ -102,19 +102,16 @@ Os tipos ficam em `src/data/types.ts`. O tipo `Localized` guarda uma string por 
 
 Existem dois canais e eles nunca devem ser confundidos. Os dois ficam em `src/config/site.ts`.
 
-- `officialEmail` (ajudalito@avioesemusicas.com): equipe oficial do Lito. Informações científicas, clínicas e institucionais.
+- `officialInstagram` e `avioesEMusicas` (site e YouTube): canais oficiais do Lito, mantidos pela equipe dele.
 - `initiativeEmail` (helplito@brunosilva.io): a pessoa responsável por este site. Correções, remoções, questões jurídicas, propriedade e questões operacionais.
 
 `NEXT_PUBLIC_REPOSITORY_URL` habilita o link do código-fonte na página Sobre e no rodapé. Defina como `https://github.com/brunos3d/helplito.org` no ambiente de hospedagem.
 
-## O formulário "Você pode ajudar?"
+## O antigo formulário "Você pode ajudar?"
 
-`NEXT_PUBLIC_SUBMISSION_MODE` controla a entrega (veja `.env.example`):
+Até outubro de 2026, `/can-you-help` tinha um formulário estruturado que preparava um e-mail para a equipe do Lito. Ele foi removido junto com a rota `/api/submissions` depois da morte dele. A rota agora serve a página "Para pesquisadores", que aponta para o diretório de organizações e para a página de Pesquisa. O caminho continua o mesmo para que links antigos sigam funcionando.
 
-- `mailto` (padrão): o formulário monta uma mensagem em texto puro, mostra para revisão e abre o cliente de e-mail do remetente endereçado à equipe oficial. Nada é enviado para este projeto nem armazenado por ele.
-- `moderated`: o formulário envia para `/api/submissions`, que valida o payload e encaminha para `SUBMISSION_WEBHOOK_URL` (opcionalmente com `SUBMISSION_WEBHOOK_TOKEN` como bearer token). A rota não armazena nada. Sem o webhook configurado, responde 503.
-
-Envios nunca são publicados. Não há fórum, comentários nem diretório público.
+O e-mail que a equipe divulgou durante a doença (ajudalito@avioesemusicas.com) foi criado para o caso dele e não aparece mais em nenhuma página do site.
 
 ## Adicionando um idioma
 
@@ -125,7 +122,7 @@ Envios nunca são publicados. Não há fórum, comentários nem diretório públ
 
 ## Imagens
 
-`public/lito.jpg` é o retrato principal. `lito-airbus.jpg` aparece na seção "Quem é o Lito", `lito-and-wife.jpg` na seção sobre a família, e `lito-hospitalized.jpg` só depois que o visitante já conheceu o Lito, na seção "Por que o tempo importa". Mantenha essa ordem.
+Todas as fotos aparecem em preto e branco e voltam a ter cor no hover, no foco ou no toque (`src/components/ui/Figure.tsx`); os cards de compartilhamento usam o mesmo tratamento. `public/lito.jpg` é o retrato do memorial, usado no topo da página inicial e nos cards de compartilhamento. `lito-airbus.jpg` aparece na seção "Quem foi o Lito" e na página Sobre o Lito, e `lito-and-wife.jpg` na seção sobre a família. A foto do hospital foi removida quando o site virou memorial; prefira fotos que mostrem o Lito como as pessoas se lembram dele.
 
 As fotografias mostram pessoas reais e vieram de material que a família e a equipe do Lito compartilharam publicamente. Estão incluídas apenas para identificação. Qualquer pessoa que apareça nelas pode pedir a remoção por meio de [CLAIMS.pt-BR.md](CLAIMS.pt-BR.md).
 

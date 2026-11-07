@@ -5,7 +5,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { ButtonLink, ArrowIcon } from "@/components/ui/Button";
 import { PrionDiagram } from "@/components/visuals/PrionDiagram";
 
-/** Section 4. The disease, in sixty seconds. */
+/** Section 2. What he had: the disease, in sixty seconds. */
 export function Diagnosis() {
   const t = useTranslations("home.diagnosis");
   const steps = (["normal", "misfold", "chain", "damage"] as const).map((k) => ({
@@ -18,7 +18,7 @@ export function Diagnosis() {
       <Container size="wide">
         <div className="grid gap-8 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <Eyebrow index="03">{t("eyebrow")}</Eyebrow>
+            <Eyebrow index="02">{t("eyebrow")}</Eyebrow>
             <h2 className="display mt-4 text-3xl text-navy-900 sm:text-4xl">{t("title")}</h2>
             <p className="mt-5 max-w-2xl text-[1.05rem] leading-relaxed text-ink-700">{t("intro")}</p>
           </div>

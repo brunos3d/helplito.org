@@ -4,12 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
+import { siteConfig } from "@/config/site";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Wordmark } from "./Wordmark";
 
 const navItems = [
   { href: "/about-lito", key: "aboutLito" },
-  { href: "/understanding-cjd", key: "cjd" },
   { href: "/research", key: "research" },
   { href: "/about", key: "about" },
 ] as const;
@@ -94,12 +94,14 @@ export function Header() {
 
         <div className="flex items-center gap-5">
           <LanguageSwitcher className="hidden sm:flex" />
-          <Link
-            href="/can-you-help"
+          <a
+            href={siteConfig.avioesEMusicas.youtube}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden border border-navy-900 bg-navy-900 px-4 py-2 text-sm font-medium text-cream-50 transition-colors hover:bg-navy-800 sm:inline-flex"
           >
-            {t("help")}
-          </Link>
+            {t("watch")}
+          </a>
           <button
             ref={toggleRef}
             type="button"
@@ -141,12 +143,14 @@ export function Header() {
               {t(item.key)}
             </Link>
           ))}
-          <Link
-            href="/can-you-help"
+          <a
+            href={siteConfig.avioesEMusicas.youtube}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-6 inline-flex items-center justify-center border border-navy-900 bg-navy-900 px-5 py-3.5 text-base font-medium text-cream-50"
           >
-            {t("help")}
-          </Link>
+            {t("watch")}
+          </a>
           <div className="mt-8 flex items-center justify-between">
             <span className="eyebrow text-ink-500">{t("language")}</span>
             <LanguageSwitcher size="lg" />
