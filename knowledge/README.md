@@ -47,6 +47,8 @@ Use simple YAML frontmatter:
 ---
 type: finding
 status: verified
+observed_at: 2026-08-24T22:15:45-03:00
+source_last_updated: 2026-08-19
 last_verified: 2026-08-24
 confidence: high
 sources:
@@ -66,6 +68,13 @@ Allowed status values are:
 Confidence is `high`, `medium` or `low`. It describes the strength and
 specificity of the cited evidence, not the importance of a finding. Records may
 also use `supersedes` and `related` when those links prevent ambiguity.
+
+For mutable claims, `observed_at` records when the source was read and
+`source_last_updated` records the date displayed by the source, when one is
+available. When several sources have different dates, `source_last_updated` may
+be a YAML mapping keyed by a short source label. `last_verified` remains the
+calendar date of the verification. A trial, site, cohort, access-program or
+institutional status must not be carried forward without these temporal bounds.
 
 `public_site_impact` should be one of:
 
