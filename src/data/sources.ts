@@ -145,6 +145,36 @@ export const sources: Source[] = [
     accessed: ACCESSED,
   },
   {
+    id: "nct06153966",
+    category: "clinical-trials",
+    title: {
+      en: "PrProfile: ION717 Phase 1/2a study (NCT06153966)",
+      "pt-br": "PrProfile: estudo de fase 1/2a do ION717 (NCT06153966)",
+    },
+    publisher: "ClinicalTrials.gov",
+    url: "https://clinicaltrials.gov/study/NCT06153966",
+    note: {
+      en: "Official registry record. Status, regimens, enrollment and locations as of August 2026.",
+      "pt-br": "Registro oficial. Status, regimes, número de participantes e locais em agosto de 2026.",
+    },
+    accessed: "2026-08-25",
+  },
+  {
+    id: "uol-ionis-statement-2026-08-25",
+    category: "clinical-trials",
+    title: {
+      en: "Ionis statement on ION717 recruitment and expanded access (in Portuguese)",
+      "pt-br": "Declaração da Ionis sobre recrutamento e acesso expandido do ION717",
+    },
+    publisher: "UOL / Splash",
+    url: "https://www.uol.com.br/splash/noticias/2026/08/25/lito-sousa-farmaceutica-caso.amp.htm",
+    note: {
+      en: "Reporting that reproduces a direct Ionis statement: the study is no longer recruiting new participants and ION717 is not available through Ionis expanded-access programs.",
+      "pt-br": "Reportagem que reproduz uma declaração direta da Ionis: o estudo não recruta mais novos participantes e o ION717 não está disponível pelos programas de acesso expandido da Ionis.",
+    },
+    accessed: "2026-08-25",
+  },
+  {
     id: "clinicaltrials-prion-search",
     category: "clinical-trials",
     title: { en: "ClinicalTrials.gov search: prion disease", "pt-br": "Busca no ClinicalTrials.gov: doença priônica" },

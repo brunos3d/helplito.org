@@ -12,7 +12,6 @@ sources:
 public_site_impact: none
 related:
   - F-PRISM-001
-  - Q-PRISM-002
 ---
 
 # Q-002 — PRiSM functional-threshold administration
@@ -38,6 +37,5 @@ that defines the criterion's assessment time and administration rules.
 
 ## Interpretation limits
 
-This question concerns administration of the trial criterion. Q-PRISM-002 is a
-separate question about whether a publicly reported score came from the same
-instrument. Neither question assesses an individual's eligibility.
+This question concerns administration of the trial criterion. It does not
+assess any individual's eligibility.

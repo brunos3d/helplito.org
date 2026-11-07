@@ -8,7 +8,6 @@ source_last_updated:
   ionis_neurology_reference: 2026-03-05
   ionis_pipeline: 2026-06-24
   anvisa_forms: 2026-03-03
-  lito_secondary_report: 2026-08-23
 last_verified: 2026-08-24
 confidence: high
 sources:
@@ -19,7 +18,6 @@ sources:
   - https://neurology.ionis.com/our-pipeline
   - https://ionis.com/patients-and-advocacy/expanded-access-policy
   - https://euclinicaltrials.eu/ctis-public/view/2023-503355-98-00?lang=en
-  - https://www1.folha.uol.com.br/equilibrioesaude/2026/08/tenho-duas-opcoes-velar-o-meu-marido-ou-lutar-por-ele-decidi-lutar-diz-mila-seidl-esposa-de-lito-sousa.shtml
 public_site_impact: review-required
 ---
 
@@ -49,11 +47,6 @@ zilganersen program. No current ION717 EAP was found. FDA and ANVISA pathways
 exist, but neither regulator can be treated as evidence that a manufacturer has
 agreed to supply ION717.
 
-A Folha report attributes to the family that Broad requested Lito's medical
-records for evaluation. That is case-specific secondary evidence only; it does
-not establish eligibility, enrollment, acceptance, treatment allocation or a
-slot.
-
 ## Material changes
 
 - ION717 changed after the August 5 snapshot to `Active, not recruiting` on
@@ -68,8 +61,6 @@ slot.
 - Broad explicitly states 15 treated plus 15 observational PRiSM participants,
   resolving the registry-total versus treated-cohort scope.
 - Ionis's current EAP list contains zilganersen and not ION717.
-- A secondary case-specific report says Broad requested Lito's medical records
-  for evaluation.
 
 ## Confirmed findings
 
@@ -91,9 +82,6 @@ slot.
 
 ## Partially verified findings
 
-- **F-LITO-001:** Folha reports, based on the family's account, that Broad
-  requested medical records for evaluation. No Broad or study-team confirmation
-  was found in this round.
 - **H-PRION-001:** “European Phase 3 without placebo” is likely a terminology
   confusion with Regimen 3 in a Phase 1/2a study with European sites, but the
   original statement's provenance is missing.
@@ -125,8 +113,6 @@ slot.
   participants” while current registry prose still says Regimen 3 sites recruit?
 - **Q-ION-002:** Could Ionis change its current published position and create an
   ION717 EAP, and what primary evidence would show that change?
-- **Q-PRISM-003:** Does the reported request for records advance only to
-  pre-screening review, or has any formal study screening step begun?
 
 ## Questions resolved
 
@@ -151,8 +137,6 @@ No public data change is implemented in this round.
 
 ## Intelligence-only findings
 
-- The reported Broad request for Lito's records remains secondary and
-  case-specific.
 - The absence of ION717 from Ionis's EAP list is time-sensitive and should not
   be generalized into permanent impossibility.
 - The secondary “not accepting” wording lacks a public primary Ionis definition.

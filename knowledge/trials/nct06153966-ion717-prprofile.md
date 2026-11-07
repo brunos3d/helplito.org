@@ -16,6 +16,7 @@ sources:
   - https://clinicaltrials.gov/api/int/studies/NCT06153966/history/30
   - https://euclinicaltrials.eu/ctis-public/view/2023-503355-98-00?lang=en
   - https://neurology.ionis.com/our-pipeline
+  - https://www.uol.com.br/splash/noticias/2026/08/25/lito-sousa-farmaceutica-caso.amp.htm
 public_site_impact: review-required
 related:
   - F-ION-001
@@ -178,3 +179,16 @@ The reviewed sources do not establish:
 - Q-ION-002: What primary evidence would establish a current ION717 expanded
   access route?
 - Q-005: What did the public phrase “European Phase 3 without placebo” refer to?
+
+## Sponsor statement, 2026-08-25
+
+Added after the campaign ended, from evidence first collected in PR #13 by
+the same contributor. In a company response reproduced by UOL on August 25,
+2026, Ionis stated that the study is no longer recruiting new participants and
+that ION717 is not currently available through Ionis expanded-access programs.
+
+This sponsor operational statement resolves current availability but does not
+correct the registry metadata conflict described above: the structured status
+says `Active, not recruiting` while the detailed description still mentions
+Regimen 3 recruitment. Case-specific details reported in the same article are
+intentionally not recorded here.
